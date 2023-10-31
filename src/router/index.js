@@ -46,7 +46,7 @@ const router = createRouter({
       }
     },
     {
-      path: '/loginPage',
+      path: '/LoginPage',
       name: 'LoginPage', // eslint-disable-next-line
       component: () => import('../views/LoginPage.vue') 
     },
@@ -55,7 +55,11 @@ const router = createRouter({
       name: 'LandingPage', // eslint-disable-next-line
       component: () => import('../views/LandingPage.vue'),
     },
-    
+    {
+      path: '/SearchPage',
+      name: 'SearchPage', // eslint-disable-next-line
+      component: () => import('../views/SearchPage.vue'),
+    },
   ]
 })
 

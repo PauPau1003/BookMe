@@ -1,6 +1,6 @@
 
 <template>
-<v-container>
+
     <div class="serviceproviderprofile">
           <ServiceProviderProfile />
         </div>
@@ -12,9 +12,9 @@
           <Reviews/>
         </div>
         
-      </v-container>
+
            
-      <v-container>
+
         <div class="scheduling">
               <Scheduling />
             </div>
@@ -22,7 +22,7 @@
               <Payment />
             </div>
             
-        </v-container>
+
 
 </template>
 <script>

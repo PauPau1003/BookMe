@@ -59,7 +59,6 @@ export default {
 
 <style>
 body{
-
 background-blend-mode: multiply;
 background-position: center;
 background-size: cover;
