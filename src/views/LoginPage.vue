@@ -1,4 +1,6 @@
 <template>
+<div class="bg">
+<div class="container min-height-container">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-2"></div>
@@ -32,7 +34,7 @@
                                     <label for="loginPassword" class="form-label">Password</label>
                                     <input required v-model="login_form.password" type="password" class="form-control" id="loginPassword" placeholder="Password">
                                     </div>
-                                    <button type="submit" value="login" class="btn btn-outline-success">Login</button>
+                                    <button type="submit" value="login" class="btn btn-outline-primary">Login</button>
                                 </form>
                                 </div>
                             </div>
@@ -49,18 +51,18 @@
                                 <label for="registerPassword" class="form-label">Password</label>
                                 <input required v-model="register_form.password" type="password" class="form-control" id="registerPassword" placeholder="Password">
                                 </div>
-                                <button type="submit" value="login" class="btn btn-outline-success">Register</button>
+                                <button type="submit" value="login" class="btn btn-outline-primary">Register</button>
                             </form>
                             </div>
 
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-2"></div>
             </div>
         </div>
     </div>
-
+</div>
+</div>
 
   </template>
   
@@ -100,34 +102,27 @@
 
 
 <style>
-
-body {
+.bg {
     background: #7EBFB3;
 }
 
+.min-height-container {
+  min-height: 100vh; 
+}
+
 .login-box {
+    border-radius: 10px;
     margin-top: 75px;
-    height: auto;
+    min-height: 70vh;
     background: white;
     text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.login-key {
-    height: 100px;
-    font-size: 80px;
-    line-height: 100px;
-    background: -webkit-linear-gradient(#27EF9F, #0DB8DE);
-}
-
 .login-title {
     margin-top: 15px;
     text-align: center;
-    font-size: 30px;
-    letter-spacing: 2px;
     margin-top: 15px;
-    font-weight: bold;
-    color: #ECF0F5;
 }
 
 .login-form {
@@ -157,38 +152,22 @@ input[type=password] {
     color: black;
 }
 
-.form-group {
-    margin-bottom: 40px;
-    outline: 0px;
-}
-
-input:focus {
-    outline: none;
-    box-shadow: 0 0 0;
-}
-
 label {
     margin-bottom: 0px;
 }
 
 .form-label {
-    font-size: 10px;
     color: #6C6C6C;
-    font-weight: bold;
-    letter-spacing: 1px;
 }
 
 .btn-outline-primary {
     border-color: #0DB8DE;
     color: #0DB8DE;
-    border-radius: 0px;
-    font-weight: bold;
-    letter-spacing: 1px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .btn-outline-primary:hover {
-    background-color: #0DB8DE;
+    background-color: blue;
     right: 0px;
 }
 
