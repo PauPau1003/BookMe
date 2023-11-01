@@ -24,7 +24,7 @@ const router = createRouter({
       }
     },
     {
-      path: '/service-provider',
+      path: '/service-provider/:id',
       name: 'service-provider',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -32,7 +32,9 @@ const router = createRouter({
       component: () => import('../views/ServiceProvider.vue'),
       meta:{
         requiresAuth:true
-      }
+      },
+     
+      
     },
     {
       path: '/search-result',
@@ -49,6 +51,11 @@ const router = createRouter({
       path: '/loginPage',
       name: 'LoginPage', // eslint-disable-next-line
       component: () => import('../views/LoginPage.vue') 
+    },
+    {
+      path: '/service-selection',
+      name: 'ServiceSelection', // eslint-disable-next-line
+      component: () => import('../components/serviceprovider/ServiceSelection.vue') 
     },
    
     
