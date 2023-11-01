@@ -1,5 +1,12 @@
+<script>
+export default{
+ name: 'Categories'
+}
+
+</script>
+
 <template>
-    <div class="categories">
+  <div class="categories">
       <ul class="m-4 nav nav-underline">
         <li class="nav-item">
           <a class="nav-link text-dark" aria-current="page" href="#">Graphic & Design</a>
@@ -33,13 +40,5 @@
           </li>
       </ul>
     </div>
+
 </template>
-<script>
-
-export default {
-  name: 'Categories',
-};
-</script>
-<style scoped>
-
-</style>
