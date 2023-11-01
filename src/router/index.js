@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+
 import { auth } from "../firebase/firebaseconfig.js";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: HomeView,
+      component: () => import("../views/HomeLandingPage.vue"),
       meta: {
         requiresAuth: true,
       },
@@ -52,12 +52,6 @@ const router = createRouter({
       path: "/loginPage",
       name: "LoginPage", // eslint-disable-next-line
       component: () => import("../views/LoginPage.vue"),
-    },
-
-    {
-      path: "/HomeLandingPage",
-      name: "HomeLandingPage",
-      component: () => import("../views/HomelandingPage.vue"),
     },
     {
       path: '/service-selection',

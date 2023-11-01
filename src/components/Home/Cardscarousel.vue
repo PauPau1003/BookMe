@@ -209,5 +209,10 @@ export default {
 
 .cardwrapper > img {
   max-height: 768px;
+  transition: transform 0.3s ease-in-out; /* Add a transition */
+}
+
+.cardwrapper:hover > img {
+  transform: scale(1.05); /* Scale the image slightly when hovering */
 }
 </style>

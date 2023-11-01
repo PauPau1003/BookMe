@@ -55,8 +55,8 @@
             <li class="nav-item mx-2">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#about">Services</a>
+            <li class="nav-item mx-2 nav">
+              <router-link to="/Searchpage" class="nav-link">Services</router-link>
             </li>
             <!-- <li class="nav-item mx-2">
                 <a class="nav-link" href="#about">Contact</a>
@@ -74,6 +74,7 @@
               style="white-space: nowrap"
               >Sign up</a
             >
+            <button class="text-black text-decoration-none" @click="$store.dispatch('logout')">Logout</button>
           </div>
         </div>
       </div>
