@@ -1,7 +1,7 @@
 //color codes = #4ABDAC,#FC4A1A,#F7B733,#DFDCE3
 
-import './assets/main.css';
-import '../../css/style.css'
+// import './assets/main.css';
+// import '../../css/style.css'
 
 // Import Bootstrap and BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
