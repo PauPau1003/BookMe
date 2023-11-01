@@ -2,7 +2,11 @@
   <div class="features container-fluid mt-5 mb-5">
     <div class="row">
       <div class="col-md-4">
-        <div class="card custom-card1 m-3" style="max-width: none">
+        <div
+          data-aos="zoom-in-up"
+          class="card custom-card1 m-3"
+          style="max-width: none"
+        >
           <div class="card-body text-center">
             <span class="icon-users display-5"></span>
             <h5 class="card-title mt-3">Our Services</h5>
@@ -15,7 +19,11 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card custom-card1 m-3" style="max-width: none">
+        <div
+          data-aos="zoom-in-up"
+          class="card custom-card1 m-3"
+          style="max-width: none"
+        >
           <div class="card-body text-center">
             <span class="icon-people display-5"></span>
             <h5 class="card-title mt-3">Service Provider</h5>
@@ -28,7 +36,11 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card custom-card1 m-3" style="max-width: none">
+        <div
+          data-aos="zoom-in-up"
+          class="card custom-card1 m-3"
+          style="max-width: none"
+        >
           <div class="card-body text-center">
             <span class="icon-book display-5"></span>
             <h5 class="card-title mt-3">Support and Education</h5>
