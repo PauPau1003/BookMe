@@ -14,7 +14,7 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta perspiciatis quos nulla commodi labore cum atque quas, voluptas quisquam error eaque tempore nam natus, saepe quidem velit fuga. Numquam, distinctio?
                     <br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium voluptatem non enim perspiciatis harum nisi porro ea ducimus repudiandae, maxime distinctio hic libero nemo atque. Eos ducimus fugiat nam id!
                 </p>
-                <button type="button" class="btn btn-success">Finish Course</button>
+                <button type="button" class="btn btn-success" style="color:white;">Finish Course</button>
             </div>
 
             <div class="col-md-1 col-0">
@@ -38,7 +38,7 @@
                     <br>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam itaque expedita provident dolore recusandae error quia laborum possimus, deserunt similique voluptatem ullam ratione quos! Cumque labore nemo aspernatur sapiente architecto!
                         <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta perspiciatis quos nulla commodi labore cum atque quas, voluptas quisquam error eaque tempore nam natus, saepe quidem velit fuga. Numquam, distinctio?</p>
-                    <button type="button" class="btn btn-success">Finish Course</button>
+                    <button type="button" class="btn btn-success" style="color:white;">Finish Course</button>
                 </div>
             </div>
                 
@@ -49,7 +49,7 @@
                 <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nostrum voluptatem molestiae consequuntur sequi laborum ipsa tenetur cum excepturi iste. Magnam placeat nesciunt iure suscipit facere totam laudantium qui vero?
                     <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta perspiciatis quos nulla commodi labore cum atque quas, voluptas quisquam error eaque tempore nam natus, saepe quidem velit fuga. Numquam, distinctio?</p>
-                <button type="button" class="btn btn-success">Finish Course</button>
+                <button type="button" class="btn btn-success" style="color:white;">Finish Course</button>
             </div>
 
             <div class="col-md-1 col-0">
@@ -73,7 +73,7 @@
                     <br>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus dolorem, iusto nisi ullam fuga et, veritatis fugit illo consequuntur aliquam deserunt deleniti vero quis! Maiores architecto sint doloremque non consectetur!
                         <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta perspiciatis quos nulla commodi labore cum atque quas, voluptas quisquam error eaque tempore nam natus, saepe quidem velit fuga. Numquam, distinctio?</p>
-                    <button type="button" class="btn btn-success">Finish Course</button>
+                    <button type="button" class="btn btn-success" style="color:white;">Finish Course</button>
                 </div>
             </div>
             <div class="row me-auto">
@@ -82,7 +82,7 @@
                     <br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sunt dicta ullam accusamus amet eligendi qui nulla magnam vel explicabo alias dolores, nam in inventore temporibus aliquid neque voluptates fugiat?
                         <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta perspiciatis quos nulla commodi labore cum atque quas, voluptas quisquam error eaque tempore nam natus, saepe quidem velit fuga. Numquam, distinctio?</p>
-                    <button type="button" class="btn btn-success">Finish Course</button>
+                    <button type="button" class="btn btn-success" style="color:white;">Finish Course</button>
                 </div>
     
                 <div class="col-md-1 col-0">
@@ -96,8 +96,9 @@
 
     </div>
     
-            
-            
+    <div class="newfooter">
+        <Newfooter />
+    </div>
     
     
 </template>
@@ -105,10 +106,12 @@
 <script>
     
     import spnavbar from "../components/spnavbar.vue";
+    import Newfooter from "../components/newfooter.vue";
       
       export default {
         components: {
         spnavbar,
+        Newfooter,
     },
       };
     
