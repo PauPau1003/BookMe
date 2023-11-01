@@ -46,7 +46,7 @@ const router = createRouter({
     //   }
     // },
     {
-      path: '/loginPage',
+      path: '/LoginPage',
       name: 'LoginPage', // eslint-disable-next-line
       component: () => import('../views/LoginPage.vue') 
     },
@@ -65,7 +65,26 @@ const router = createRouter({
       // meta:{
       //   requiresAuth:true
       // }
-    } 
+    },{
+      path: '/Dashboard',
+      name: 'Dashboard',
+      component: () => import('../views/Dashboard.vue')
+    },
+    {
+      path: '/SPHome',
+      name: 'SPHome',
+      component: () => import('../views/SPHome.vue')
+    },
+    {
+      path: '/LearningAvenue',
+      name: 'LearningAvenue',
+      component: () => import('../views/LearningAvenue.vue')
+    },
+    {
+      path: '/Permits&Requirements',
+      name: 'Permits&Requirements',
+      component: () => import('../views/Permits&Requirements.vue')
+    },
     
   ]
 })
