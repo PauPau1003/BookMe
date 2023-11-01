@@ -63,9 +63,6 @@
 	</div>
     
     
-	<div class="newfooter">
-        <Newfooter />
-    </div>
     
     
 </template>
@@ -73,12 +70,10 @@
 <script>
     
     import spnavbar from "../components/spnavbar.vue";
-    import Newfooter from "../components/newfooter.vue";
       
       export default {
         components: {
         spnavbar,
-        Newfooter,
     },
       };
     
