@@ -5,15 +5,15 @@
 </script>
 <template>
      <div class="container-fluid">
-      <div class="pt-4 my-md-5 pt-md-5 border-top">
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
           <div class="col-12 col-md">
             <img
               class="mb-2"
-              src="/BookMeLogo-removebg-preview.png"
+              src="/docs/4.3/assets/brand/bootstrap-solid.svg"
               alt=""
-              width="80"
-              height="30"
+              width="24"
+              height="24"
             />
             <small class="d-block mb-3 text-muted">© 2017-2019</small>
           </div>
@@ -47,7 +47,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
 </template>
 
@@ -81,9 +81,9 @@ color: rgb(56, 56, 56);
 width:300px
 }
 
-/* .maincontent{
+.maincontent{
 background: url('images/bg.jpg') rgba(0,0,0,0.3);
-} */
+}
 
 .sticky-top-navbar {
 position: sticky;

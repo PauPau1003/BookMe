@@ -34,17 +34,18 @@ const router = createRouter({
         requiresAuth: true,
       },
     },
-    {
-      path: "/search-result",
-      name: "search-result",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("../views/SearchResult.vue"),
-      meta: {
-        requiresAuth: true,
-      },
-    },
+    // {
+    //   path: '/search-result',
+    //   name: 'search-result',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (About.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/SearchResult.vue'),
+    //   meta:{
+    //     requiresAuth:true
+    //   }
+    // },
+    
     {
       path: "/loginPage",
       name: "LoginPage", // eslint-disable-next-line
@@ -56,8 +57,45 @@ const router = createRouter({
       name: "HomeLandingPage",
       component: () => import("../views/HomelandingPage.vue"),
     },
-  ],
-});
+    {
+      path: '/LandingPage',
+      name: 'LandingPage', // eslint-disable-next-line
+      component: () => import('../views/LandingPage.vue'),
+    },
+    {
+      path: '/Searchpage',
+      name: 'Searchpage',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Searchpage.vue'),
+      // meta:{
+      //   requiresAuth:true
+      // }
+    },
+    {
+      path: '/Dashboard',
+      name: 'Dashboard',
+      component: () => import('../views/Dashboard.vue')
+    },
+    {
+      path: '/SPHome',
+      name: 'SPHome',
+      component: () => import('../views/SPHome.vue')
+    },
+    {
+      path: '/LearningAvenue',
+      name: 'LearningAvenue',
+      component: () => import('../views/LearningAvenue.vue')
+    },
+    {
+      path: '/Permits&Requirements',
+      name: 'Permits&Requirements',
+      component: () => import('../views/Permits&Requirements.vue')
+    },
+    
+  ]
+})
 
 router.beforeEach((to, from, next) => {
   if (to.path === "/loginPage" && auth.currentUser) {

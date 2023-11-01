@@ -1,5 +1,12 @@
+<script>
+export default{
+ name: 'Suggested'
+}
+
+</script>
+
 <template>
-<div class="suggested">
+  <div class="suggested">
       <nav class="navbar bg-body-tertiary">
         <form class="container-fluid justify-content-start">
             <span class="fw-bold">Suggested</span>
@@ -15,10 +22,5 @@
         </form>
       </nav>
     </div>
-</template>
 
-<script>
-export default {
-  name: 'Suggested',
-};
-</script>
+</template>
