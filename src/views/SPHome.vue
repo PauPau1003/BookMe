@@ -10,7 +10,7 @@
                     <div class="row mb-5"> 
                       <div class="col-12">
                         <div class="card">
-                          <img src="../../public/person_1-min.jpg" class="card-img-top" style="height: 60px;width:60px; border-radius:25px;margin:auto; margin-top:20px">
+                          <img src="../../person_1-min.jpg" class="card-img-top" style="height: 60px;width:60px; border-radius:25px;margin:auto; margin-top:20px">
                           <div class="card-body">
                           <h5 class="card-title" style="text-align: center;color:#194759;">Jason Tourney</h5>
                           <p class="card-text" style="text-align: center;color: #7EBFB3;">
@@ -21,10 +21,10 @@
                           </p>
                           <hr>
                           <p class="card-text">
-                            <img src="../../public/location_marker.png" style="height:20px ;width:20px;"> From : Spain<br><br>
-                            <img src="../../public/user.png" style="height:20px ;width:20px;"> Member Since : May 2023<br><br>
-                            <img src="../../public/clock.png" style="height:20px ;width:20px;"> Avg. Response Time : 2 Hrs.<br><br>
-                            <img src="../../public/acquisition.png" style="height:20px ;width:20px;"> Recent Sale(s) : 1 Day Ago</p>                              
+                            <img src="../../location_marker.png" style="height:20px ;width:20px;"> From : Spain<br><br>
+                            <img src="../../user.png" style="height:20px ;width:20px;"> Member Since : May 2023<br><br>
+                            <img src="../../clock.png" style="height:20px ;width:20px;"> Avg. Response Time : 2 Hrs.<br><br>
+                            <img src="../../acquisition.png" style="height:20px ;width:20px;"> Recent Sale(s) : 1 Day Ago</p>                              
                             </div>
                           </div>
     
@@ -36,9 +36,9 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Successfully Completed Courses</h5>
                                   <br>
-                                  <p class="card-text" style="font-weight: bold;"><img src="../../public/pen.png" style="height:30px ;width:30px;"> Craft Your Own Logo by Hand : DD/MM/YY</p><br>
-                                  <p class="card-text" style="font-weight: bold;"><img src="../../public/photoshop.png" style="height:30px ;width:30px;"> Adobe Photoshop Mastery : DD/MM/YY</p><br>
-                                  <p class="card-text" style="font-weight: bold;"><img src="../../public/google-analytics.png" style="height:30px ;width:30px;"> Google Analytics - Beginner : DD/MM/YY</p><br>
+                                  <p class="card-text" style="font-weight: bold;"><img src="../../pen.png" style="height:30px ;width:30px;"> Craft Your Own Logo by Hand : DD/MM/YY</p><br>
+                                  <p class="card-text" style="font-weight: bold;"><img src="../../photoshop.png" style="height:30px ;width:30px;"> Adobe Photoshop Mastery : DD/MM/YY</p><br>
+                                  <p class="card-text" style="font-weight: bold;"><img src="../../google-analytics.png" style="height:30px ;width:30px;"> Google Analytics - Beginner : DD/MM/YY</p><br>
                                   
                                 </div>
                               </div>
@@ -61,7 +61,7 @@
                     <div class="row mb-2">
                         <div class="col-md-4 col-12 mb-4">
                             <div class="card">
-                                <img src="../../public/img_1.jpg" class="card-img-top">
+                                <img src="../../img_1.jpg" class="card-img-top">
                                 <div class="card-body">
                                   <h5 class="card-title">Product 1</h5>
                                   <p class="card-text">A modern house.</p>
@@ -73,7 +73,7 @@
                         </div>
                         <div class="col-md-4 col-12 mb-4">
                             <div class="card">
-                                <img src="../../public/img_2.jpg" class="card-img-top">
+                                <img src="../../img_2.jpg" class="card-img-top">
                                 <div class="card-body">
                                   <h5 class="card-title">Product 2</h5>
                                   <p class="card-text">A luxury estate.</p>
@@ -85,7 +85,7 @@
                         </div>
                         <div class="col-md-4 col-12 mb-4">
                             <div class="card" >
-                                <img src="../../public/img_3.jpg" class="card-img-top">
+                                <img src="../../img_3.jpg" class="card-img-top">
                                 <div class="card-body">
                                   <h5 class="card-title">Product 3</h5>
                                   <!-- pull from what user input the card text to be -->
@@ -99,7 +99,7 @@
 
                         <div class="col-md-4 col-12 mb-4">
                             <div class="card" >
-                                <img src="../../public/img_4.jpg" class="card-img-top">
+                                <img src="../../img_4.jpg" class="card-img-top">
                                 <div class="card-body">
                                   <h5 class="card-title">Product 4</h5>
                                   <!-- pull from what user input the card text to be -->
@@ -113,7 +113,7 @@
 
                         <div class="col-md-4 col-12 mb-4">
                             <div class="card" >
-                                <img src="../../public/img_5.jpg" class="card-img-top">
+                                <img src="../../img_5.jpg" class="card-img-top">
                                 <div class="card-body">
                                   <h5 class="card-title">Product 5</h5>
                                   <!-- pull from what user input the card text to be -->
@@ -137,7 +137,7 @@
                           <div class="carousel-item active" data-bs-interval="10000">
                            <div class="card-group">
                             <div class="card">
-                              <img src="../../public/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
+                              <img src="../../person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
                              <div class="card-body">
                              <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
@@ -145,7 +145,7 @@
                           </div>
                         </div>
                         <div class="card">
-                          <img src="../../public/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
+                          <img src="../../person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
                           <div class="card-body">
                             <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
@@ -153,7 +153,7 @@
                           </div>
                         </div>
                         <div class="card">
-                          <img src="../../public/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
+                          <img src="../../person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
                           <div class="card-body">
                             <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
@@ -166,7 +166,7 @@
                           <div class="carousel-item">
                       <div class="card-group">
                         <div class="card">
-                          <img src="../../public/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
+                          <img src="../../person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
                           <div class="card-body">
                             <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
@@ -174,7 +174,7 @@
                           </div>
                         </div>
                         <div class="card">
-                          <img src="../../public/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
+                          <img src="../../person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
                           <div class="card-body">
                             <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
@@ -182,7 +182,7 @@
                           </div>
                         </div>
                         <div class="card">
-                          <img src="../../public/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
+                          <img src="../../person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
                           <div class="card-body">
                             <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
@@ -197,7 +197,7 @@
                       
                       <div class="card-group">
                         <div class="card">
-                          <img src="../../public/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
+                          <img src="../../person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
                           <div class="card-body">
                             <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
@@ -205,7 +205,7 @@
                           </div>
                         </div>
                         <div class="card">
-                          <img src="../../public/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
+                          <img src="../../person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
                           <div class="card-body">
                             <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
@@ -213,7 +213,7 @@
                           </div>
                         </div>
                         <div class="card">
-                          <img src="../../public/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
+                          <img src="../../person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
                           <div class="card-body">
                             <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>

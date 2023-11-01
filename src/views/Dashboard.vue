@@ -13,7 +13,7 @@
 				</div>
 				<div class="row mb-3 mx-2">
 					<div class="col-md-3 col-12 mx-md-3 mb-3" data-aos="fade-up" data-aos-delay="300" style="height:80%;border: 2px solid white; border-radius:5px;background-color: white; ">
-						<p><small class="text-muted">Auto date range</small><br><img src="../../public/calendar.png" style="width:20px ; height:20px;"> This Month</p>
+						<p><small class="text-muted">Auto date range</small><br><img src="../../calendar.png" style="width:20px ; height:20px;"> This Month</p>
 					</div>
 					<div class="col-md-2 col-12 mx-md-3 mb-3" data-aos="fade-up" data-aos-delay="300" style="height:90%;border: 2px solid white; border-radius:5px;background-color: white; ">
 						<p><small class="text-muted">Products</small><br>All</p>
@@ -50,7 +50,7 @@
 					<div class="col-md-2 col-5 mx-md-2 mx-3 mb-3"  data-aos="fade-up" data-aos-delay="600" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 							<h3 class="mb-3">Webpage Views</h3>
 							<div id="container" style="text-align: center;margin-top:15px;">
-								<img src="../../public/pie-chart.png" style="width:100px; height:100px;">
+								<img src="../../pie-chart.png" style="width:100px; height:100px;">
 							</div>
 
 					</div>	
@@ -59,13 +59,13 @@
 					<div class="col-md-6 col-12 mx-md-3 mb-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 						<div>
 						<h3 class="mb-3">Business Progress</h3>
-						<img src="../../public/success.png" style="height:380px;width: 100%; padding-bottom: 15px;">
+						<img src="../../success.png" style="height:380px;width: 100%; padding-bottom: 15px;">
 						</div>
 					</div>
 					<div class="col-md-5 col-12 mx-md-2 mb-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 						<div>
 						<h3 class="mb-3">MRR</h3>
-						<img src="../../public/MRRexample.png" style="height:380px;width: 100%;">
+						<img src="../../MRRexample.png" style="height:380px;width: 100%;">
 					</div>
 					</div>
 				</div>
