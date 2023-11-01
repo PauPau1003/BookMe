@@ -12,7 +12,7 @@
           aria-label="Search"
           style="width: 300px"
         />
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-outline-dark text-light" type="submit">Search</button>
       </form>
       <!-- Toggle Button -->
       <button

@@ -21,11 +21,11 @@
       
 </template>
 <script>
-import Cardsection from "../components/cardsection.vue";
-import Carouselsection from "../components/carouselsection.vue";
-import Section from "../components/section.vue";
-import navbar from "../components/navbar.vue";
-import Newfooter from "../components/newfooter.vue";
+import Cardsection from "../components/LandingPage/cardsection.vue";
+import Carouselsection from "../components/LandingPage/carouselsection.vue";
+import Section from "../components/LandingPage/section.vue";
+import navbar from "../components/LandingPage/navbar.vue";
+import Newfooter from "../components/LandingPage/newfooter.vue";
   
   export default {
     components: {
