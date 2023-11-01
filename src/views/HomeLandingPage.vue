@@ -30,13 +30,13 @@
 </template>
 
 <script>
-import Cardscarousel from "@/components/Cardscarousel.vue";
-import Cilentsreviews from "@/components/Cilentsreviews.vue";
-import Featurespage from "@/components/Featurespage.vue";
-import FirstImage from "@/components/FirstImage.vue";
+import Cardscarousel from "@/components/Home/Cardscarousel.vue";
+import Cilentsreviews from "@/components/Home/Cilentsreviews.vue";
+import Featurespage from "@/components/Home/Featurespage.vue";
+import FirstImage from "@/components/Home/FirstImage.vue";
 import Footer from "@/components/Footer.vue";
-import MoreFeatures from "@/components/MoreFeatures.vue";
-import Navbar from "@/components/Navbar.vue";
+import MoreFeatures from "@/components/Home/MoreFeatures.vue";
+import Navbar from "@/components/Home/Navbar.vue";
 
 
 export default {

@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import "../assets/icomoon/style.css";
+import "../../assets/icomoon/style.css";
 
 export default {
   name: "Featurespage",

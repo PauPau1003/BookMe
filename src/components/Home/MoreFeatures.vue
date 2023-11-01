@@ -12,7 +12,7 @@
       <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
         <div>
           <img
-            src="../../public/images/back.jpg"
+            src="../../../public/images/back.jpg"
             alt="Image"
             class="img-fluid"
           />
@@ -62,8 +62,7 @@
 </template>
 
 <script>
-
-import '../assets/icomoon/style.css';
+import "../../assets/icomoon/style.css";
 
 export default {
   name: "MoreFeatures",
