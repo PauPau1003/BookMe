@@ -3,7 +3,7 @@
     <div class="container">
       <!-- Logo -->
       <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px"></a>
-      <form class="d-none d-md-flex d-lg-flex" role="search">
+      <form class="d-none d-md-flex d-lg-flex" role="search" action="http://localhost:5173/Searchpage" method="get">
         <!-- Search Form -->
         <input
           class="formsearch form-control me-2"
@@ -60,9 +60,9 @@
           <div
             class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
           >
-            <a href="#login" class="text-black text-decoration-none">Login</a>
+            <a href="/LoginPage" class="text-black text-decoration-none">Login</a>
             <a
-              href="#signup"
+              href="/LoginPage"
               class="signupBut text-decoration-none px-3 py-1 rounded-1"
               style="white-space: nowrap"
               >Sign up</a

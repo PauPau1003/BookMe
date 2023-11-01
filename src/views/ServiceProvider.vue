@@ -5,7 +5,7 @@ import Reviews from '../components/Reviews.vue';
 import Scheduling from '../components/Scheduling.vue';
 import Payment from '../components/Payment.vue';
 import Categories from '../components/Categories.vue';
-import Filter from '../components/Filter.vue';
+import Filter from  '../components/Filter.vue';
 import Footer from '../components/Footer.vue';
 import SearchBar from '../components/SearchBar.vue';
 import SellerContent from '../components/SellerContent.vue';
