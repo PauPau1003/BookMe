@@ -5,7 +5,7 @@
 
 
 		
-		<div class="container-fluid" style="background-color:#194759 ;border-radius: 5px;padding-bottom:10px;">
+		<div class="container-fluid" style="background-color:#7EBFB3 ;border-radius: 5px;padding-bottom:10px;">
 			<div class="row mb-4">
 				<div class="col-md-6 col-12">
 					<h2 class="font-weight-bold heading mt-5" style="color: white">Your Executive Dashboard</h2>
