@@ -23,7 +23,7 @@
 
                             <div class="tab-content mt-3" id="loginRegisterTabContent">
                                 <!-- Login Tab Content -->
-                                <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                                <div class="tab-pane show active" id="login" role="tabpanel" aria-labelledby="login-tab">
                                 <!-- Login Form -->
                                 <form class="login" @submit.prevent="login">
                                     <div class="mb-3">  
