@@ -1,8 +1,11 @@
 <script>
 export default {
+  props:{
+    calendlyurl: String
+  },
   mounted() {
     Calendly.initInlineWidget({
-      url: 'https://calendly.com/dominicj-2022',
+      url: this.calendlyurl,
       parentElement: document.getElementById('calendar'),
     });
     console.log('Component is mounted and Calendly widget is initialized');
@@ -25,6 +28,10 @@ export default {
 
   <style scoped>
    /* style="min-width:320px;height:580px;" */
+   h2{
+    text-align: center;
+    margin-top: 20px;
+   }
   .scheduling {
     padding: 20px;
   }

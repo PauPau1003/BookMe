@@ -24,15 +24,17 @@ const router = createRouter({
       },
     },
     {
-      path: "/service-provider",
-      name: "service-provider",
+      path: '/service-provider/:id',
+      name: 'service-provider',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import("../views/ServiceProvider.vue"),
-      meta: {
-        requiresAuth: true,
+      component: () => import('../views/ServiceProvider.vue'),
+      meta:{
+        requiresAuth:true
       },
+     
+      
     },
     // {
     //   path: '/search-result',
@@ -58,6 +60,11 @@ const router = createRouter({
       component: () => import("../views/HomelandingPage.vue"),
     },
     {
+      path: '/service-selection',
+      name: 'ServiceSelection', // eslint-disable-next-line
+      component: () => import('../components/serviceprovider/ServiceSelection.vue') 
+    },
+   {
       path: '/LandingPage',
       name: 'LandingPage', // eslint-disable-next-line
       component: () => import('../views/LandingPage.vue'),

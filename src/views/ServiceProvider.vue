@@ -1,17 +1,12 @@
-<script setup>
-import ServiceProviderProfile from '../components/ServiceProviderProfile.vue';
-import Services from '../components/Services.vue';
-import Reviews from '../components/Reviews.vue';
-import Scheduling from '../components/Scheduling.vue';
-import Payment from '../components/Payment.vue';
-import Categories from '../components/Categories.vue';
-import Filter from '../components/Filter.vue';
-import Footer from '../components/Footer.vue';
-import SearchBar from '../components/SearchBar.vue';
-import SellerContent from '../components/SellerContent.vue';
-import Suggested from '../components/Suggested.vue';
+<script >
+import ServiceProviderProfile from '../components/serviceprovider/ServiceProviderProfile.vue';
+import Services from '../components/serviceprovider/Services.vue';
+import Reviews from '../components/serviceprovider/Reviews.vue';
+import Scheduling from '../components/serviceprovider/Scheduling.vue';
+import Payment from '../components/serviceprovider/Payment.vue';
 
 
+import data from "../firebase/data.json";
 // const redirectToStripe = async () => {
 // isLoading.value = true;
 
@@ -22,7 +17,70 @@ import Suggested from '../components/Suggested.vue';
 
 // window.location.href = url;
 // };
+export default {
+  
+  data() {
+    return {
+      serviceId: 0,
+      serviceDetails: {},
+      name: '',
+      username: '',
+      profileImage: '',
+      serviceImage: [],
+      serviceDescription: '',
+      calendlyurl: '',
+    };
+  },
+  // computed: {
+  //   serviceProviderId() {
+  //     // Access the data from route parameters
+  //     serviceId = this.$route.params.id
+  //     console.log(this.$route.params.id)
+  //     return this.$route.params.id;
+  //   },
+  // },
+  async created() {
+    // Fetch service details based on the route parameter (serviceId)
+     this.serviceId = this.$route.params.id;
+    // Fetch service details from your data source (e.g., JSON data)
+    // Assign the service details to this.serviceDetails
+    for (let i = 0; i < data.length;i++){
+      console.log(data[i])
+      if (data[i].service.serviceId == this.serviceId){
+        this.serviceDetails=data[i]
+        // For service provider profile
+        this.name = this.serviceDetails.user.name
+        this.username = this.serviceDetails.user.username
+        this.profileImage = this.serviceDetails.user.profileImage
+        
+        // For about me
+        this.serviceImage = this.serviceDetails.service.serviceImage
+        this.serviceDescription = this.serviceDetails.service.serviceDescription
 
+        //For Scheduling
+        this.calendlyurl = this.serviceDetails.service.calendlyURL
+        console.log(this.calendlyurl)
+        
+      }
+    }
+
+  },
+  
+  methods: {
+    test(serviceId) {
+      for (user in data){
+        console.log(user)
+      }
+  }
+},
+components: {
+    ServiceProviderProfile,
+    Services,
+    Reviews,
+    Scheduling,
+    Payment
+  },
+};
 
 
 
@@ -34,23 +92,40 @@ import Suggested from '../components/Suggested.vue';
   <SellerContent/>
   <Suggested/>
   <Footer/> -->
-  <div >
-    <v-breadcrumbs :items="['Home', 'Services', 'ServiceProvider']"></v-breadcrumbs>
-    <ServiceProviderProfile />
-        <Services />
-        <Reviews/>
-  </div>
-      
-      <div >
-        <div id="scheduling"> 
-        <Scheduling />
-      </div>
-            
-      <div id="payment">
+  <!-- <button v-on:click="test(serviceId)">
+    Test
+  </button> -->
+  <v-breadcrumbs :items="['Home', 'Services', 'ServiceProvider']"></v-breadcrumbs>
+  <div>
+    <v-row>
+      <v-col cols="12" md="6">
+        <ServiceProviderProfile :name="name" :username="username" :profileImage="profileImage" />
+        <Services :serviceDescription="serviceDescription" :serviceImage="serviceImage" />
+      </v-col>
+      <v-col cols="12" md="6">
+        <Scheduling :calendlyurl="calendlyurl" />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12" md="6">
+        <Reviews />
+      </v-col>
+      <v-col cols="12" md="6">
         <Payment />
-      </div>
-      </div>
-          
+      </v-col>
+    </v-row>
+  </div>
+  
+        
+     
+        
+            
+    
+       
+    
+          <h2 >
+
+          </h2>
        
         
         
