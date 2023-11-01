@@ -56,10 +56,26 @@ const router = createRouter({
       component: () => import('../views/LandingPage.vue'),
     },
     {
-      path: '/SearchPage',
-      name: 'SearchPage', // eslint-disable-next-line
-      component: () => import('../views/SearchPage.vue'),
+      path: '/Dashboard',
+      name: 'Dashboard',
+      component: () => import('../views/Dashboard.vue')
     },
+    {
+      path: '/SPHome',
+      name: 'SPHome',
+      component: () => import('../views/SPHome.vue')
+    },
+    {
+      path: '/LearningAvenue',
+      name: 'LearningAvenue',
+      component: () => import('../views/LearningAvenue.vue')
+    },
+    {
+      path: '/Permits&Requirements',
+      name: 'Permits&Requirements',
+      component: () => import('../views/Permits&Requirements.vue')
+    },
+    
   ]
 })
 
