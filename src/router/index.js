@@ -51,6 +51,11 @@ const router = createRouter({
       component: () => import('../views/LoginPage.vue') 
     },
     {
+      path: '/LandingPage',
+      name: 'LandingPage', // eslint-disable-next-line
+      component: () => import('../views/LandingPage.vue'),
+    },
+    {
       path: '/Dashboard',
       name: 'Dashboard',
       component: () => import('../views/Dashboard.vue')
@@ -69,8 +74,7 @@ const router = createRouter({
       path: '/Permits&Requirements',
       name: 'Permits&Requirements',
       component: () => import('../views/Permits&Requirements.vue')
-    }
-   
+    },
     
   ]
 })
