@@ -14,10 +14,10 @@
                         <form>
                             <ul class="nav nav-tabs justify-content-center nav-pills nav-fill" id="loginRegisterTabs" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active" :class="{ 'bg-success': loginTabActive }" id="login-tab" @click="activateLoginTab" data-bs-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                                <a class="nav-link active" id="login-tab" data-bs-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" :class="{ 'bg-success': registerTabActive }" id="register-tab" @click="activateRegisterTab" data-bs-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                                <a class="nav-link" id="register-tab" data-bs-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
                             </li>
                             </ul>
 
@@ -40,7 +40,7 @@
                             </div>
 
                             <!-- Register Tab Content -->
-                            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                            <div class="tab-pane fade" id="register" role="tabpanel1" aria-labelledby="register-tab">
                             <!-- Registration Form -->
                             <form class="register" @submit.prevent="register">
                                 <div class="mb-3">
@@ -113,7 +113,7 @@
 .login-box {
     border-radius: 10px;
     margin-top: 75px;
-    min-height: 70vh;
+    min-height: 100vh;
     background: white;
     text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
