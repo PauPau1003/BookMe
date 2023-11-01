@@ -1,7 +1,7 @@
 <template>
     <div class="services">
       <v-carousel>
-  <v-carousel-item
+  <!-- <v-carousel-item
     src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
     cover
   ></v-carousel-item>
@@ -14,6 +14,9 @@
   <v-carousel-item
     src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
     cover
+  ></v-carousel-item> -->
+  <v-carousel-item
+    v-for="image in serviceImage" :src="image" cover
   ></v-carousel-item>
 </v-carousel>
 
@@ -27,21 +30,19 @@
         </li>
       </ul> -->
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Incidunt, repellat, consequuntur quam esse tempora error itaque atque excepturi quae nemo eligendi ipsa possimus vitae nisi enim cumque quibusdam. 
-        Amet, cupiditate!
+        {{ serviceDescription }}
       </p>
     </div>
   </template>
   
   <script>
   export default {
-    props: {
-      services: {
-        type: Array,
-        required: true,
-      },
-    },
+    props:{
+    serviceImage: Array,
+    serviceDescription: String,
+
+},
+
     methods: {
       scheduleService(service) {
         // Implement the logic to schedule the selected service here

@@ -8,14 +8,14 @@
       <!-- Left Column: Image Avatar -->
       <v-col cols="2">
         <v-avatar size="60">
-          <v-img src="https://cdn.vuetifyjs.com/images/john.jpg"></v-img>
+          <v-img :src="profileImage"></v-img>
         </v-avatar>
       </v-col>
       
       <!-- Right Column: Name and Username -->
       <v-col cols="10">
-        <div class="name">Dominic Jovin</div>
-        <div class="username">@Dom1003</div>
+        <div class="name">{{ name }}</div>
+        <div class="username">{{ username }}</div>
       </v-col>
     </v-row>
   </v-container>
@@ -28,7 +28,10 @@
 
 <script>
 export default {
-  name: 'ServiceProviderProfile',
+  props:{
+  name: String,
+  username: String,
+  profileImage: String,}
 };
 </script>
 
