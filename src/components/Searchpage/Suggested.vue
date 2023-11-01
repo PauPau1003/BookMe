@@ -24,3 +24,9 @@ export default{
     </div>
 
 </template>
+
+<style>
+.btn {
+  color: white;
+}
+</style>
