@@ -77,6 +77,7 @@
 
 <script>
 
+
 import spnavbar from "../components/spnavbar.vue";
   
   export default {
