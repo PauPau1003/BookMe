@@ -1,8 +1,10 @@
 <template>
   <!-- Carousel of Images -->
   <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-    <section class="captions" data-aos="fade-up">
-      <h1>Easiest way to find your desired services</h1>
+    <section class="captions">
+      <h1 data-aos="fade-up" data-aos-duration="3000">
+        Easiest way to find your desired services
+      </h1>
     </section>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -71,7 +73,25 @@
 </style>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css"; // You may need to import AOS styles as well
+
 export default {
   name: "FirstImage",
+  mounted() {
+    AOS.init({
+      offset: 100, // Adjust this value as needed
+      duration: 1000, // Animation duration in milliseconds
+      easing: "ease", // Animation easing function
+      once: true, // Whether the animation should only occur once
+    });
+  },
+  methods: {
+    updateContentDynamically() {
+      // Add new elements to the DOM dynamically
+      // Call AOS.refresh() to detect and apply animations to the new elements
+      AOS.refresh();
+    },
+  },
 };
 </script>

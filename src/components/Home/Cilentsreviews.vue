@@ -60,7 +60,7 @@
               style="width: 100px; height: 100px; border-radius: 50%"
             />
             <div class="person-contents">
-              <h2 class="mb-0">Alicia Huston</h2>
+              <h2 class="mb-0">John Lee</h2>
               <span class="meta mb-3 mt-1">Make-up Artist</span>
               <p>
                 Book Me helped me to streamline appointment scheduling and
