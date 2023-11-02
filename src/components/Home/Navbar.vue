@@ -74,7 +74,8 @@
               style="white-space: nowrap"
               >Sign up</a
             >
-            <button class="text-black text-decoration-none" @click="$store.dispatch('logout')">Logout</button>
+            <a  class="text-black text-decoration-none" @click="$store.dispatch('logout')">Logout</a>
+            
           </div>
         </div>
       </div>
