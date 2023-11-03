@@ -20,7 +20,7 @@
   ></v-carousel-item>
 </v-carousel>
 
-      <h2>About this gig</h2>
+      <h2 class="aboutgig ms-5">About this gig</h2>
       <!-- <ul>
         <li v-for="service in services" :key="service.id">
           <h3>{{ service.name }}</h3>

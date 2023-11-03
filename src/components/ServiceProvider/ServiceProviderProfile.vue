@@ -1,6 +1,6 @@
 <template>
   <v-container >
-  <v-container class="gig-overview">
+  <v-container class="gig-overview ms-5">
     <h1> I will design responsive website for your business</h1>
   
     <v-container>
@@ -61,7 +61,8 @@ export default {
 }
 </style> -->
 <style scoped>
-.avatar{
+v.avatar{
   float: left;
 }
+
 </style>

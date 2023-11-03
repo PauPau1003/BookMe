@@ -1,6 +1,6 @@
 <script>
-import ServiceProviderProfile from "../components/serviceprovider/ServiceProviderProfile.vue";
-import Services from "../components/serviceprovider/Services.vue";
+import ServiceProviderProfile from "../components/ServiceProvider/ServiceProviderProfile.vue";
+import Services from "../components/ServiceProvider/Services.vue";
 import Reviews from "../components/serviceprovider/Reviews.vue";
 import Scheduling from "../components/serviceprovider/Scheduling.vue";
 import Payment from "../components/serviceprovider/Payment.vue";

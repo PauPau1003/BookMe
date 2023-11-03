@@ -1,19 +1,18 @@
 <template>
-  <div class="section mt-5 mb-5">
-    <div class="row justify-content-evenly mb-5 ps-5 mx-0">
+  <div class="about-one mt-5 mb-5">
+    <div class="row justify-content-evenly mb-5 ps-5 mx-0 ps-lg-0">
       <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
         <div data-aos="fade-up" data-aos-duration="1000">
           <img
             src="../../assets/images/TeckXuan/serviceprovider.jpg"
             alt="Image"
-            class="img-fluid"
+            class="img-fluid max-img"
           />
         </div>
       </div>
-      <div class="col-lg-4 ps-3">
+      <div class="col-lg-4 ps-3 ps-md-0">
         <div class="fw-bolder mb-5 fst-italic">
-          <h1 data-aos="fade-up"
-          data-aos-duration="1000">Service Provider</h1>
+          <h1 data-aos="fade-up" data-aos-duration="1000">Service Provider</h1>
         </div>
         <div
           data-aos="fade-up"
@@ -26,7 +25,8 @@
           <div class="feature-text">
             <h2 class="heading">Increase Visibility</h2>
             <p>
-              Reach a broader audience, including potential customers who may not have known about their services otherwise.
+              Reach a broader audience, including potential customers who may
+              not have known about their services otherwise.
             </p>
           </div>
         </div>
@@ -42,7 +42,8 @@
           <div class="feature-text">
             <h2 class="heading">Efficient Scheduling</h2>
             <p>
-              Manage your schedules and appointments more effectively through the app, reducing scheduling conflicts and no-shows.
+              Manage your schedules and appointments more effectively through
+              the app, reducing scheduling conflicts and no-shows.
             </p>
           </div>
         </div>
@@ -58,7 +59,8 @@
           <div class="feature-text">
             <h2 class="heading">Education Hub</h2>
             <p>
-              Have a look at all the courses BookMe has to offer you to guide you in your entrepreneural journey!
+              Have a look at all the courses BookMe has to offer you to guide
+              you in your entrepreneural journey!
             </p>
           </div>
         </div>
@@ -73,6 +75,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+@media (max-width: 767px) {
+  .about-one .ps-lg-0 {
+    padding-left: 0;
+  }
+}
 
 </style>

@@ -24,17 +24,15 @@ const router = createRouter({
       },
     },
     {
-      path: '/service-provider/:id',
-      name: 'service-provider',
+      path: "/service-provider/:id",
+      name: "service-provider",
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ServiceProvider.vue'),
-      meta:{
-        requiresAuth:true
+      component: () => import("../views/ServiceProvider.vue"),
+      meta: {
+        requiresAuth: true,
       },
-     
-      
     },
     // {
     //   path: '/search-result',
@@ -47,7 +45,7 @@ const router = createRouter({
     //     requiresAuth:true
     //   }
     // },
-    
+
     {
       path: "/loginPage",
       name: "LoginPage", // eslint-disable-next-line
@@ -67,49 +65,55 @@ const router = createRouter({
     },
 
     {
-      path: '/service-selection',
-      name: 'ServiceSelection', // eslint-disable-next-line
-      component: () => import('../components/serviceprovider/ServiceSelection.vue') 
+      path: "/ContactPage",
+      name: "ContactPage",
+      component: () => import("../views/ContactPage.vue"),
     },
-   {
-      path: '/LandingPage',
-      name: 'LandingPage', // eslint-disable-next-line
-      component: () => import('../views/LandingPage.vue'),
+
+    {
+      path: "/service-selection",
+      name: "ServiceSelection", // eslint-disable-next-line
+      component: () =>
+        import("../components/serviceprovider/ServiceSelection.vue"),
     },
     {
-      path: '/Searchpage',
-      name: 'Searchpage',
+      path: "/LandingPage",
+      name: "LandingPage", // eslint-disable-next-line
+      component: () => import("../views/LandingPage.vue"),
+    },
+    {
+      path: "/Searchpage",
+      name: "Searchpage",
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/Searchpage.vue'),
+      component: () => import("../views/Searchpage.vue"),
       // meta:{
       //   requiresAuth:true
       // }
     },
     {
-      path: '/Dashboard',
-      name: 'Dashboard',
-      component: () => import('../views/Dashboard.vue')
+      path: "/Dashboard",
+      name: "Dashboard",
+      component: () => import("../views/Dashboard.vue"),
     },
     {
-      path: '/SPHome',
-      name: 'SPHome',
-      component: () => import('../views/SPHome.vue')
+      path: "/SPHome",
+      name: "SPHome",
+      component: () => import("../views/SPHome.vue"),
     },
     {
-      path: '/LearningAvenue',
-      name: 'LearningAvenue',
-      component: () => import('../views/LearningAvenue.vue')
+      path: "/LearningAvenue",
+      name: "LearningAvenue",
+      component: () => import("../views/LearningAvenue.vue"),
     },
     {
-      path: '/Permits&Requirements',
-      name: 'Permits&Requirements',
-      component: () => import('../views/Permits&Requirements.vue')
+      path: "/Permits&Requirements",
+      name: "Permits&Requirements",
+      component: () => import("../views/Permits&Requirements.vue"),
     },
-    
-  ]
-})
+  ],
+});
 
 router.beforeEach((to, from, next) => {
   if (to.path === "/loginPage" && auth.currentUser) {

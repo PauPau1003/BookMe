@@ -6,7 +6,7 @@
           <img
             src="../../assets/images/TeckXuan/customers.jpg"
             alt="Image"
-            class="img-fluid"
+            class="img-fluid  max-img"
           />
         </div>
       </div>
@@ -79,4 +79,6 @@ export default {
 h2:hover {
   color: gray;
 }
+
 </style>
+

@@ -40,7 +40,7 @@
           <div
             class="h-100 person"
             data-aos="zoom-in-up"
-            data-aos-delay="500"
+            data-aos-delay="450"
             style="text-align: center"
           >
             <img
@@ -65,7 +65,7 @@
           <div
             class="h-100 person"
             data-aos="zoom-in-up"
-            data-aos-delay="450"
+            data-aos-delay="500"
             style="text-align: center"
           >
             <img

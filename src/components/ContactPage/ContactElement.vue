@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-9 text-center mt-5">
-          <h1 class="heading text-light" data-aos="fade-up">About</h1>
+          <h1 class="heading text-light" data-aos="fade-up">Contact Us</h1>
           <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
             <ol class="breadcrumb text-center justify-content-center">
               <li class="breadcrumb-item">
@@ -16,7 +16,7 @@
                 class="breadcrumb-item active text-white-50"
                 aria-current="page"
               >
-                About
+                Contact Us
               </li>
             </ol>
           </nav>
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: "TopElement",
+  name: "ContactElement",
 };
 </script>
 
@@ -44,7 +44,7 @@ export default {
 }
 
 .background-image {
-  background-image: url("../../assets/images/TeckXuan/about.jpg");
+  background-image: url("../../assets/images/TeckXuan/contact.jpg");
   background-size: cover;
   background-position: center;
   filter: brightness(0.7); /* Adjust the brightness as needed */
