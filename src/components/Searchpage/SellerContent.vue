@@ -16,35 +16,101 @@ export default{
             <div class="container">
               <div class="row">
                 <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
-                  <div class="box-feature mb-4">
-                    <img src="/hero_bg_1.jpg" alt="" width="350" height="300">
+                  <div class="box-feature mb-4 mx-auto" style="height: 550px;">
+                    <img src="/src/assets/Img/Tirsa/massage_service.jpg" alt="" class="cropped-image">
+                    <span class="flaticon-house mb-4 d-block"></span>
+                    <!-- <img src="person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4"> -->
+                    <p style="color:black; font-size: 20px;">Ibu Jum</p>
+                    <h3 class="text-black mb-3 fw-normal">Traditional hot oil head, shoulders, and full body massage</h3>
+                    <p class="text-black">From SGD 30</p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                  <div class="box-feature mb-4" style="height: 550px;">
+                    <img src="/src/assets/Img/Tirsa/plumbing_service.jpg" alt="" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
                     <!-- <img src="person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4"> -->
                     <p style="color:black; font-size: 20px;">Mike Jones</p>
-                    <h3 class="text-black mb-3 fw-normal">I will design 2 awesome business minimalist logo design in 24 hours</h3>
+                    <h3 class="text-black mb-3 fw-normal">I fix leaks and plumbing mysteries</h3>
                     <p class="text-black">From SGD 22</p>
                     <p><a href="#" class="learn-more">Read more</a></p>
                   </div>
                 </div>
                 <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
-                  <div class="box-feature mb-4">
-                    <img src="/hero_bg_2.jpg" alt="" width="350" height="300">
+                  <div class="box-feature mb-4" style="height: 550px;">
+                    <img src="/src/assets/Img/Tirsa/makeup_artist_service.jpg" alt="" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
                     <!-- <img src="person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4"> -->
-                    <p style="color:black; font-size: 20px;">Mike Jones</p>
-                    <h3 class="text-black mb-3 fw-normal">I will design 2 awesome business minimalist logo design in 24 hours</h3>
-                    <p class="text-black">From SGD 22</p>
+                    <p style="color:black; font-size: 20px;">Mia Wells</p>
+                    <h3 class="text-black mb-3 fw-normal">I am a professinal and licensed makeup artist since 2014.</h3> 
+                    <p class="text-black">From SGD 55</p>
                     <p><a href="#" class="learn-more">Read more</a></p>
                   </div>
                 </div>
                 <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
-                  <div class="box-feature mb-4">
-                    <img src="/hero_bg_3.jpg" alt="" width="350" height="300">
+                  <div class="box-feature mb-4" style="height: 550px;">
+                    <img src="/src/assets/Img/Tirsa/nail_artist_service.jpg" alt="" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
                     <!-- <img src="person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4"> -->
-                    <p style="color:black; font-size: 20px;">Mike Jones</p>
-                    <h3 class="text-black mb-3 fw-normal">I will design 2 awesome business minimalist logo design in 24 hours</h3>
-                    <p class="text-black">From SGD 22</p>
+                    <p style="color:black; font-size: 20px;">Mia Wells</p>
+                    <h3 class="text-black mb-3 fw-normal">I am a professinal and licensed makeup artist since 2014.</h3> 
+                    <p class="text-black">From SGD 55</p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                  <div class="box-feature mb-4" style="height: 550px;">
+                    <img src="/src/assets/Img/Tirsa/wedding_hairdresser.jpg" alt="" class="cropped-image">
+                    <span class="flaticon-house mb-4 d-block"></span>
+                    <!-- <img src="person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4"> -->
+                    <p style="color:black; font-size: 20px;">Mia Wells</p>
+                    <h3 class="text-black mb-3 fw-normal">I am a professinal and licensed makeup artist since 2014.</h3> 
+                    <p class="text-black">From SGD 55</p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                  <div class="box-feature mb-4" style="height: 550px;">
+                    <img src="/src/assets/Img/Tirsa/wedding_photography.jpg" alt="" class="cropped-image">
+                    <span class="flaticon-house mb-4 d-block"></span>
+                    <!-- <img src="person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4"> -->
+                    <p style="color:black; font-size: 20px;">Mia Wells</p>
+                    <h3 class="text-black mb-3 fw-normal">I am a professinal and licensed makeup artist since 2014.</h3> 
+                    <p class="text-black">From SGD 55</p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                  <div class="box-feature mb-4" style="height: 550px;">
+                    <img src="/src/assets/Img/Tirsa/jewelery designer.jpg" alt="" class="cropped-image">
+                    <span class="flaticon-house mb-4 d-block"></span>
+                    <!-- <img src="person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4"> -->
+                    <p style="color:black; font-size: 20px;">Mia Wells</p>
+                    <h3 class="text-black mb-3 fw-normal">I am a professinal and licensed makeup artist since 2014.</h3> 
+                    <p class="text-black">From SGD 55</p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                  <div class="box-feature mb-4" style="height: 550px;">
+                    <img src="/src/assets/Img/Tirsa/baker.jpg" alt="" class="cropped-image">
+                    <span class="flaticon-house mb-4 d-block"></span>
+                    <!-- <img src="person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4"> -->
+                    <p style="color:black; font-size: 20px;">Mia Wells</p>
+                    <h3 class="text-black mb-3 fw-normal">I am a professinal and licensed makeup artist since 2014.</h3> 
+                    <p class="text-black">From SGD 55</p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                  <div class="box-feature mb-4" style="height: 550px;">
+                    <img src="/src/assets/Img/Tirsa/electrician.jpg" alt="" class="cropped-image">
+                    <span class="flaticon-house mb-4 d-block"></span>
+                    <!-- <img src="person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4"> -->
+                    <p style="color:black; font-size: 20px;">Mia Wells</p>
+                    <h3 class="text-black mb-3 fw-normal">I am a professinal and licensed makeup artist since 2014.</h3> 
+                    <p class="text-black">From SGD 55</p>
                     <p><a href="#" class="learn-more">Read more</a></p>
                   </div>
                 </div>
@@ -59,3 +125,12 @@ export default{
 
 
 </template>
+
+<style>
+.cropped-image {
+  width: 350px; /* Set the desired width */
+  height: 300px; /* Set the desired height */
+  object-fit: cover; /* This will crop the image as necessary to cover the defined width and height */
+  margin: auto;
+}
+</style>
