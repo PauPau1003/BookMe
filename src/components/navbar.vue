@@ -55,6 +55,9 @@
             <li class="nav-item mx-2">
               <a class="nav-link" href="#about">Services</a>
             </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#about">Contact Us</a>
+            </li>
           </ul>
           <!-- Login/Sign up -->
           <div

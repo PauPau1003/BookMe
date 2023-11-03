@@ -3,24 +3,24 @@
     <Navbar />
   </div>
 
-  <div class="FirstImage">
-    <FirstImage />
+  <div class="TopElement">
+    <TopElement />
   </div>
 
-  <div class="Cardscarousel">
-    <Cardscarousel />
+  <div class="AboutText">
+    <AboutText />
   </div>
 
-  <div class="Featurespage">
-    <Featurespage />
+  <div class="AboutOne">
+    <AboutOne />
   </div>
 
-  <div class="MoreFeatures">
-    <MoreFeatures />
+  <div class="AboutTwo">
+    <AboutTwo />
   </div>
 
-  <div class="Cilentsreviews">
-    <Cilentsreviews />
+  <div class="AboutEnd">
+    <AboutEnd />
   </div>
 
   <div class="Footer">
@@ -29,33 +29,35 @@
 </template>
 
 <script>
-import Cardscarousel from "@/components/Home/Cardscarousel.vue";
-import Cilentsreviews from "@/components/Home/Cilentsreviews.vue";
-import Featurespage from "@/components/Home/Featurespage.vue";
-import FirstImage from "@/components/Home/FirstImage.vue";
-import Footer from "@/components/Footer.vue";
-import MoreFeatures from "@/components/Home/MoreFeatures.vue";
+import TopElement from "@/components/AboutPage/TopElement.vue";
+import AboutText from "@/components/AboutPage/AboutText.vue";
+import AboutOne from "@/components/AboutPage/AboutOne.vue";
+import AboutTwo from "@/components/AboutPage/AboutTwo.vue";
+import AboutEnd from "../components/AboutPage/AboutEnd.vue";
+import Footer from "@/components/footer.vue";
 import Navbar from "@/components/Navbar.vue";
 
-import "../assets/icomoon/style.css";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../assets/icomoon/style.css";
 
 export default {
   components: {
     Navbar,
-    FirstImage,
-    Cardscarousel,
-    Featurespage,
-    MoreFeatures,
-    Cilentsreviews,
+    TopElement,
+    AboutText,
+    AboutOne,
+    AboutTwo,
+    AboutEnd,
     Footer,
-  },
+},
+
   mounted() {
     AOS.init({
       //   offset: 100, // Adjust this value as needed
       //   duration: 1000, // Animation duration in milliseconds
-      //   easing: "ease", // Animation easing function
+      easing: "ease", // Animation easing function
       // once: true, // Whether the animation should only occur once
     });
   },
@@ -119,5 +121,9 @@ body {
   color: grey;
   display: flex;
   justify-content: center;
+}
+
+.icon:hover {
+  color: gray;
 }
 </style>
