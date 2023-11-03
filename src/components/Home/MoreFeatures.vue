@@ -1,5 +1,5 @@
 <template>
-  <div class="section section-4">
+  <div class="section">
     <div class="row justify-content-center text-center mb-3">
       <div class="col-lg-5">
         <h2 class="pt-4 font-weight-bold heading headercolour mb-4">
@@ -10,8 +10,7 @@
     </div>
     <div class="row justify-content-between mb-5 ps-5 mx-0">
       <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
-        <div data-aos="fade-up"
-          data-aos-duration="2000">
+        <div data-aos="fade-up" data-aos-duration="2000">
           <img
             src="../../assets/images/TeckXuan/back.jpg"
             alt="Image"
@@ -71,6 +70,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
