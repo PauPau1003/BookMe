@@ -35,10 +35,10 @@ import Featurespage from "@/components/Home/Featurespage.vue";
 import FirstImage from "@/components/Home/FirstImage.vue";
 import Footer from "@/components/Footer.vue";
 import MoreFeatures from "@/components/Home/MoreFeatures.vue";
-import Navbar from "@/components/Home/Navbar.vue";
+import Navbar from "@/components/Navbar.vue";
 
 import AOS from "aos";
-import "aos/dist/aos.css"; // You may need to import AOS styles as well
+import "aos/dist/aos.css";
 
 export default {
   components: {
@@ -51,12 +51,12 @@ export default {
     Footer,
   },
   mounted() {
-    AOS.init({
-      offset: 100, // Adjust this value as needed
-      duration: 1000, // Animation duration in milliseconds
-      easing: "ease", // Animation easing function
-      once: true, // Whether the animation should only occur once
-    });
+    AOS.init()
+    //   offset: 100, // Adjust this value as needed
+    //   duration: 1000, // Animation duration in milliseconds
+    //   easing: "ease", // Animation easing function
+    //   once: true, // Whether the animation should only occur once
+    //   });
   },
   methods: {
     updateContentDynamically() {

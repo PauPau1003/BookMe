@@ -9,11 +9,11 @@
           <p class="text-black-50">Let's hear what they say</p>
         </div>
       </div>
-      <div class="row">
+      <div data-aos="zoom-in-up" data-aos-delay="400" class="row">
         <div class="person-wrap col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
           <div class="h-100 person" style="text-align: center">
             <img
-              src="images/person_1-min.jpg"
+              src="../../assets/images/TeckXuan/person_1-min.jpg"
               alt="Image"
               class="img-fluid rounded-circle"
               style="width: 100px; height: 100px; border-radius: 50%"
@@ -34,7 +34,7 @@
         <div class="person-wrap col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
           <div class="h-100 person" style="text-align: center">
             <img
-              src="images/person_2-min.jpg"
+              src="../../assets/images/TeckXuan/person_2-min.jpg"
               alt="Image"
               class="img-fluid rounded-circle"
               style="width: 100px; height: 100px; border-radius: 50%"
@@ -54,7 +54,7 @@
         <div class="person-wrap col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
           <div class="h-100 person" style="text-align: center">
             <img
-              src="images/person_3-min.jpg"
+              src="../../assets/images/TeckXuan/person_3-min.jpg"
               alt="Image"
               class="img-fluid rounded-circle"
               style="width: 100px; height: 100px; border-radius: 50%"

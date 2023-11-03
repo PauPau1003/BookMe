@@ -3,7 +3,8 @@
     <div class="row">
       <div class="col-md-4">
         <div
-          data-aos="zoom-in-up"
+          data-aos="flip-left"
+          data-aos-delay="200"
           class="card custom-card1 m-3"
           style="max-width: none"
         >
@@ -20,7 +21,8 @@
       </div>
       <div class="col-md-4">
         <div
-          data-aos="zoom-in-up"
+          data-aos="flip-left"
+          data-aos-delay="200"
           class="card custom-card1 m-3"
           style="max-width: none"
         >
@@ -37,7 +39,8 @@
       </div>
       <div class="col-md-4">
         <div
-          data-aos="zoom-in-up"
+          data-aos="flip-left"
+          data-aos-delay="200"
           class="card custom-card1 m-3"
           style="max-width: none"
         >
