@@ -1,9 +1,12 @@
 <script>
 import ServiceProviderProfile from "../components/ServiceProvider/ServiceProviderProfile.vue";
 import Services from "../components/ServiceProvider/Services.vue";
-import Reviews from "../components/serviceprovider/Reviews.vue";
-import Scheduling from "../components/serviceprovider/Scheduling.vue";
-import Payment from "../components/serviceprovider/Payment.vue";
+import Reviews from "../components/ServiceProvider/Reviews.vue";
+import Scheduling from "../components/ServiceProvider/Scheduling.vue";
+import Payment from "../components/ServiceProvider/Payment.vue";
+import Footer from "../components/Footer.vue";
+import Navbar from "@/components/Navbar.vue";
+
 
 import data from "../firebase/data.json";
 // const redirectToStripe = async () => {
@@ -71,11 +74,13 @@ export default {
     },
   },
   components: {
+    Navbar,
     ServiceProviderProfile,
     Services,
     Reviews,
     Scheduling,
     Payment,
+    Footer,
   },
 };
 </script>
@@ -173,4 +178,17 @@ export default {
 #payment {
   margin-left: 20pxz;
 }
+
+*{
+  background-color: #EBF2F1;
+}
+
+.v-btn_overlay {
+  border-radius: 10px;
+  background-color: #194759 !important;
+  color: #ebf2f1 !important;
+  border: none !important;
+}
+
+
 </style>

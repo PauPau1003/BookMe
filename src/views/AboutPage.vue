@@ -33,10 +33,9 @@ import TopElement from "@/components/AboutPage/TopElement.vue";
 import AboutText from "@/components/AboutPage/AboutText.vue";
 import AboutOne from "@/components/AboutPage/AboutOne.vue";
 import AboutTwo from "@/components/AboutPage/AboutTwo.vue";
-import AboutEnd from "../components/AboutPage/AboutEnd.vue";
+import AboutEnd from "@/components/AboutPage/AboutEnd.vue";
 import Footer from "@/components/footer.vue";
 import Navbar from "@/components/Navbar.vue";
-
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -51,7 +50,7 @@ export default {
     AboutTwo,
     AboutEnd,
     Footer,
-},
+  },
 
   mounted() {
     AOS.init({

@@ -23,7 +23,7 @@ window.location.href = url;
 };
 </script>
 <template>
-  <v-card>
+  <v-card class="payment-tab">
     <v-tabs
       v-model="tab"
       bg-color= '#4ABDAC'
@@ -36,22 +36,27 @@ window.location.href = url;
     <v-card-text>
       <v-window v-model="tab">
         <v-window-item value="one">
-          One
+          $5
         </v-window-item>
 
         <v-window-item value="two">
-          Two
+          $10
         </v-window-item>
 
         <v-window-item value="three">
-          Three
+          $20
         </v-window-item>
       </v-window>
     </v-card-text>
     <v-btn @click="redirectToStripe" color="#FC4A1A" >Pay Now!</v-btn>
   </v-card>
-  
- 
 </template>
+
+<style>
+.payment-tab{
+  margin-top: 63px;
+}
+
+</style>
 
 

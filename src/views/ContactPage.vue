@@ -8,7 +8,7 @@
   </div>
 
   <div class="ContactForm">
-    <ContactForm/>
+    <ContactForm />
   </div>
 
   <div class="Footer">
@@ -17,16 +17,14 @@
 </template>
 
 <script>
-
 import Navbar from "@/components/Navbar.vue";
-import ContactElement from "../components/ContactPage/ContactElement.vue";
-import ContactForm from  "../components/ContactPage/ContactForm.vue"
+import ContactElement from "@/components/ContactPage/ContactElement.vue";
+import ContactForm from "@/components/ContactPage/ContactForm.vue";
 import Footer from "@/components/footer.vue";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../assets/icomoon/style.css";
-
 
 export default {
   components: {
@@ -34,8 +32,7 @@ export default {
     ContactElement,
     ContactForm,
     Footer,
-
-},
+  },
 
   mounted() {
     AOS.init({

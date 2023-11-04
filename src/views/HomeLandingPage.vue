@@ -51,18 +51,17 @@ export default {
     Cilentsreviews,
     Footer,
   },
+  
   mounted() {
     AOS.init({
       //   offset: 100, // Adjust this value as needed
       //   duration: 1000, // Animation duration in milliseconds
-      //   easing: "ease", // Animation easing function
+      easing: "ease", // Animation easing function
       // once: true, // Whether the animation should only occur once
     });
   },
   methods: {
     updateContentDynamically() {
-      // Add new elements to the DOM dynamically
-      // Call AOS.refresh() to detect and apply animations to the new elements
       AOS.refresh();
     },
   },
