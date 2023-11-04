@@ -80,7 +80,7 @@
               <router-link
               to="/ContactPage"
               style="text-decoration: none; color: black"
-              >Contact Page</router-link
+              >Contact</router-link
             >
             </li>
           </ul>
