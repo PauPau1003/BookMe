@@ -51,16 +51,14 @@
           ></button>
         </div>
         <!-- Sidebar Body -->
-        <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+        <div class="offcanvas-body d-flex flex-lg-row p-4 p-lg-0">
           <ul
             class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3"
           >
             <li class="nav-item mx-2">
-              <router-link
-              to="/"
-              style="text-decoration: none; color: black"
-              >Home</router-link
-            >
+              <router-link to="/" style="text-decoration: none; color: black"
+                >Home</router-link
+              >
             </li>
             <li class="nav-item mx-2">
               <router-link
@@ -78,10 +76,10 @@
             </li>
             <li class="nav-item mx-2">
               <router-link
-              to="/ContactPage"
-              style="text-decoration: none; color: black"
-              >Contact</router-link
-            >
+                to="/ContactPage"
+                style="text-decoration: none; color: black"
+                >Contact</router-link
+              >
             </li>
           </ul>
           <!-- Login/Sign up -->
@@ -115,7 +113,6 @@ import "bootstrap/dist/js/bootstrap.js";
 export default {
   name: "navbar",
 };
-
 </script>
 
 <style>
@@ -153,13 +150,6 @@ body {
   background-color: #194759 !important;
   color: #ebf2f1 !important;
   border: none !important;
-}
-
-.signupBut {
-background-color: rgb(244, 241, 241);
-border: 1px ;
-border-color: green;
-color: rgb(56, 56, 56);
 }
 
 .navbar-dark .navbar-nav .nav-link {
