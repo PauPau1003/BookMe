@@ -177,7 +177,8 @@ export default{
                     <p style="color:black; font-size: 20px;">Mia Wells</p>
                     <h3 class="text-black mb-3 fw-normal">I am a professinal and licensed makeup artist since 2014.</h3> 
                     <p class="text-black">From SGD 55</p>
-                    <p><a href="#" class="learn-more">Read more</a></p>
+                    <!-- <p><a href="#" class="learn-more">Read more</a></p> -->
+                    <RouterLink to="/ServiceProvider">Home</RouterLink>
                   </div>
                 </div>
                 
