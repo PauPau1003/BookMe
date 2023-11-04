@@ -64,7 +64,7 @@
             <li class="nav-item mx-2 nav">
               <router-link
                 to="/Searchpage"
-                style="text-decoration: none; color: #1c1c1c"
+                style="text-decoration: none; color: black"
                 >Services</router-link
               >
             </li>
@@ -103,6 +103,7 @@ import "bootstrap/dist/js/bootstrap.js";
 export default {
   name: "navbar",
 };
+
 </script>
 
 <style>
