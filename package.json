@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mdi/font": "^7.3.67",
     "@vue/compat": "^3.3.4",
     "aos": "^2.3.4",
     "axios": "^1.5.1",

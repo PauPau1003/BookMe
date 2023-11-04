@@ -6,7 +6,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 
 // Optionally install the BootstrapVue icon components plugin
-
+import '@mdi/font/css/materialdesignicons.css'
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
@@ -18,6 +18,7 @@ import * as directives from "vuetify/directives";
 import * as labsComponents from "vuetify/labs/components";
 
 const vuetify = createVuetify({
+  ssr: true,
   components,
   directives,
   labsComponents,

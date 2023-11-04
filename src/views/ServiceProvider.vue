@@ -23,6 +23,7 @@ export default {
       serviceDescription: '',
       calendlyurl: '',
       productArray: [],
+      reviews: [],
     };
   },
   // computed: {
@@ -72,6 +73,7 @@ querySnapshot.forEach((doc) => {
   this.calendlyurl = data.calendlyURL
   console.log(this.calendlyurl)
   this.productArray = data.serviceList.productArray
+  this.reviews = data.reviews
 });
   },
   
@@ -110,7 +112,7 @@ components: {
     </v-row>
     <v-row>
       <v-col cols="12" md="6">
-        <Reviews />
+        <Reviews :reviews="reviews" />
       </v-col>
       <v-col cols="12" md="6">
         <Payment :productArray="productArray"/>
