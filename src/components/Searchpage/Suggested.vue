@@ -8,8 +8,8 @@ export default{
 <template>
   <div class="suggested">
       <nav class="navbar bg-body-tertiary">
-        <form class="container-fluid justify-content-start">
-            <span class="fw-bold">Suggested</span>
+        <form class="container-fluid justify-content-around my-6">
+           
             <button class="m-2 btn btn-sm btn-outline-secondary" type="button">video editing</button>
           <button class="m-2 btn btn-sm btn-outline-secondary" type="button">website deployment</button>
           <button class="m-2 btn btn-sm btn-outline-secondary" type="button">background removal</button>
