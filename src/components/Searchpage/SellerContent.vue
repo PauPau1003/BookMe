@@ -18,6 +18,12 @@ created(){
   this.services.push(doc.data())
   console.log(this.services)
 });
+},
+methods:{
+  redirectToServiceProvider(serviceId) {
+        console.log(serviceId)
+      this.$router.push(`/service-provider/${serviceId}`);
+    }
 }
 }
 
@@ -32,7 +38,7 @@ created(){
 <div class="section" style="background-color:#7EBFB3">
             <div class="container">
               <div class="row">
-                <div class="col-6 col-lg-4 col-sm-12 expand-on-hover"  data-aos="fade-up" data-aos-delay="300" v-for="service in services">
+                <div class="col-6 col-lg-4 col-sm-12 expand-on-hover"  data-aos="fade-up" data-aos-delay="300" v-on:click="redirectToServiceProvider(service.serviceList.serviceId)" v-for="service in services">
                   <div class="box-feature mb-4">
                     <img src="/hero_bg_1.jpg" alt="" width="350" height="300">
                     <span class="flaticon-house mb-4 d-block"></span>
