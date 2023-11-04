@@ -99,7 +99,7 @@ const router = createRouter({
       path: '/Permits&Requirements',
       name: 'Permits&Requirements',
       component: () => import('../views/Permits&Requirements.vue')
-    },
+    }
     
   ]
 })
