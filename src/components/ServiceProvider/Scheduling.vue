@@ -8,7 +8,7 @@ export default {
       url: this.calendlyurl,
       parentElement: document.getElementById('calendar'),
     });
-    console.log('Component is mounted and Calendly widget is initialized');
+    console.log(`${this.calendlyurl}`);
   },
 }
 </script>

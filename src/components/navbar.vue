@@ -54,8 +54,8 @@
               
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#about">Services</a>
+            <li class="nav-item mx-2 nav">
+              <router-link to="/Searchpage">Services</router-link>
             </li>
           </ul>
           <!-- Login/Sign up -->

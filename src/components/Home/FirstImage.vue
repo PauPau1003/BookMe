@@ -70,6 +70,13 @@
 #imageCarousel .carousel-inner {
   filter: brightness(60%);
 }
+.carousel-item {
+  transition: transform 0.3s ease-in-out; /* Add a transition */
+}
+
+.carousel-item:hover {
+  transform: scale(1.05); /* Scale the image slightly when hovering */
+}
 </style>
 
 <script>

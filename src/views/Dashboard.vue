@@ -5,7 +5,7 @@
 
 
 		
-		<div class="container-fluid" style="background-color:#194759 ;border-radius: 5px;padding-bottom:10px;">
+		<div class="container-fluid" style="background-color:#7EBFB3 ;border-radius: 5px;padding-bottom:10px;">
 			<div class="row mb-4">
 				<div class="col-md-6 col-12">
 					<h2 class="font-weight-bold heading mt-5" style="color: white">Your Executive Dashboard</h2>
@@ -76,6 +76,8 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css"; // You may need to import AOS styles as well
 
 import spnavbar from "../components/spnavbar.vue";
   
@@ -83,6 +85,21 @@ import spnavbar from "../components/spnavbar.vue";
     components: {
     spnavbar,
 },
+mounted() {
+    AOS.init({
+      offset: 100, // Adjust this value as needed
+      duration: 1000, // Animation duration in milliseconds
+      easing: "ease", // Animation easing function
+      once: true, // Whether the animation should only occur once
+    });
+  },
+  methods: {
+    updateContentDynamically() {
+      // Add new elements to the DOM dynamically
+      // Call AOS.refresh() to detect and apply animations to the new elements
+      AOS.refresh();
+    },
+  },
   };
 
 </script>

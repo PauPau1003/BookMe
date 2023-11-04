@@ -5,6 +5,7 @@ export default {
   data() {
     return {
       tab: null,
+      productArray: [],
     };
   },
   methods: {
@@ -28,7 +29,7 @@ window.location.href = url;
       v-model="tab"
       bg-color= '#4ABDAC'
     >
-      <v-tab value="one">Basic</v-tab>
+      <v-tab value="one" >Basic</v-tab>
       <v-tab value="two">Standard</v-tab>
       <v-tab value="three">Premium</v-tab>
     </v-tabs>

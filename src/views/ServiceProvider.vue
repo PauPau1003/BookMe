@@ -1,22 +1,15 @@
 <script >
-import ServiceProviderProfile from '../components/serviceprovider/ServiceProviderProfile.vue';
-import Services from '../components/serviceprovider/Services.vue';
-import Reviews from '../components/serviceprovider/Reviews.vue';
-import Scheduling from '../components/serviceprovider/Scheduling.vue';
-import Payment from '../components/serviceprovider/Payment.vue';
+import ServiceProviderProfile from '../components/ServiceProvider/ServiceProviderProfile.vue';
+import Services from '../components/ServiceProvider/Services.vue';
+import Reviews from '../components/ServiceProvider/Reviews.vue';
+import Scheduling from '../components/ServiceProvider/Scheduling.vue';
+import Payment from '../components/ServiceProvider/Payment.vue';
 
 
-import data from "../firebase/data.json";
-// const redirectToStripe = async () => {
-// isLoading.value = true;
+import { collection, getDocs, query,where } from "firebase/firestore";
+import {db} from "../firebase/firebaseconfig"
 
-// const response = await fetch("/api/create-checkout-session", {
-//   method: "POST",
-// });
-// const { url } = await response.json();
 
-// window.location.href = url;
-// };
 export default {
   
   data() {
@@ -29,6 +22,7 @@ export default {
       serviceImage: [],
       serviceDescription: '',
       calendlyurl: '',
+      productArray: [],
     };
   },
   // computed: {
@@ -41,38 +35,46 @@ export default {
   // },
   async created() {
     // Fetch service details based on the route parameter (serviceId)
-     this.serviceId = this.$route.params.id;
+    //  this.serviceId = this.$route.params.id;
     // Fetch service details from your data source (e.g., JSON data)
     // Assign the service details to this.serviceDetails
-    for (let i = 0; i < data.length;i++){
-      console.log(data[i])
-      if (data[i].service.serviceId == this.serviceId){
-        this.serviceDetails=data[i]
-        // For service provider profile
-        this.name = this.serviceDetails.user.name
-        this.username = this.serviceDetails.user.username
-        this.profileImage = this.serviceDetails.user.profileImage
+    // for (let i = 0; i < data.length;i++){
+    //   console.log(data[i])
+    //   if (data[i].service.serviceId == this.serviceId){
+    //     this.serviceDetails=data[i]
+    //     // For service provider profile
+    //     this.name = this.serviceDetails.user.name
+    //     this.username = this.serviceDetails.user.username
+    //     this.profileImage = this.serviceDetails.user.profileImage
         
-        // For about me
-        this.serviceImage = this.serviceDetails.service.serviceImage
-        this.serviceDescription = this.serviceDetails.service.serviceDescription
+    //     // For about me
+    //     this.serviceImage = this.serviceDetails.service.serviceImage
+    //     this.serviceDescription = this.serviceDetails.service.serviceDescription
 
-        //For Scheduling
-        this.calendlyurl = this.serviceDetails.service.calendlyURL
-        console.log(this.calendlyurl)
+    //     //For Scheduling
+    //     this.calendlyurl = this.serviceDetails.service.calendlyURL
+    //     console.log(this.calendlyurl)
         
-      }
-    }
-
+    //   }
+    // }
+    // const querySnapshot = await getDocs(collection(db, "usersForProj"));
+    const collectionRef = collection(db, "usersForProj");
+    const q = query(collectionRef, where('serviceList.serviceId', "==",this.$route.params.id ));
+    const querySnapshot = await getDocs(q);
+querySnapshot.forEach((doc) => {
+  // doc.data() is never undefined for query doc snapshots
+  console.log(doc.id, " => ", doc.data());
+  const data = doc.data()
+  this.serviceDescription = data.serviceList.serviceDescription
+  this.name = data.name
+  this.username= data.username
+  this.serviceTitle = data.serviceList.serviceTitle
+  this.calendlyurl = data.calendlyURL
+  console.log(this.calendlyurl)
+  this.productArray = data.serviceList.productArray
+});
   },
   
-  methods: {
-    test(serviceId) {
-      for (user in data){
-        console.log(user)
-      }
-  }
-},
 components: {
     ServiceProviderProfile,
     Services,
@@ -99,7 +101,7 @@ components: {
   <div>
     <v-row>
       <v-col cols="12" md="6">
-        <ServiceProviderProfile :name="name" :username="username" :profileImage="profileImage" />
+        <ServiceProviderProfile :name="name" :username="username" :profileImage="profileImage" :serviceTitle="serviceTitle" />
         <Services :serviceDescription="serviceDescription" :serviceImage="serviceImage" />
       </v-col>
       <v-col cols="12" md="6">
@@ -111,7 +113,7 @@ components: {
         <Reviews />
       </v-col>
       <v-col cols="12" md="6">
-        <Payment />
+        <Payment :productArray="productArray"/>
       </v-col>
     </v-row>
   </div>

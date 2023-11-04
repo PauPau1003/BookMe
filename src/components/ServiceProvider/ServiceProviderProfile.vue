@@ -1,7 +1,7 @@
 <template>
   <v-container >
   <v-container class="gig-overview">
-    <h1> I will design responsive website for your business</h1>
+    <h1>{{ serviceTitle }}</h1>
   
     <v-container>
     <v-row >
@@ -31,7 +31,9 @@ export default {
   props:{
   name: String,
   username: String,
-  profileImage: String,}
+  profileImage: String,
+  serviceTitle: String,
+}
 };
 </script>
 
