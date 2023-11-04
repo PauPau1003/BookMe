@@ -1,24 +1,24 @@
-<script >
-import ServiceProviderProfile from '../components/ServiceProvider/ServiceProviderProfile.vue';
-import Services from '../components/ServiceProvider/Services.vue';
-import Reviews from '../components/ServiceProvider/Reviews.vue';
-import Scheduling from '../components/ServiceProvider/Scheduling.vue';
-import Payment from '../components/ServiceProvider/Payment.vue';
-
+<script>
+import ServiceProviderProfile from "../components/ServiceProvider/ServiceProviderProfile.vue";
+import Services from "../components/ServiceProvider/Services.vue";
+import Reviews from "../components/ServiceProvider/Reviews.vue";
+import Scheduling from "../components/ServiceProvider/Scheduling.vue";
+import Payment from "../components/ServiceProvider/Payment.vue";
+import Footer from "../components/Footer.vue";
+import Navbar from "@/components/navbar.vue";
 
 import { collection, getDocs, query,where } from "firebase/firestore";
 import {db} from "../firebase/firebaseconfig"
 
 
 export default {
-  
   data() {
     return {
       serviceId: 0,
       serviceDetails: {},
-      name: '',
-      username: '',
-      profileImage: '',
+      name: "",
+      username: "",
+      profileImage: "",
       serviceImage: [],
       serviceDescription: '',
       calendlyurl: '',
@@ -80,14 +80,12 @@ components: {
     Services,
     Reviews,
     Scheduling,
-    Payment
+    Payment,
+    Footer,
   },
 };
-
-
-
 </script>
-<template >
+<template>
   <!-- <SearchBar/>
   <Categories/>
   <Filter/>
@@ -97,7 +95,10 @@ components: {
   <!-- <button v-on:click="test(serviceId)">
     Test
   </button> -->
-  <v-breadcrumbs :items="['Home', 'Services', 'ServiceProvider']"></v-breadcrumbs>
+  <Navbar />
+  <v-breadcrumbs
+    :items="['Home', 'Services', 'ServiceProvider']"
+  ></v-breadcrumbs>
   <div>
     <v-row>
       <v-col cols="12" md="6">
@@ -117,36 +118,10 @@ components: {
       </v-col>
     </v-row>
   </div>
-  
-        
-     
-        
-            
-    
-       
-    
-          <h2 >
+  <Footer />
+  <h2></h2>
 
-          </h2>
-       
-        
-        
-          
-        
-        
-          
-       
-        
-     
-           
-      
-        
-             
-           
-            
-       
-    
-      <!-- <v-row>
+  <!-- <v-row>
         <v-col>
         <ServiceProviderProfile/>
       </v-col>
@@ -163,11 +138,10 @@ components: {
       </v-col>
       </v-row>
       <Reviews/> -->
-           
-  </template>
- 
-  <style scoped>
-  /* .service-provider-profile {
+</template>
+
+<style scoped>
+/* .service-provider-profile {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -184,23 +158,21 @@ components: {
     margin-left: 20px; 
   }
    */
-   .scheduling {
-    /* Set a specific width and height for the embedded widget */
-    width: 100%;
-     /* Adjust this as needed */
-    margin: 0 auto; /* Center align the widget horizontally */
+.scheduling {
+  /* Set a specific width and height for the embedded widget */
+  width: 100%;
+  /* Adjust this as needed */
+  margin: 0 auto; /* Center align the widget horizontally */
 
-    /* You can add more styling as needed to customize the appearance */
-    background-color: #f7f7f7;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  #payment{
-    margin-left: 20pxz;
-  }
-   
-   
-  </style>
-  
-   
+  /* You can add more styling as needed to customize the appearance */
+  background-color: #4F7369;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+#payment {
+  margin-left: 20pxz;
+}
+
+
+</style>

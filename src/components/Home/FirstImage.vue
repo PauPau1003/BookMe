@@ -9,24 +9,32 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img
-          src="images/barbers-in-singapore.jpg"
+          src="../../assets/images/TeckXuan/barbers-in-singapore.jpg"
           class="d-block w-100"
           alt="Image 1"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="images/photographer.jpg"
+          src="../../assets/images/TeckXuan/photographer.jpg"
           class="d-block w-100"
           alt="Image
           2"
         />
       </div>
       <div class="carousel-item">
-        <img src="images/plumber.jpg" class="d-block w-100" alt="Image 3" />
+        <img
+          src="../../assets/images/TeckXuan/plumber.jpg"
+          class="d-block w-100"
+          alt="Image 3"
+        />
       </div>
       <div class="carousel-item">
-        <img src="images/bake.jpg" class="d-block w-100" alt="Image 4" />
+        <img
+          src="../../assets/images/TeckXuan/bake.jpg"
+          class="d-block w-100"
+          alt="Image 4"
+        />
       </div>
     </div>
     <a
@@ -80,25 +88,7 @@
 </style>
 
 <script>
-import AOS from "aos";
-import "aos/dist/aos.css"; // You may need to import AOS styles as well
-
 export default {
   name: "FirstImage",
-  mounted() {
-    AOS.init({
-      offset: 100, // Adjust this value as needed
-      duration: 1000, // Animation duration in milliseconds
-      easing: "ease", // Animation easing function
-      once: true, // Whether the animation should only occur once
-    });
-  },
-  methods: {
-    updateContentDynamically() {
-      // Add new elements to the DOM dynamically
-      // Call AOS.refresh() to detect and apply animations to the new elements
-      AOS.refresh();
-    },
-  },
 };
 </script>

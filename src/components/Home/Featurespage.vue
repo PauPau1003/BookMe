@@ -3,7 +3,8 @@
     <div class="row">
       <div class="col-md-4">
         <div
-          data-aos="zoom-in-up"
+          data-aos="flip-left"
+          data-aos-delay="200"
           class="card custom-card1 m-3"
           style="max-width: none"
         >
@@ -20,7 +21,8 @@
       </div>
       <div class="col-md-4">
         <div
-          data-aos="zoom-in-up"
+          data-aos="flip-left"
+          data-aos-delay="200"
           class="card custom-card1 m-3"
           style="max-width: none"
         >
@@ -37,13 +39,14 @@
       </div>
       <div class="col-md-4">
         <div
-          data-aos="zoom-in-up"
+          data-aos="flip-left"
+          data-aos-delay="200"
           class="card custom-card1 m-3"
           style="max-width: none"
         >
           <div class="card-body text-center">
-            <span class="icon-book display-5"></span>
-            <h5 class="card-title mt-3">Support and Education</h5>
+            <span class="icon-phone display-5"></span>
+            <h5 class="card-title mt-3">Support</h5>
             <p class="card-text">
               Experience excellence in service and support like never before -
               where your needs are our priority.
