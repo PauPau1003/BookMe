@@ -9,34 +9,31 @@ export default{
   <div class="categories">
       <ul class="m-4 nav nav-underline">
         <li class="nav-item">
-          <a class="nav-link text-dark" aria-current="page" href="#">Graphic & Design</a>
+          <a class="nav-link text-dark px-4" aria-current="page" href="#">Phone Service</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#">Programming & Tech</a>
+          <a class="nav-link text-dark px-4" href="#">Chef</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#">Digital Marketing</a>
+          <a class="nav-link text-dark px-4" href="#">Shoe Cleaner</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Video Animation</a>
+            <a class="nav-link text-dark px-4" href="#">Watch Repair</a>
         </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Writing and Translation</a>
+            <a class="nav-link text-dark px-4" href="#">Aircon Cleaner</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Music and Audio</a>
+            <a class="nav-link text-dark px-4" href="#">Makeup Artist</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Business</a>
+            <a class="nav-link text-dark px-4" href="#">Baker</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Data</a>
+            <a class="nav-link text-dark px-4" href="#">Tutor</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Photography</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">AI service</a>
+            <a class="nav-link text-dark px-4" href="#">Photography</a>
           </li>
       </ul>
     </div>

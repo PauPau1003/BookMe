@@ -20,8 +20,15 @@ export default{
         </button>
         <ul class="dropdown-menu">
           <li><button class="dropdown-item text-light" type="button">All Categories</button></li>
-          <li><button class="dropdown-item text-light" type="button">Health</button></li>
-          <li><button class="dropdown-item text-light" type="button">Fashion</button></li>
+          <li><button class="dropdown-item text-light" type="button">Phone Service</button></li>
+          <li><button class="dropdown-item text-light" type="button">Chef</button></li>
+          <li><button class="dropdown-item text-light" type="button">Shoe Cleaner</button></li>
+          <li><button class="dropdown-item text-light" type="button">Watch Repair</button></li>
+          <li><button class="dropdown-item text-light" type="button">Aircon Cleaner</button></li>
+          <li><button class="dropdown-item text-light" type="button">Makeup Artist</button></li>
+          <li><button class="dropdown-item text-light" type="button">Baker</button></li>
+          <li><button class="dropdown-item text-light" type="button">Tutor</button></li>
+          <li><button class="dropdown-item text-light" type="button">Photography</button></li>
         </ul>
 
 
