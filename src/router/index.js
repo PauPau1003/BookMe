@@ -89,16 +89,13 @@ const router = createRouter({
       path: '/Permits&Requirements',
       name: 'Permits&Requirements',
       component: () => import('../views/Permits&Requirements.vue')
-<<<<<<< HEAD
     }
-=======
-    },
+    ,
     {
       path: '/test',
       name: 'test',
       component: () => import('../firebase/test.vue')
     },
->>>>>>> dev
     
   ]
 })

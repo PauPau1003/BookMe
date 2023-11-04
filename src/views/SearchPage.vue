@@ -11,9 +11,9 @@
         <Suggested />
     </div>
 
-    <div class="Filter">
+    <!-- <div class="Filter">
         <Filter />
-    </div>
+    </div> -->
 
     <div class="SellerContent">
         <SellerContent />
@@ -32,9 +32,9 @@
 
     <script>
       import Categories from '../components/SearchPage/categories.vue';
-      import Filter from '../components/SearchPage/filter.vue';
-      import Footer from '../components/SearchPage/footer.vue';
-      import Navbar from '../components/SearchPage/navbar.vue';
+    //   import Filter from '../components/Searchpage/filter.vue';
+      import Footer from '../components/Searchpage/footer.vue';
+      import Navbar from '../components/Searchpage/navbar.vue';
       import SellerContent from '../components/SearchPage/sellercontent.vue';
       import Suggested from '../components/SearchPage/suggested.vue';
     
@@ -42,7 +42,7 @@
     export default {
         components: {
             Categories,
-            Filter,
+            // Filter,
             Footer,
             Navbar,
             SellerContent,
