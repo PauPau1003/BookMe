@@ -25,7 +25,7 @@ export default{
 
 </template>
 
-<style>
+<style scoped>
 .btn {
   color: white;
 }

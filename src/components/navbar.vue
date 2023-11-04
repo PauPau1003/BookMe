@@ -41,7 +41,7 @@
         aria-labelledby="offcanvasNavbarLabel"
       >
         <!-- Sidebar Header -->
-        <div class="offcanvas-header text-white border-white">
+        <div class="offcanvas-header border-white">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Book Me</h5>
           <button
             type="button"
@@ -73,19 +73,11 @@
             </li>
           </ul>
           <!-- Login/Sign up -->
-          <div
-            class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
-          >
-            <a href="#login" class="text-black text-decoration-none">Login</a>
-            <a
-              href="#signup"
-              class="signupBut text-decoration-none px-3 py-1 rounded-1"
-              style="white-space: nowrap"
-              >Sign up</a
-            >
+          <div class="d-flex justify-content-center mt-1">
             <button
               @click="$store.dispatch('logout')"
-              class="signupBut text-decoration-none px-3 py-1 rounded-1"
+              class="btn"
+              style="height: 38px"
             >
               Logout
             </button>
@@ -135,12 +127,6 @@ body {
   margin-top: 0px;
 }
 
-.signupBut {
-  background-color: rgb(244, 241, 241);
-  border: 1px;
-  border-color: green;
-  color: rgb(56, 56, 56);
-}
 .form-search.form-control {
   width: 300px;
 }
@@ -154,6 +140,13 @@ body {
   background-color: #194759 !important;
   color: #ebf2f1 !important;
   border: none !important;
+}
+
+.signupBut {
+background-color: rgb(244, 241, 241);
+border: 1px ;
+border-color: green;
+color: rgb(56, 56, 56);
 }
 
 .navbar-dark .navbar-nav .nav-link {
