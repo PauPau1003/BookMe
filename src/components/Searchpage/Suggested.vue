@@ -9,7 +9,7 @@ export default{
   <div class="suggested">
       <nav class="navbar bg-body-tertiary">
         <form class="container-fluid justify-content-start">
-            <span class="fw-bold">Suggested</span>
+            <span class="m-3 fw-bold">Suggested</span>
             <button class="m-2 btn btn-sm btn-outline-secondary" type="button">video editing</button>
           <button class="m-2 btn btn-sm btn-outline-secondary" type="button">website deployment</button>
           <button class="m-2 btn btn-sm btn-outline-secondary" type="button">background removal</button>

@@ -1,4 +1,4 @@
-Tirsa Christina, [29/10/2023 7:04 pm]
+
 <script>
 export default{
  name: 'SellerContent'
@@ -15,7 +15,7 @@ export default{
 <div class="section" style="background-color:#7EBFB3">
             <div class="container">
               <div class="row">
-                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                <div class="col-6 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
                   <div class="box-feature mb-4 mx-auto" style="height: 550px;">
                     <img src="/src/assets/Img/Tirsa/massage_service.jpg" alt="" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
@@ -26,7 +26,7 @@ export default{
                     <p><a href="#" class="learn-more">Read more</a></p>
                   </div>
                 </div>
-                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                <div class="col-6 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
                   <div class="box-feature mb-4" style="height: 550px;">
                     <img src="/src/assets/Img/Tirsa/plumbing_service.jpg" alt="" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
@@ -37,7 +37,7 @@ export default{
                     <p><a href="#" class="learn-more">Read more</a></p>
                   </div>
                 </div>
-                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                <div class="col-6 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
                   <div class="box-feature mb-4" style="height: 550px;">
                     <img src="/src/assets/Img/Tirsa/makeup_artist_service.jpg" alt="" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
@@ -48,7 +48,7 @@ export default{
                     <p><a href="#" class="learn-more">Read more</a></p>
                   </div>
                 </div>
-                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                <div class="col-6 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
                   <div class="box-feature mb-4" style="height: 550px;">
                     <img src="/src/assets/Img/Tirsa/nail_artist_service.jpg" alt="" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
@@ -59,7 +59,7 @@ export default{
                     <p><a href="#" class="learn-more">Read more</a></p>
                   </div>
                 </div>
-                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                <div class="col-6 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
                   <div class="box-feature mb-4" style="height: 550px;">
                     <img src="/src/assets/Img/Tirsa/wedding_hairdresser.jpg" alt="" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
@@ -70,7 +70,7 @@ export default{
                     <p><a href="#" class="learn-more">Read more</a></p>
                   </div>
                 </div>
-                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                <div class="col-6 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
                   <div class="box-feature mb-4" style="height: 550px;">
                     <img src="/src/assets/Img/Tirsa/wedding_photography.jpg" alt="" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
@@ -81,7 +81,7 @@ export default{
                     <p><a href="#" class="learn-more">Read more</a></p>
                   </div>
                 </div>
-                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                <div class="col-6 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
                   <div class="box-feature mb-4" style="height: 550px;">
                     <img src="/src/assets/Img/Tirsa/jewelery designer.jpg" alt="" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
@@ -92,7 +92,7 @@ export default{
                     <p><a href="#" class="learn-more">Read more</a></p>
                   </div>
                 </div>
-                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                <div class="col-6 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
                   <div class="box-feature mb-4" style="height: 550px;">
                     <img src="/src/assets/Img/Tirsa/baker.jpg" alt="" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
@@ -103,7 +103,7 @@ export default{
                     <p><a href="#" class="learn-more">Read more</a></p>
                   </div>
                 </div>
-                <div class="col-6 col-lg-4 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
+                <div class="col-6 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300">
                   <div class="box-feature mb-4" style="height: 550px;">
                     <img src="/src/assets/Img/Tirsa/electrician.jpg" alt="" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
@@ -128,9 +128,12 @@ export default{
 
 <style>
 .cropped-image {
-  width: 350px; /* Set the desired width */
-  height: 300px; /* Set the desired height */
+  width: 350px;
+  max-width: 100%;
+  height: 300px; 
   object-fit: cover; /* This will crop the image as necessary to cover the defined width and height */
   margin: auto;
+  /* max-width: 100%; */
+  /* height: auto; */
 }
 </style>
