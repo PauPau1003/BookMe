@@ -5,7 +5,7 @@ import Reviews from "../components/ServiceProvider/Reviews.vue";
 import Scheduling from "../components/ServiceProvider/Scheduling.vue";
 import Payment from "../components/ServiceProvider/Payment.vue";
 import Footer from "../components/Footer.vue";
-import Navbar from "@/components/navbar.vue";
+import Navbar from "../components/navbar.vue";
 
 import { collection, getDocs, query,where } from "firebase/firestore";
 import {db} from "../firebase/firebaseconfig"
@@ -75,7 +75,7 @@ querySnapshot.forEach((doc) => {
 });
   },
   
-components: {
+components: {Navbar,
     ServiceProviderProfile,
     Services,
     Reviews,
@@ -170,6 +170,7 @@ components: {
   padding: 20px;
   border-radius: 5px;
 }
+
 #payment {
   margin-left: 20pxz;
 }

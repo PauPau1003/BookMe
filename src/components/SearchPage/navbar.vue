@@ -103,9 +103,6 @@ margin: 0;
 }
 } 
 
-.navbar{
-margin-top: 20px;
-}
 .signupBut {
 background-color: rgb(244, 241, 241);
 border: 1px ;

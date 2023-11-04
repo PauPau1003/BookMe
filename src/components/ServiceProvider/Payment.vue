@@ -29,6 +29,7 @@ window.location.href = url;
       v-model="tab"
       bg-color= '#4F7369'
     >
+    
       <v-tab value="one" >Basic</v-tab>
       <v-tab value="two">Standard</v-tab>
       <v-tab value="three">Premium</v-tab>

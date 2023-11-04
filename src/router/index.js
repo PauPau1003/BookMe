@@ -55,12 +55,7 @@ const router = createRouter({
       component: () => import("../views/ContactPage.vue"),
     },
 
-    {
-      path: "/service-selection",
-      name: "ServiceSelection", // eslint-disable-next-line
-      component: () =>
-        import("../components/serviceprovider/ServiceSelection.vue"),
-    },
+
     {
       path: "/LandingPage",
       name: "LandingPage", // eslint-disable-next-line

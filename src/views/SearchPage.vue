@@ -34,7 +34,7 @@
       import Categories from '../components/SearchPage/categories.vue';
       import Filter from '../components/SearchPage/filter.vue';
       import Footer from '../components/SearchPage/footer.vue';
-      import Navbar from '../components/SearchPage/navbar.vue';
+      import Navbar from '../components/navbar.vue';
       import SellerContent from '../components/SearchPage/sellercontent.vue';
       import Suggested from '../components/SearchPage/suggested.vue';
     

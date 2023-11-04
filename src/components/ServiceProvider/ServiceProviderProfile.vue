@@ -1,7 +1,7 @@
 <template>
   <v-container class=" first-container pt-0 ps-5" >
     <v-container class="gig-overview p-0">
-      <h1 >I will design responsive website for your business</h1>
+      <h1 >{{ serviceTitle }}</h1>
 
       <v-container>
         <v-row>

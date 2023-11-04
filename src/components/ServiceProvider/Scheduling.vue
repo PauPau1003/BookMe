@@ -34,14 +34,14 @@ h2 {
 .scheduling div {
   margin: 10px 0;
 }
-
+/* 
 .scheduling button {
   background-color: #007bff;
   color: white;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-}
+} */
 
 .calender-heading {
   margin-top: 98px;
