@@ -57,11 +57,6 @@ const router = createRouter({
 
 
     {
-      path: "/LandingPage",
-      name: "LandingPage", // eslint-disable-next-line
-      component: () => import("../views/LandingPage.vue"),
-    },
-    {
       path: "/Searchpage",
       name: "Searchpage",
       // route level code-splitting

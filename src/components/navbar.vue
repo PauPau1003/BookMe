@@ -56,10 +56,18 @@
             class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3"
           >
             <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <router-link
+              to="/"
+              style="text-decoration: none; color: black"
+              >Home</router-link
+            >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#about">About</a>
+              <router-link
+                to="/AboutPage"
+                style="text-decoration: none; color: black"
+                >About</router-link
+              >
             </li>
             <li class="nav-item mx-2 nav">
               <router-link
@@ -69,7 +77,11 @@
               >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#about">Contact Us</a>
+              <router-link
+              to="/ContactPage"
+              style="text-decoration: none; color: black"
+              >Contact Page</router-link
+            >
             </li>
           </ul>
           <!-- Login/Sign up -->
