@@ -1,4 +1,4 @@
-Tirsa Christina, [29/10/2023 7:02 pm]
+
 <script>
 export default{
  name: 'Filter'
@@ -15,7 +15,7 @@ export default{
 
       <!-- dropwdowns -->
       <div class="dropdown m-4">
-        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn btn-dark dropdown-toggle m-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           Category
         </button>
         <ul class="dropdown-menu">
@@ -25,38 +25,10 @@ export default{
         </ul>
 
 
-        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Location
-        </button>
-        <ul class="dropdown-menu">
-            <!-- <li><button class="dropdown-item" type="button">Action</button></li>
-            <li><button class="dropdown-item" type="button">Another action</button></li>
-            <li><button class="dropdown-item" type="button">Something else here</button></li> -->
-            <div class="m-2">
-              <ul class="list-group">
-              <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                <label class="form-check-label" for="firstCheckbox">Top Rated Sellers</label>
-              </li>
-              <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                <label class="form-check-label" for="secondCheckbox">Level 1</label>
-              </li>
-              <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                <label class="form-check-label" for="thirdCheckbox">Level 2</label>
-              </li>
-              <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                <label class="form-check-label" for="thirdCheckbox">New Sellers</label>
-              </li>
-            </ul>
-          </div>
-
-          </ul>
+        
 
 
-<button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+<button class="btn btn-dark dropdown-toggle m-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Budget
         </button>
         <ul class="dropdown-menu">
@@ -93,16 +65,49 @@ export default{
         <div class="numberOfService tbody-5 m-4">2000 services available</div>
       </div>
 
-      <div class="d-flex dropdown justify-content-end">
-        <span class="d-flex justify-content-end m-3">Sort by:</span>
-        <button class="btn btn-success dropdown-toggle m-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Relevance
-        </button>
-        <ul class="dropdown-menu">
-        <li><button class="dropdown-item text-light" type="button">Recommended</button></li>
-        <li><button class="dropdown-item text-light" type="button">Best Selling</button></li>
-        <li><button class="dropdown-item text-light" type="button">Newest Arrivals</button></li>
-        </ul>
-    </div>
+      
 
 </template>
+
+<style>
+.content{
+            background-color: #7EBFB3;
+            border: #7EBFB3 1px solid;
+            border-radius: 20px;
+            padding: 20px;
+            color: white;
+        }
+        button{
+          background-color: #194759 !important;
+          color: white;
+          
+        }
+        
+        .categories,.suggested{
+            font-size: 20px;
+        }
+
+        .numberOfService{
+            top: 10px;
+
+        }
+        .box-feature {
+        background: #fff;
+        border-radius: 4px;
+        padding: 30px;
+        margin-bottom: 30px; 
+      }
+        .box-feature h3, .box-feature .h3 {
+          font-size: 16px;
+          margin: 0;
+          padding: 0; 
+        }
+        .box-feature [class^="flaticon-"] {
+          color: #00204a;
+          font-size: 60px;
+          margin: 0 0 10px 0;
+          display: block;
+          padding: 0;
+          line-height: 0; 
+        }
+</style>

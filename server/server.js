@@ -44,7 +44,7 @@ app.post("/create-checkout-session", async (req, res) => {
     mode: "payment",
     line_items: lineItems,
     success_url: `http://localhost:5173/`,
-    cancel_url: `http://localhost:5173/service-provider`,
+    cancel_url: `http://localhost:5173/`,
   });
   return res.send({ url: session.url });
 });
