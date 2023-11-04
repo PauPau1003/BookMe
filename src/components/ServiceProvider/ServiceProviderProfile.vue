@@ -25,11 +25,12 @@
 
 <script>
 export default {
-  props: {
-    name: String,
-    username: String,
-    profileImage: String,
-  },
+  props:{
+  name: String,
+  username: String,
+  profileImage: String,
+  serviceTitle: String,
+}
 };
 </script>
 

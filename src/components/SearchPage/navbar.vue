@@ -9,7 +9,7 @@ export default{
    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <!--Logo-->
-          <img src="images/BookMeLogo-removebg-preview.png" alt="" width="150" height="100">
+          <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px"></a>
           <form class="d-none d-md-flex d-lg-flex pt-3" role="search">
             <input
               class="formsearch form-control me-2"

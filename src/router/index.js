@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+
 import { auth } from "../firebase/firebaseconfig.js";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,22 +7,12 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: HomeView,
+      component: () => import("../views/HomeLandingPage.vue"),
       meta: {
         requiresAuth: true,
       },
     },
-    {
-      path: "/about",
-      name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("../views/AboutView.vue"),
-      meta: {
-        requiresAuth: true,
-      },
-    },
+
     {
       path: "/service-provider/:id",
       name: "service-provider",
@@ -52,11 +42,6 @@ const router = createRouter({
       component: () => import("../views/LoginPage.vue"),
     },
 
-    {
-      path: "/HomeLandingPage",
-      name: "HomeLandingPage",
-      component: () => import("../views/HomeLandingPage.vue"),
-    },
 
     {
       path: "/AboutPage",
@@ -112,8 +97,14 @@ const router = createRouter({
       name: "Permits&Requirements",
       component: () => import("../views/Permits&Requirements.vue"),
     },
-  ],
-});
+    {
+      path: '/test',
+      name: 'test',
+      component: () => import('../firebase/test.vue')
+    },
+    
+  ]
+})
 
 router.beforeEach((to, from, next) => {
   if (to.path === "/loginPage" && auth.currentUser) {

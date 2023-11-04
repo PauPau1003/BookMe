@@ -1,10 +1,10 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-dark">
+  <!-- Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top-navbar mb-3">
     <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px"></a>
+      <!--Logo-->
+      <a class="navbar-brand fs-4" href="#" style="color: black">Book Me</a>
       <form class="d-none d-md-flex d-lg-flex" role="search">
-        <!-- Search Form -->
         <input
           class="formsearch form-control me-2"
           type="search"
@@ -12,9 +12,9 @@
           aria-label="Search"
           style="width: 300px"
         />
-        <button class="btn btn-outline-dark text-light" type="submit">Search</button>
+        <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
-      <!-- Toggle Button -->
+      <!--Toggle BTN-->
       <button
         class="navbar-toggler"
         type="button"
@@ -26,14 +26,15 @@
           <i class="fa fa-bars" aria-hidden="true" style="color: #1c1c1c"></i>
         </span>
       </button>
-      <!-- Sidebar -->
+
+      <!--SideBar-->
       <div
         class="sidebar offcanvas offcanvas-start"
         tabindex="-1"
         id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel"
       >
-        <!-- Sidebar Header -->
+        <!--Sidebar Header-->
         <div class="offcanvas-header text-white border-white">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Book Me</h5>
           <button
@@ -43,9 +44,11 @@
             aria-label="Close"
           ></button>
         </div>
-        <!-- Sidebar Body -->
+        <!--Sidebar body-->
         <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-          <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+          <ul
+            class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3"
+          >
             <li class="nav-item mx-2">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -53,13 +56,14 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item mx-2 nav">
-              <router-link to="/Searchpage">Services</router-link>
+              <router-link to="/Searchpage" class="nav-link">Services</router-link>
             </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#about">Contact Us</a>
-            </li>
+            <!-- <li class="nav-item mx-2">
+                <a class="nav-link" href="#about">Contact</a>
+              </li> -->
           </ul>
-          <!-- Login/Sign up -->
+
+          <!--Login/Sign up-->
           <div
             class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
           >
@@ -70,6 +74,8 @@
               style="white-space: nowrap"
               >Sign up</a
             >
+            <a  class="text-black text-decoration-none" @click="$store.dispatch('logout')">Logout</a>
+            
           </div>
         </div>
       </div>
@@ -77,83 +83,74 @@
   </nav>
 </template>
 
-<script>
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'jquery'
-import 'popper.js'
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min.js'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import 'bootstrap/dist/js/bootstrap.bundle.js'
-import 'bootstrap/dist/js/bootstrap.js'
-
-export default {
-  name: 'navbar',
-};
-</script>
-
 <style>
-body{
-
-background-blend-mode: multiply;
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-margin: 0;
+body {
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-@media(max-width:991px){
-.sidebar.offcanvas{
-    background-color:rgba(255,255,255,0.15);
+@media (max-width: 991px) {
+  .sidebar.offcanvas {
+    background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
-}
-} 
-
-.navbar{
-padding-top: 10px;
-background-color: #EBF2F1;
-margin-top: 0px;
+  }
 }
 
+.navbar {
+  margin-top: 20px;
+}
 .signupBut {
-background-color: rgb(244, 241, 241);
-border: 1px ;
-border-color: green;
-color: rgb(56, 56, 56);
+  background-color: rgb(244, 241, 241);
+  border: 1px;
+  border-color: green;
+  color: rgb(56, 56, 56);
 }
 .form-search.form-control {
-width:300px
+  width: 300px;
 }
 
-.maincontent{
-background: url('/bg.jpg') rgba(0,0,0,0.3);
+.maincontent {
+  background: url("../../public/images/back.jpg");
+  background-repeat: no-repeat;
 }
 
-.btn{
-  border-radius: 10px;
-  background-color: #194759 !important;
-  color: #ebf2f1 !important;
-  border: none !important;
+.sticky-top-navbar {
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 100; /* Adjust the z-index as needed */
 }
 
 .navbar-dark .navbar-nav .nav-link {
-color: black !important;
+  color: black !important;
 }
 
 /* Target specifically the "Home" link */
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
-color: black !important;
+  color: black !important;
 }
-
 
 .navbar-toggler-icon {
-
-border-color: black;
+  border-color: black;
 }
+
+.navbar-toggler {
+  background-color: #194759 !important;
+  
+}
+
 
 .navbar .text-white {
-color: black; /* Change the text color to black */
+  color: black; /* Change the text color to black */
 }
 </style>
+
+<script>
+export default {
+  name: "Navbar",
+};
+</script>

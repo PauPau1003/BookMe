@@ -1,5 +1,5 @@
 <template>
-    <!-- <div class="Navbar">
+    <div class="Navbar">
         <Navbar />
     </div>
 
@@ -21,13 +21,13 @@
 
     <div class="Footer">
         <Footer />
-    </div> -->
-    <Navbar/>
+    </div>
+    <!-- <Navbar/>
     <Categories/>
     <Suggested/>
     <Filter/>
     <SellerContent/>
-    <Footer/>
+    <Footer/> -->
 </template>
 
     <script>
