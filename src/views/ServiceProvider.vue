@@ -5,8 +5,7 @@ import Reviews from "../components/ServiceProvider/Reviews.vue";
 import Scheduling from "../components/ServiceProvider/Scheduling.vue";
 import Payment from "../components/ServiceProvider/Payment.vue";
 import Footer from "../components/Footer.vue";
-import Navbar from "@/components/Navbar.vue";
-
+import Navbar from "@/components/navbar.vue";
 
 import data from "../firebase/data.json";
 // const redirectToStripe = async () => {
@@ -94,6 +93,7 @@ export default {
   <!-- <button v-on:click="test(serviceId)">
     Test
   </button> -->
+  <Navbar />
   <v-breadcrumbs
     :items="['Home', 'Services', 'ServiceProvider']"
   ></v-breadcrumbs>
@@ -123,7 +123,7 @@ export default {
       </v-col>
     </v-row>
   </div>
-
+  <Footer />
   <h2></h2>
 
   <!-- <v-row>
@@ -170,24 +170,13 @@ export default {
   margin: 0 auto; /* Center align the widget horizontally */
 
   /* You can add more styling as needed to customize the appearance */
-  background-color: #f7f7f7;
+  background-color: #4F7369;
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 5px;
 }
 #payment {
   margin-left: 20pxz;
-}
-
-*{
-  background-color: #EBF2F1;
-}
-
-.v-btn_overlay {
-  border-radius: 10px;
-  background-color: #194759 !important;
-  color: #ebf2f1 !important;
-  border: none !important;
 }
 
 

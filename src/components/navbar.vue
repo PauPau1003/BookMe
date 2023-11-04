@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <!-- Logo -->
       <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px"></a>
@@ -112,8 +112,11 @@ margin: 0;
 } 
 
 .navbar{
-margin-top: 20px;
+padding-top: 10px;
+background-color: #EBF2F1;
+margin-top: 0px;
 }
+
 .signupBut {
 background-color: rgb(244, 241, 241);
 border: 1px ;
@@ -128,10 +131,11 @@ width:300px
 background: url('/bg.jpg') rgba(0,0,0,0.3);
 }
 
-.sticky-top-navbar {
-position: sticky;
-top: 0; /* Stick to the top of the viewport */
-z-index: 100; /* Adjust the z-index as needed */
+.btn{
+  border-radius: 10px;
+  background-color: #194759 !important;
+  color: #ebf2f1 !important;
+  border: none !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {

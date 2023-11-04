@@ -26,7 +26,7 @@ window.location.href = url;
   <v-card class="payment-tab">
     <v-tabs
       v-model="tab"
-      bg-color= '#4ABDAC'
+      bg-color= '#4F7369'
     >
       <v-tab value="one">Basic</v-tab>
       <v-tab value="two">Standard</v-tab>
@@ -48,7 +48,7 @@ window.location.href = url;
         </v-window-item>
       </v-window>
     </v-card-text>
-    <v-btn @click="redirectToStripe" color="#FC4A1A" >Pay Now!</v-btn>
+    <v-btn @click="redirectToStripe" color="#194759 " >Pay Now!</v-btn>
   </v-card>
 </template>
 
