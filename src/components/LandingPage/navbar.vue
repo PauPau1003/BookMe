@@ -60,7 +60,7 @@
           <div
             class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
           >
-            <a href="#login" class="text-black text-decoration-none">Login</a>
+            <a href="/LoginPage" class="text-black text-decoration-none">Login</a>
             <a
               href="#signup"
               class="signupBut text-decoration-none px-3 py-1 rounded-1"

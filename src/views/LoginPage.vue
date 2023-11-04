@@ -14,10 +14,10 @@
                         <form>
                             <ul class="nav nav-tabs justify-content-center nav-pills nav-fill" id="loginRegisterTabs" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active" id="login-tab" data-bs-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                                <a class="nav-link active custom-tab" id="login-tab" data-bs-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="register-tab" data-bs-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                                <a class="nav-link custom-tab" id="register-tab" data-bs-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
                             </li>
                             </ul>
 
@@ -63,47 +63,46 @@
     </div>
 </div>
 </div>
+</template>
+  
+<script>
+import { ref } from 'vue';
+import { useStore } from 'vuex';
+    
+export default {
+setup() {
+    const login_form = ref({});
+    const register_form = ref({});
+    const store = useStore();
+    const registerTabActive = ref(false);
 
-  </template>
-  
-  <script>
-  import { ref } from 'vue';
-  import { useStore } from 'vuex';
-  
-  export default {
-    setup() {
-      const login_form = ref({});
-      const register_form = ref({});
-      const store = useStore();
-      const registerTabActive = ref(false);
-  
-      const login = () => {
-        store.dispatch('login', login_form.value);
-      };
-  
-      const register = () => {
-        store.dispatch('register', register_form.value);
-      };
-  
-      const activateRegisterTab = () => {
-        registerTabActive.value = true;
-      };
-  
-      return {
-        login_form,
-        register_form,
-        login,
-        register,
-        registerTabActive
-      };
-    }
-  };
+    const login = () => {
+    store.dispatch('login', login_form.value);
+    };
+
+    const register = () => {
+    store.dispatch('register', register_form.value);
+    };
+
+    const activateRegisterTab = () => {
+    registerTabActive.value = true;
+    };
+
+    return {
+    login_form,
+    register_form,
+    login,
+    register,
+    registerTabActive
+    };
+}
+};
   </script>
 
 
 <style>
 .bg {
-    background: #7EBFB3;
+    background-color: #7EBFB3;  
 }
 
 .min-height-container {
@@ -156,10 +155,6 @@ label {
     margin-bottom: 0px;
 }
 
-.form-label {
-    color: #6C6C6C;
-}
-
 .btn-outline-primary {
     border-color: #0DB8DE;
     color: #0DB8DE;
@@ -167,7 +162,7 @@ label {
 }
 
 .btn-outline-primary:hover {
-    background-color: blue;
+    background-color: #194759;
     right: 0px;
 }
 
@@ -189,6 +184,16 @@ label {
 
 .loginbttm {
     padding: 0px;
+}
+        
+.custom-tab {
+    background-color: #194759 !important; 
+    color: white !important; 
+}
+
+.custom-tab:not(.active) {
+    background-color: #ffffff !important; 
+    color: #194759 !important; 
 }
 
 </style>
