@@ -48,7 +48,7 @@ methods:{
                   style="height: 550px;"
                   v-if="filterKeyword === 'All' || service.serviceCategory === filterKeyword">
                     <div class="text-center">
-                    <img :src="'/src/assets/Img/Tirsa/' + service.serviceList.serviceImage[0]" class="cropped-image">
+                    <img :src="'/src/assets/Images/Tirsa/' + service.serviceList.serviceImage[0]" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
                     <!-- <img src="person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4"> -->
                     <p style="color:black; font-size: 20px;">{{ service.name }}</p>
@@ -120,5 +120,5 @@ methods:{
           padding: 0;
           line-height: 0; 
         }
-        
+
 </style>
