@@ -4,6 +4,7 @@
 
 // Import Bootstrap and BootstrapVue CSS files (order is important)
 import "bootstrap/dist/css/bootstrap.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Optionally install the BootstrapVue icon components plugin
 import '@mdi/font/css/materialdesignicons.css'

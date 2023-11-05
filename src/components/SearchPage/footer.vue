@@ -51,7 +51,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 body{
 
 background-blend-mode: multiply;

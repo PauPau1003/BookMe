@@ -11,9 +11,14 @@
       </div>
       <div class="row">
         <div class="person-wrap col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
-          <div class="h-100 person" style="text-align: center">
+          <div
+            class="h-100 person"
+            data-aos="zoom-in-up"
+            data-aos-delay="400"
+            style="text-align: center"
+          >
             <img
-              src="images/person_1-min.jpg"
+              src="../../assets/images/TeckXuan/person_1-min.jpg"
               alt="Image"
               class="img-fluid rounded-circle"
               style="width: 100px; height: 100px; border-radius: 50%"
@@ -32,15 +37,20 @@
         </div>
 
         <div class="person-wrap col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
-          <div class="h-100 person" style="text-align: center">
+          <div
+            class="h-100 person"
+            data-aos="zoom-in-up"
+            data-aos-delay="450"
+            style="text-align: center"
+          >
             <img
-              src="images/person_2-min.jpg"
+              src="../../assets/images/TeckXuan/person_2-min.jpg"
               alt="Image"
               class="img-fluid rounded-circle"
               style="width: 100px; height: 100px; border-radius: 50%"
             />
             <div class="person-contents">
-              <h2 class="mb-0">Jean Smith</h2>
+              <h2 class="mb-0">John Smith</h2>
               <span class="meta mb-3 mt-1">Hairdresser</span>
               <p>
                 Book Me has helped me significantly by establishing an online
@@ -52,15 +62,20 @@
         </div>
 
         <div class="person-wrap col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
-          <div class="h-100 person" style="text-align: center">
+          <div
+            class="h-100 person"
+            data-aos="zoom-in-up"
+            data-aos-delay="500"
+            style="text-align: center"
+          >
             <img
-              src="images/person_3-min.jpg"
+              src="../../assets/images/TeckXuan/person_4-min.jpg"
               alt="Image"
               class="img-fluid rounded-circle"
               style="width: 100px; height: 100px; border-radius: 50%"
             />
             <div class="person-contents">
-              <h2 class="mb-0">John Lee</h2>
+              <h2 class="mb-0">Jane Lee</h2>
               <span class="meta mb-3 mt-1">Make-up Artist</span>
               <p>
                 Book Me helped me to streamline appointment scheduling and
@@ -70,6 +85,27 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5">
+    <div
+      class="row justify-content-center footer-cta"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      <div class="col-lg-7 mx-auto text-center">
+        <h2 class="mb-4">
+          Be a part of our growing community to promote sustainable growth
+        </h2>
+        <p>
+          <a
+            href="#"
+            target="_blank"
+            class="btn btn-primary text-white py-3 px-4"
+            >Become a Service Provider</a
+          >
+        </p>
       </div>
     </div>
   </div>
