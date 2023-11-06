@@ -12,19 +12,19 @@
                         <div class="card">
                           <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 60px;width:60px; border-radius:25px;margin:auto; margin-top:20px">
                           <div class="card-body">
-                          <h5 class="card-title" style="text-align: center;color:#194759;">Jason Tourney</h5>
+                          <h5 class="card-title" style="text-align: center;color:#194759;">{{ data_array.name }}</h5>
                           <p class="card-text" style="text-align: center;color: #7EBFB3;">
                             Customer is #1 Priority!
                           </p>
                             <p style="text-align: center;">
-                            5.0 <small class="text-muted">(9 Reviews)</small>
+                            {{  }} <small class="text-muted">({{ (data_array.reviews).length }} Reviews)</small>
                           </p>
                           <hr>
                           <p class="card-text">
-                            <img src="../../src/assets/Img/location_marker.png" style="height:20px ;width:20px;"> From : Spain<br><br>
-                            <img src="../../src/assets/Img/user.png" style="height:20px ;width:20px;"> Member Since : May 2023<br><br>
-                            <img src="../../src/assets/Img/clock.png" style="height:20px ;width:20px;"> Avg. Response Time : 2 Hrs.<br><br>
-                            <img src="../../src/assets/Img/acquisition.png" style="height:20px ;width:20px;"> Recent Sale(s) : 1 Day Ago</p>                              
+                            <img src="../../src/assets/Img/location_marker.png" style="height:20px ;width:20px; margin: 5px;"> Location : {{ data_array.location }}<br><br>
+                            <img src="../../src/assets/Img/user.png" style="height:20px ;width:20px; margin: 5px;"> Member Since : {{ data_array.creationdate }}<br><br>
+                            <img src="../../src/assets/Img/clock.png" style="height:20px ;width:20px; margin: 5px;"> Avg. Response Time : {{ data_array.responsetime }} Hrs.<br><br>
+                            <img src="../../src/assets/Img/acquisition.png" style="height:20px ;width:20px; margin: 5px;"> Recent Sale(s) : {{ data_array.recentsales }} Day Ago</p>                              
                             </div>
                           </div>
     
@@ -36,10 +36,9 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Successfully Completed Courses</h5>
                                   <br>
-                                  <p class="card-text" style="font-weight: bold;"><img src="../../src/assets/Img/pen.png" style="height:30px ;width:30px;"> Craft Your Own Logo by Hand : DD/MM/YY</p><br>
-                                  <p class="card-text" style="font-weight: bold;"><img src="../../src/assets/Img/photoshop.png" style="height:30px ;width:30px;"> Adobe Photoshop Mastery : DD/MM/YY</p><br>
-                                  <p class="card-text" style="font-weight: bold;"><img src="../../src/assets/Img/google-analytics.png" style="height:30px ;width:30px;"> Google Analytics - Beginner : DD/MM/YY</p><br>
-                                  
+                                  <div v-for="courses in data_array.Courses">
+                                  <p class="card-text" style="font-weight: bold;"><img :src='courses.cimg' style="height:30px ;width:30px; margin: 5px; display: inline;">{{ courses.cname }}</p><br>    
+                                  </div>
                                 </div>
                               </div>
         
@@ -55,75 +54,22 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-12">
-                            <p style="font-weight: bold;border: 1px solid rgb(205, 200, 200); border-radius:5px ; padding: 5px;color:white;">this_guy's products/gigs</p>
+                            <p style="font-weight: bold;border: 1px solid rgb(205, 200, 200); border-radius:5px ; padding: 5px;color:white;">{{ data_array.name }}'s Services</p>
                         </div>
                     </div>
                     <div class="row mb-2">
-                        <div class="col-md-4 col-12 mb-4">
+                        <div class="col-md-4 col-12 mb-4" v-for="products in data_array.serviceList.productArray">
                             <div class="card">
-                                <img src="../../src/assets/Img/img_1.jpg" class="card-img-top">
+                                <img :src='products.product_image' class="card-img-top">
                                 <div class="card-body">
-                                  <h5 class="card-title">Product 1</h5>
-                                  <p class="card-text">A modern house.</p>
+                                  <h5 class="card-title">{{ products.product_name }}</h5>
+                                  <p class="card-text">{{ products.product_description }}</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">$450,000</li>
+                                  <li class="list-group-item">SGD${{ products.pricing }}</li>
                                 </ul>
                               </div>
                         </div>
-                        <div class="col-md-4 col-12 mb-4">
-                            <div class="card">
-                                <img src="../../src/assets/Img/img_2.jpg" class="card-img-top">
-                                <div class="card-body">
-                                  <h5 class="card-title">Product 2</h5>
-                                  <p class="card-text">A luxury estate.</p>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">$700,000</li>
-                                </ul>
-                              </div>
-                        </div>
-                        <div class="col-md-4 col-12 mb-4">
-                            <div class="card" >
-                                <img src="../../src/assets/Img/img_3.jpg" class="card-img-top">
-                                <div class="card-body">
-                                  <h5 class="card-title">Product 3</h5>
-                                  <!-- pull from what user input the card text to be -->
-                                  <p class="card-text">Estate by the beach.</p>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">$900,000</li>
-                                </ul>
-                              </div>
-                        </div>
-
-                        <div class="col-md-4 col-12 mb-4">
-                            <div class="card" >
-                                <img src="../../src/assets/Img/img_4.jpg" class="card-img-top">
-                                <div class="card-body">
-                                  <h5 class="card-title">Product 4</h5>
-                                  <!-- pull from what user input the card text to be -->
-                                  <p class="card-text">Estate by the beach.</p>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">$600,000</li>
-                                </ul>
-                              </div>
-                        </div>
-
-                        <div class="col-md-4 col-12 mb-4">
-                            <div class="card" >
-                                <img src="../../src/assets/Img/img_5.jpg" class="card-img-top">
-                                <div class="card-body">
-                                  <h5 class="card-title">Product 5</h5>
-                                  <!-- pull from what user input the card text to be -->
-                                  <p class="card-text">Estate by the beach.</p>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">$1,000,000</li>
-                                </ul>
-                              </div>
-                        </div>  
                         <div>
                         <button type="button" class="btn btn-light" style="color:#194759; text-decoration: underline;">Add Product</button>
                       </div>
@@ -239,7 +185,7 @@
                 </div>
             </div>
         </div>
-    </div>
+      </div>
     
             
             
@@ -248,14 +194,48 @@
 </template>
     
 <script>
-    
+
+    import { collection, getDocs } from "firebase/firestore"; 
+    import db from "../firebase/firebaseconfig" 
     import spnavbar from "../components/spnavbar.vue";
-      
+    import { auth } from "../firebase/firebaseconfig.js";
+
+    const querySnapshot = await getDocs(collection(db, "usersForProj")); 
+
       export default {
         components: {
         spnavbar,
     },
-      };
+    data(){
+      return{
+        data_array: {},
+        name: '',
+        email: null,
+      }
+    },
+    methods:{
+      fetchEmail() {
+      const user = auth.currentUser; // Get the currently logged-in user
+
+      if (user) {
+        // If a user is logged in
+        this.email = user.email; // Set the email to the user's email
+      } else {
+        this.email = null; // If no user is logged in, set email to null
+      }
+    }
+    },
+    created(){
+      this.fetchEmail();
+      querySnapshot.forEach((doc)=>{
+        if (doc.data().email == this.email){
+          this.data_array = (doc.data())
+          console.log(this.data_array)
+        }
+      })
+
+      },
+    }
     
 </script>
     
