@@ -3,9 +3,9 @@
         <Navbar />
     </div>
 
-    <div class="Categories">
+    <!-- <div class="Categories">
         <Categories />
-    </div>
+    </div> -->
 
     <div class="Suggested">
         <Suggested />

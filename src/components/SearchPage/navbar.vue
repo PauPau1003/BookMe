@@ -55,13 +55,16 @@ export default{
               <ul
                 class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
                 <li class="nav-item mx-2">
-                  <a class="nav-link active text-black" aria-current="page" href="#">Home</a>
+                  <RouterLink to="/HomeLandingPage">Home</RouterLink>
+                  <!-- <a class="nav-link active text-black" aria-current="page" href="#">Home</a> -->
                 </li>
                 <li class="nav-item mx-2 ">
-                  <a class="nav-link text-black" href="#about">About</a>
+                  <RouterLink to="/SPHome">Home</RouterLink>
+                  <!-- <a class="nav-link text-black" href="#about">About</a> -->
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link text-black" href="#about">Services</a>
+                  <RouterLink to="/SPHome">Home</RouterLink>
+                  <!-- <a class="nav-link text-black" href="#about">Services</a> -->
                 </li>
                 <!-- <li class="nav-item mx-2">
                   <a class="nav-link" href="#about">Contact</a>

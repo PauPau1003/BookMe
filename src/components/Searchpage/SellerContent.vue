@@ -10,6 +10,7 @@ export default{
     return{
       services: [],
       // imageUrl: '/src/assets/Img/Tirsa/'
+      filterKeyword: 'All', // Default filter category
     }
   },
 created(){
@@ -29,8 +30,6 @@ methods:{
 }
 </script>
 
-<!-- image = {{ service.serviceList.serviceImage }} -->
-
 <template>
 
    <div class="container-fluid">
@@ -39,11 +38,14 @@ methods:{
             <h1 class="ms-5">New to buying in BookMe?</h1>
             <p class="ms-5">Discover sellers with a great track record at guiding new buyers.</p>
           </div>
-          <div class="section" style="background-color:#7EBFB3">
+          <div class="section" style="background: color #4f7369;">
             <div class="container">
               <div class="row">
                 <div class="col-xs-12 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300" v-for="service in services">
-                  <div class="box-feature mb-4" style="height: 550px;">
+                  <div 
+                  class="box-feature mb-4" 
+                  style="height: 550px;"
+                  v-if="filterKeyword === 'All' || service.serviceCategory === filterKeyword">
                     <div class="text-center">
                     <img :src="'/src/assets/Img/Tirsa/' + service.serviceList.serviceImage[0]" class="cropped-image">
                     <span class="flaticon-house mb-4 d-block"></span>
@@ -78,8 +80,8 @@ methods:{
 }
 
 .content{
-            background-color: #7EBFB3;
-            border: #7EBFB3 1px solid;
+            background-color: #4f7369;
+            border: #4f7369 1px solid;
             border-radius: 20px;
             padding: 20px;
             color: white;
