@@ -11,7 +11,7 @@
 
                 <div class="col-lg-12 login-form">
                     <div class="col-lg-12 login-form">
-                        <form>
+                       
                             <ul class="nav nav-tabs justify-content-center nav-pills nav-fill" id="loginRegisterTabs" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link active custom-tab" id="login-tab" data-bs-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
@@ -40,7 +40,7 @@
                             </div>
 
                             <!-- Register Tab Content -->
-                            <div class="tab-pane fade" id="register" role="tabpanel1" aria-labelledby="register-tab">
+                            <div class="tab-pane" id="register" role="tabpanel1" aria-labelledby="register-tab">
                             <!-- Registration Form -->
                             <form class="register" @submit.prevent="register">
                                 <div class="mb-3">
@@ -55,7 +55,7 @@
                             </form>
                             </div>
 
-                        </form>
+                       
                     </div>
                 </div>
             </div>
