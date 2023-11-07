@@ -82,6 +82,14 @@
                 >Contact</router-link
               >
             </li>
+            <li class="nav-item mx-2">
+              <router-link
+              to="/SPHome"
+              style="text-decoration: none; color: black"
+            >
+              Switch to Seller
+            </router-link>
+            </li>
           </ul>
           <!-- Login/Sign up -->
           <div class="d-flex justify-content-center">

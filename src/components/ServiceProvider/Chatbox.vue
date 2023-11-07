@@ -2,7 +2,7 @@
 
 <template>
     <div ref="talkjs" style="width: 1000px; margin: 30px; height: 500px">
-        
+      <i>Loading chat...</i>
     </div>
 </template>
 

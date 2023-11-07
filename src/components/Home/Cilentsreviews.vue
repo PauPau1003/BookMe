@@ -103,12 +103,14 @@
           Be a part of our growing community to promote sustainable growth
         </h2>
         <p>
-          <a
+          <!-- <a
             href="#"
             target="_blank"
-            class="btn btn-primary text-white py-3 px-4"
-            >Become a Service Provider</a
-          >
+            
+            >Become a Service Provider</a -->
+            <router-link to="/ContactPage" class="btn btn-primary text-white py-3 px-4"
+                >Become a Service Provider</router-link>
+          
         </p>
       </div>
     </div>
@@ -116,6 +118,7 @@
 </template>
 
 <style scoped>
+/* class="btn btn-primary text-white py-3 px-4" */
 .btn {
   transition: transform 0.3s ease-in-out; /* Add a transition */
 }

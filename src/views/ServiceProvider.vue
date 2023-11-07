@@ -80,7 +80,7 @@ querySnapshot.forEach((doc) => {
   this.docId = doc.id
   this.profileImage = data.profileImage
   this.longDescription = data.serviceList.longDescription
-  console.log(data.profileImage)
+  console.log(data.name)
 });
   },
   

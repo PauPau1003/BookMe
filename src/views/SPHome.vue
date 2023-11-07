@@ -174,7 +174,7 @@
     
 </script>
     
-<style>
+<style scoped>
 .rating-container {
   position: absolute;
   bottom: 0;
