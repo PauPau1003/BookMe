@@ -8,8 +8,10 @@
           alt="Logo"
           style="height: 40px"
       /></a>
+      <span class="welcome-message fs-5" v-if="data_array.username"
+        >Welcome, {{ data_array.username }}</span
+      >
       <!-- <form class="d-none d-md-flex d-lg-flex" role="search">
-
         <input
           class="formsearch form-control me-2"
           type="search"
@@ -32,6 +34,9 @@
         <span class="navbar-toggler-icon">
           <i class="fa fa-bars" aria-hidden="true" style="color: #1c1c1c"></i>
         </span>
+        <!-- <span v-if="data_array.username"
+          >Welcome, {{ data_array.username }}</span
+        > -->
       </button>
       <!-- Sidebar -->
       <div
@@ -60,19 +65,18 @@
                 >Home</router-link
               >
             </li>
-
-            <li class="nav-item mx-2 nav">
-              <router-link
-                to="/Searchpage"
-                style="text-decoration: none; color: black"
-                >Services</router-link
-              >
-            </li>
             <li class="nav-item mx-2">
               <router-link
                 to="/AboutPage"
                 style="text-decoration: none; color: black"
                 >About</router-link
+              >
+            </li>
+            <li class="nav-item mx-2 nav">
+              <router-link
+                to="/Searchpage"
+                style="text-decoration: none; color: black"
+                >Services</router-link
               >
             </li>
             <li class="nav-item mx-2">
@@ -84,7 +88,7 @@
             </li>
           </ul>
           <!-- Login/Sign up -->
-          <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center mt-1">
             <button
               @click="$store.dispatch('logout')"
               class="btn"
@@ -101,6 +105,7 @@
 
 <script>
 import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css";
 import "jquery";
 import "popper.js";
 import "bootstrap";
@@ -109,9 +114,60 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "bootstrap/dist/js/bootstrap.js";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  query,
+  where,
+} from "firebase/firestore";
+
+import { auth } from "../firebase/firebaseconfig.js";
+
+import { db } from "../firebase/firebaseconfig";
+const querySnapshot = await getDocs(collection(db, "usersForProj"));
 
 export default {
   name: "navbar",
+  data() {
+    return {
+      data_array: {},
+      name: "",
+      email: null,
+    };
+  },
+  methods: {
+    fetchEmail() {
+      const user = auth.currentUser; // Get the currently logged-in user
+
+      if (user) {
+        // If a user is logged in
+        this.email = user.email; // Set the email to the user's email
+      } else {
+        this.email = null; // If no user is logged in, set email to null
+      }
+    },
+  },
+  created() {
+    this.fetchEmail();
+    const db = getFirestore(); // Get Firestore instance
+    const collectionRef = collection(db, "usersForProj"); // Replace 'your_collection_name' with the actual name of your Firestore collection
+
+    // Now, you can query the Firestore collection using the user's email
+    // Make sure to replace 'email' with the actual field name in your Firestore documents
+    const q = query(collectionRef, where("email", "==", this.email));
+
+    getDocs(q)
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          this.data_array = doc.data();
+          console.log(this.data_array);
+        });
+      })
+      .catch((error) => {
+        console.error("Error getting documents: ", error);
+      });
+  },
 };
 </script>
 
@@ -129,12 +185,15 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
   }
+  .welcome-message {
+    display: none;
+  }
 }
 
 .navbar {
+  padding-top: 10px;
   background-color: #ebf2f1;
   margin-top: 0px;
-  padding-top: 10px;
 }
 
 .form-search.form-control {
@@ -168,11 +227,4 @@ body {
 .navbar .text-white {
   color: black; /* Change the text color to black */
 }
-
-.offcanvas-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content horizontally */
-}
-
 </style>
