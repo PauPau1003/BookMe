@@ -55,7 +55,7 @@
         </div>
 
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-          <form action="#">
+          <form @submit="submitForm">
             <div class="row">
               <div class="col-6 mb-3">
                 <input
@@ -86,12 +86,7 @@
               </div>
 
               <div class="col-12">
-                <input
-                  type="submit"
-                  value="Send Message"
-                  class="btn"
-                  @click="showAlert"
-                />
+                <input type="submit" value="Send Message" class="btn" />
               </div>
             </div>
           </form>
@@ -104,6 +99,19 @@
 <script>
 export default {
   name: "ContactForm",
+  methods: {
+    submitForm(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+
+      // Your form submission logic here, for example, sending data to a server
+
+      // Display an alert after form submission
+      alert("Form submitted successfully");
+
+      // Optionally, reset the form or perform other actions as needed
+      // For example, this.$refs.form.reset(); // Reset the form fields
+    },
+  },
 };
 </script>
 
