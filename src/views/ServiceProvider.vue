@@ -98,9 +98,7 @@ components: {Navbar,
     Test
   </button> -->
   <Navbar />
-  <v-breadcrumbs
-    :items="['Home', 'Services', 'ServiceProvider']"
-  ></v-breadcrumbs>
+  
   <div>
     <v-row>
       <v-col cols="12" md="6">

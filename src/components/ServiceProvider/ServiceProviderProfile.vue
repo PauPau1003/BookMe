@@ -7,7 +7,7 @@
         <v-row>
           <!-- Left Column: Image Avatar -->
           <v-col cols="2" class="profileimage">
-            <v-avatar size="60">
+            <v-avatar size="80">
               <v-img :src="profileImage"></v-img>
             </v-avatar>
           </v-col>

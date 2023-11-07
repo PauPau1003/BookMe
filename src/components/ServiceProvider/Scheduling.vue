@@ -4,20 +4,22 @@ export default {
     calendlyurl: String,
   },
   mounted() {
+  setTimeout(() => {
     Calendly.initInlineWidget({
-      url: this.calendlyurl,
+      url: this.calendlyurl + '/event-with-myself',
       parentElement: document.getElementById("calendar"),
     });
     console.log("Component is mounted and Calendly widget is initialized");
-    console.log(`${this.calendlyurl}`);
-  },
+    
+  }, 1000); // Adjust the delay as needed
+}
 };
 </script>
 
 <template>
   <h2 class="calender-heading text-center">Schedule an Appointment</h2>
 
-  <div id="calendar" style="min-width: 320px; height: 750px"></div>
+  <div id="calendar" style="min-width: 320px; height: 890px;"></div>
   <!-- <CalendlyVue url="dominicj-2022" @event="logEvent" @event-details="logEvent" @error="logEvent"></CalendlyVue> -->
 </template>
 

@@ -92,6 +92,11 @@ const router = createRouter({
       name: 'test',
       component: () => import('../firebase/test.vue')
     },
+    {
+      path: '/inbox',
+      name: 'inbox',
+      component: () => import('../components/ServiceProvider/Inbox.vue')
+    },
     
   ]
 })

@@ -21,7 +21,7 @@ const USER_SHOPPING_CART = [
   
 ];
 
-const domainUrl = process.env.DOMAIN;
+
 
 const stripe = require("stripe")('sk_test_51O44ptCX4vBGwQY3FDkBOMT7JywR11jiCqmt01uDpnGHZZQepjGUNuLHIPk3i7EnB47kEcv8BvhfaGh1nMNvGBOZ006240zYum');
 
@@ -43,8 +43,8 @@ app.post("/create-checkout-session", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
     line_items: lineItems,
-    success_url: `http://localhost:5173/`,
-    cancel_url: `http://localhost:5173/`,
+    success_url: `http://localhost:5173/?paymentSuccess=true`,
+    cancel_url: `http://localhost:5173/?paymentSuccess=false`,
   });
   return res.send({ url: session.url });
 });

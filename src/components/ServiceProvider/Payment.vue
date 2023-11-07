@@ -5,13 +5,12 @@ export default {
   data() {
     return {
       tab: null,
-      productArray: [],
     };
   },
   methods: {
      async redirectToStripe() {
 
-
+      console.log(this.productArray)
 const response = await fetch("/api/create-checkout-session", {
   method: "POST",
 });
@@ -21,6 +20,9 @@ window.location.href = url;
 }
 
   },
+  props:{
+    productArray: Array
+  }
 };
 </script>
 <template>
@@ -30,24 +32,25 @@ window.location.href = url;
       bg-color= '#4F7369'
     >
     
-      <v-tab value="one" >Basic</v-tab>
-      <v-tab value="two">Standard</v-tab>
-      <v-tab value="three">Premium</v-tab>
+      <v-tab :value="index" v-for="(product,index) in productArray" >{{ product.product_name }}</v-tab>
+      <!-- <v-tab value="two">Standard</v-tab>
+      <v-tab value="three">Premium</v-tab> -->
     </v-tabs>
 
     <v-card-text>
       <v-window v-model="tab">
-        <v-window-item value="one">
-          $5
+        <v-window-item :value="index" v-for="(product,index) in productArray" >
+          {{ product.product_description }}<br>
+         Price: ${{ product.pricing }}
         </v-window-item>
 
-        <v-window-item value="two">
+        <!-- <v-window-item value="two">
           $10
         </v-window-item>
 
         <v-window-item value="three">
           $20
-        </v-window-item>
+        </v-window-item> -->
       </v-window>
     </v-card-text>
     <v-btn @click="redirectToStripe" color="#194759 " >Pay Now!</v-btn>

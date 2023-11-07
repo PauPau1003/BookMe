@@ -4,6 +4,14 @@
       <v-col cols="12" class="ps-5">
         <!-- Write a Review Section -->
         <h2 >Write a Review</h2>
+        <v-rating
+  half-increments
+  hover
+  :length="5"
+  :size="32"
+  :model-value="3"
+  active-color="primary"
+ />
         <v-textarea v-model="newReview" label="Write your review" rows="4"></v-textarea>
         <v-btn @click="addReview" color="#194759">Submit</v-btn>
       </v-col>
@@ -26,6 +34,9 @@
 </template>
 
 <script>
+// import { useStore } from 'vuex';
+// const store = useStore();
+//     const currentUser = store.state.user
 export default {
   data() {
     return {
@@ -33,6 +44,8 @@ export default {
       newRating: 0,
     };
   },
+  
+
   methods: {
     addReview() {
       // if (this.newReview.trim() !== '' && this.newRating > 0) {
@@ -45,7 +58,7 @@ export default {
       //   this.newReview = '';
       //   this.newRating = 0;
       // }
-      console.log(this.reviews)
+      console.log(currentUser)
     },
   },
   props:{
