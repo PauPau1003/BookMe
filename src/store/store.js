@@ -7,6 +7,9 @@ import {
   signOut 
 } from 'firebase/auth'
 
+import {db} from "../firebase/firebaseconfig"
+import { doc, setDoc,addDoc,collection} from "firebase/firestore";
+
 export default createStore({
   state: {
     user: null
@@ -60,6 +63,26 @@ export default createStore({
 
     async register ({ commit}, details) {
        const { email, password } = details
+      // const docRef = await setDoc(collection(db,"usersForProj",
+      // {email:email}
+
+      // ));
+      const username = email.split('@')[0];
+      const colRef= collection(db,"usersForProj")
+
+      const dataObj={
+        email:email,
+        username: username
+      }
+
+      const docRef=await addDoc(colRef,dataObj)
+
+      //  await addDoc(doc(db, "usersForProj"),
+      //  {
+      //   email:  email
+
+      //  }
+      // );
 
       try {
         await createUserWithEmailAndPassword(auth, email, password)
