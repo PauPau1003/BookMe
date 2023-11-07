@@ -58,7 +58,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .captions {
   position: absolute;
   top: 50%;
@@ -78,6 +78,7 @@
 #imageCarousel .carousel-inner {
   filter: brightness(60%);
 }
+
 .carousel-item {
   transition: transform 0.3s ease-in-out; /* Add a transition */
 }

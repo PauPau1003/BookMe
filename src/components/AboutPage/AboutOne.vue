@@ -1,6 +1,6 @@
 <template>
-  <div class="about-one mt-5 mb-5">
-    <div class="row justify-content-evenly mb-5 ps-5 mx-0 ps-lg-0">
+  <div class=" container-fluid about-one pt-5 pb-5">
+    <div class="row justify-content-evenly mb-5 mx-0 ps-lg-0">
       <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
         <div data-aos="fade-up" data-aos-duration="1000">
           <img
@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="col-lg-4 ps-3 ps-md-0">
-        <div class="fw-bolder mb-5 fst-italic">
+        <div class="fw-bolder mb-5 pb-2 fst-italic">
           <h1 data-aos="fade-up" data-aos-duration="1000">Service Provider</h1>
         </div>
         <div

@@ -56,11 +56,10 @@ export default {
 
   mounted() {
     AOS.init({
-      //   offset: 100, // Adjust this value as needed
-      //   duration: 1000, // Animation duration in milliseconds
       easing: "ease", // Animation easing function
       // once: true, // Whether the animation should only occur once
     });
+    AOS.refresh();
   },
  
 

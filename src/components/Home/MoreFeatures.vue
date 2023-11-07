@@ -10,7 +10,7 @@
     </div>
     <div class="row justify-content-between mb-5 ps-5 mx-0">
       <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
-        <div data-aos="fade-up" data-aos-duration="2000">
+        <div data-aos="fade-up" data-aos-duration="2000" data-aos-offset ="100">
           <img
             src="../../assets/images/TeckXuan/back.jpg"
             alt="Image"
@@ -22,6 +22,7 @@
         <div
           data-aos="fade-up"
           data-aos-duration="2000"
+          data-aos-offset ="100"
           class="d-flex feature-h"
         >
           <span class="wrap-icon me-5">
@@ -39,6 +40,7 @@
         <div
           data-aos="fade-up"
           data-aos-duration="2000"
+          data-aos-offset ="100"
           class="d-flex feature-h"
         >
           <span class="wrap-icon me-5">
@@ -55,6 +57,7 @@
         <div
           data-aos="fade-up"
           data-aos-duration="2000"
+          data-aos-offset ="100"
           class="d-flex feature-h"
         >
           <span class="wrap-icon me-5">
@@ -74,7 +77,6 @@
 </template>
 
 <script>
-
 export default {
   name: "MoreFeatures",
 };

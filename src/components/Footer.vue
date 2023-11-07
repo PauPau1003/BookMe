@@ -7,7 +7,7 @@ export default {
   <div class="container-fluid">
     <div class="pt-4 my-md-5 pt-md-5 border-top">
       <div class="row">
-        <div class="col-12 col-md">
+        <div class="col-12 col-md mx-5">
           <img
             class="mb-2"
             src="/BookMeLogo-removebg-preview.png"
@@ -15,22 +15,39 @@ export default {
             width="80"
             height="30"
           />
-          <small class="d-block mb-3 text-muted">© 2017-2019</small>
+          <small class="d-block mb-3 text-muted">© 2022-2023</small>
         </div>
         <div class="col-6 col-md">
           <h5>Features</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Home</a></li>
-            <li><a class="text-muted" href="#">About</a></li>
-            <li><a class="text-muted" href="#">Services</a></li>
-
+            <li class="nav-item">
+              <router-link to="/" class="text-muted">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/AboutPage" class="text-muted"
+                >About</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link to="/SearchPage" class="text-muted"
+                >Services</router-link
+              >
+            </li>
           </ul>
         </div>
         <div class="col-6 col-md">
           <h5>Support</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Contact Us</a></li>
-            <li><a class="text-muted" href="#">Selling on BookMe</a></li>
+            <li class="nav-item">
+              <router-link to="/ContactPage" class="text-muted"
+                >Contact Us</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link to="/ContactPage" class="text-muted"
+                >Selling on Book Me</router-link
+              >
+            </li>
             <li><a class="text-muted" href="#">Terms and Condition</a></li>
           </ul>
         </div>

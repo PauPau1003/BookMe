@@ -8,9 +8,9 @@
           <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
             <ol class="breadcrumb text-center justify-content-center">
               <li class="breadcrumb-item">
-                <a style="color: white; text-decoration: none" href="index.html"
-                  >Home</a
-                >
+                <router-link to="/" style="text-decoration: none; color: white"
+                >Home</router-link
+              >
               </li>
               <li
                 class="breadcrumb-item active text-white-50"
