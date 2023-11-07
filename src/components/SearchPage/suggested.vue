@@ -7,7 +7,7 @@ export default {
 <template>
   <div class="suggested">
     <nav class="navbar bg-body-tertiary">
-      <form class="container-fluid justify-content-around my-6">
+      <form class="container-fluid justify-content-around my-2">
         <button
           class="m-2 btn btn-sm btn-outline-secondary"
           type="button"
