@@ -70,18 +70,13 @@ import Featurespage from "@/components/Home/Featurespage.vue";
 import FirstImage from "@/components/Home/FirstImage.vue";
 import Footer from "@/components/Footer.vue";
 import MoreFeatures from "@/components/Home/MoreFeatures.vue";
-import Navbar from "@/components/Home/Navbar.vue";
+import Navbar from "@/components/Navbar.vue";
 
+import "../assets/icomoon/style.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You may need to import AOS styles as well
+import "aos/dist/aos.css";
 
 export default {
-  data() {
-    return {
-      paymentSuccessDialog: false,
-      paymentUnsuccessfulDialog: false,
-    };
-  },
   components: {
     Navbar,
     FirstImage,
@@ -91,14 +86,22 @@ export default {
     Cilentsreviews,
     Footer,
   },
+
   mounted() {
     AOS.init({
-      offset: 100, // Adjust this value as needed
-      duration: 1000, // Animation duration in milliseconds
       easing: "ease", // Animation easing function
-      once: true, // Whether the animation should only occur once
+      // once: true, // Whether the animation should only occur once
     });
+    AOS.refresh();
   },
+
+  data() {
+    return {
+      paymentSuccessDialog: false,
+      paymentUnsuccessfulDialog: false,
+    };
+  },
+
   methods: {
     updateContentDynamically() {
       // Add new elements to the DOM dynamically
@@ -172,4 +175,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
+
 </style>
+

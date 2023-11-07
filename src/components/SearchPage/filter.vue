@@ -85,7 +85,7 @@ export default{
             color: white;
         }
         button{
-          background-color: #194759 !important;
+          background-color: #194759 ;
           color: white;
           
         }

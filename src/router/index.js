@@ -12,29 +12,17 @@ const router = createRouter({
         requiresAuth: true,
       },
     },
+
     {
-      path: "/about",
-      name: "about",
+      path: "/service-provider/:id",
+      name: "service-provider",
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import("../views/AboutView.vue"),
+      component: () => import("../views/ServiceProvider.vue"),
       meta: {
         requiresAuth: true,
       },
-    },
-    {
-      path: '/service-provider/:id',
-      name: 'service-provider',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ServiceProvider.vue'),
-      meta:{
-        requiresAuth:true
-      },
-     
-      
     },
     // {
     //   path: '/search-result',
@@ -47,55 +35,70 @@ const router = createRouter({
     //     requiresAuth:true
     //   }
     // },
-    
+
     {
       path: "/loginPage",
       name: "LoginPage", // eslint-disable-next-line
       component: () => import("../views/LoginPage.vue"),
     },
-    
-   {
-      path: '/LandingPage',
-      name: 'LandingPage', // eslint-disable-next-line
-      component: () => import('../views/LandingPage.vue'),
-    },
+
     {
-      path: '/Searchpage',
-      name: 'Searchpage',
+      path: "/AboutPage",
+      name: "AboutPage",
+      component: () => import("../views/AboutPage.vue"),
+    },
+
+    {
+      path: "/ContactPage",
+      name: "ContactPage",
+      component: () => import("../views/ContactPage.vue"),
+    },
+
+    {
+      path: "/Searchpage",
+      name: "Searchpage",
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/Searchpage.vue'),
+      component: () => import("../views/Searchpage.vue"),
       // meta:{
       //   requiresAuth:true
       // }
     },
     {
-      path: '/Dashboard',
-      name: 'Dashboard',
-      component: () => import('../views/Dashboard.vue')
+      path: "/Dashboard",
+      name: "Dashboard",
+      component: () => import("../views/Dashboard.vue"),
     },
     {
-      path: '/SPHome',
-      name: 'SPHome',
-      component: () => import('../views/SPHome.vue')
+      path: "/SPHome",
+      name: "SPHome",
+      component: () => import("../views/SPHome.vue"),
     },
     {
-      path: '/LearningAvenue',
-      name: 'LearningAvenue',
-      component: () => import('../views/LearningAvenue.vue')
+      path: "/LearningAvenue",
+      name: "LearningAvenue",
+      component: () => import("../views/LearningAvenue.vue"),
     },
     {
+<<<<<<< HEAD
       path: '/Permits&Requirements',
       name: 'Permits&Requirements',
       component: () => import('../views/Permits&Requirements.vue')
     }
     ,
-    {
-      path: '/test',
-      name: 'test',
-      component: () => import('../firebase/test.vue')
+=======
+      path: "/Permits&Requirements",
+      name: "Permits&Requirements",
+      component: () => import("../views/Permits&Requirements.vue"),
     },
+>>>>>>> dev
+    {
+      path: "/test",
+      name: "test",
+      component: () => import("../firebase/test.vue"),
+    },
+<<<<<<< HEAD
     {
       path: '/PaymentFailed',
       name: 'PaymentFailed',
@@ -109,6 +112,21 @@ const router = createRouter({
     
   ]
 })
+=======
+  ],
+
+  // For links in the footer to be scrolled to the top
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      // If the route has a hash (e.g., #section), scroll to the element with that ID
+      return { el: to.hash, behavior: "smooth" };
+    } else {
+      // Scroll to the top of the page
+      return { top: 0,behavior: "smooth" };
+    }
+  },
+});
+>>>>>>> dev
 
 router.beforeEach((to, from, next) => {
   if (to.path === "/loginPage" && auth.currentUser) {
