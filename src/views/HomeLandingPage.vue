@@ -92,7 +92,7 @@ export default {
     Cilentsreviews,
     Footer,
   },
-  
+
   mounted() {
     AOS.init({
       //   offset: 100, // Adjust this value as needed
@@ -102,9 +102,6 @@ export default {
     });
   },
   methods: {
-    updateContentDynamically() {
-      AOS.refresh();
-    },
     showPaymentSuccessModal() {
       this.paymentSuccessDialog = true;
     },
