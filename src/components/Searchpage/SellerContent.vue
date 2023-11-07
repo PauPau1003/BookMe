@@ -2,6 +2,8 @@
 import { collection, getDocs } from "firebase/firestore";
 import {db} from "../../firebase/firebaseconfig"
 
+
+
 const querySnapshot = await getDocs(collection(db, "usersForProj"));
 
 export default{
@@ -9,7 +11,6 @@ export default{
     return{
       services: [],
       // imageUrl: '/src/assets/Img/Tirsa/'
-      filterKeyword: 'All', // Default filter category
     }
   },
 created(){
@@ -20,13 +21,11 @@ created(){
   console.log(this.services)
 });
 },
-methods:{
-  redirectToServiceProvider(serviceId) {
-        console.log(serviceId)
-      this.$router.push(`/service-provider/${serviceId}`);
-    }
+
+
+
 }
-}
+
 </script>
 
 
@@ -42,17 +41,18 @@ methods:{
           <div class="section" style="background: color #4f7369;">
             <div class="container">
               <div class="row">
-                <div class="col-xs-12 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300" v-for="service in services">
+                <div class="col-xs-12 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300" v-for="service in services" >
                   <div 
                   class="box-feature mb-4" 
-                  style="height: 550px;"
-                  v-if="filterKeyword === 'All' || service.serviceCategory === filterKeyword">
+                  style="height: 570px;">
                     <div class="text-center">
                     <img :src="'/src/assets/Images/Tirsa/' + service.serviceList.serviceImage[0]" class="cropped-image">
-                    <span class="flaticon-house mb-4 d-block"></span>
+                    <span class="flaticon-house mb-3 d-block"></span>
                     <!-- <img src="person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4"> -->
-                    <p style="color:black; font-size: 20px;">{{ service.name }}</p>
-                    <h3 class="text-black mb-3 fw-normal">{{ service.serviceList.serviceDescription }}</h3> 
+                    <h3 class="mb-2" style="color:black; font-size: 20px;">{{ service.name }}</h3>
+                    <p class="text-black fw-normal" style="font-size: 15px;">{{ service.serviceList.serviceCategory }}</p> 
+                    <p class="text-black fw-normal">{{ service.serviceList.serviceDescription }}</p> 
+                
                     <p class="text-black">From SGD {{ service.serviceList.productArray[0].pricing }}</p>
                     <!-- <p><a href="#" class="learn-more">Read more</a></p> -->
                     <RouterLink to="/ServiceProvider">Read more</RouterLink>

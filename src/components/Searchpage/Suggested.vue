@@ -1,6 +1,10 @@
 <script>
+
+
 export default{
- name: 'Suggested'
+ name: 'Suggested',
+
+
 }
 
 </script>
@@ -10,15 +14,15 @@ export default{
       <nav class="navbar bg-body-tertiary">
         <form class="container-fluid justify-content-around my-6">
            
-            <button class="m-2 btn btn-sm btn-outline-secondary" type="button">video editing</button>
-          <button class="m-2 btn btn-sm btn-outline-secondary" type="button">website deployment</button>
-          <button class="m-2 btn btn-sm btn-outline-secondary" type="button">background removal</button>
-          <button class="m-2 btn btn-sm btn-outline-secondary" type="button">data entry</button>
-          <button class="m-2 btn btn-sm btn-outline-secondary" type="button">youtube thumbnail</button>
-          <button class="m-2 btn btn-sm btn-outline-secondary" type="button">content writer</button>
-          <button class="m-2 btn btn-sm btn-outline-secondary" type="button">photo editing</button>
-          <button class="m-2 btn btn-sm btn-outline-secondary" type="button">digital marketing</button>
-          <button class="m-2 btn btn-sm btn-outline-secondary" type="button">business card</button>
+            <button class="m-2 btn btn-sm btn-outline-secondary"  type="button" @click="selectCategory('Phone Service')">Phone Service</button>
+          <button class="m-2 btn btn-sm btn-outline-secondary" type="button" @click="selectCategory('Personal Chef')">Personal Chef</button>
+          <button class="m-2 btn btn-sm btn-outline-secondary" type="button" @click="selectCategory('Shoe Cleaning')" >Shoe Cleaning</button>
+          <button class="m-2 btn btn-sm btn-outline-secondary" type="button" @click="selectCategory('Watch Repair')">Watch Repair</button>
+          <button class="m-2 btn btn-sm btn-outline-secondary" type="button" @click="selectCategory('Aircon Cleaning')">Aircon Cleaning</button>
+          <button class="m-2 btn btn-sm btn-outline-secondary" type="button" @click="selectCategory('Makeup Artistry')">Makeup Artistry</button>
+          <button class="m-2 btn btn-sm btn-outline-secondary" type="button" @click="selectCategory('Baking')">Baking</button>
+          <button class="m-2 btn btn-sm btn-outline-secondary" type="button" @click="selectCategory('Tutoring')">Tutoring</button>
+          <button class="m-2 btn btn-sm btn-outline-secondary" type="button" @click="selectCategory('Photographer')">Photographer</button>
         </form>
       </nav>
     </div>

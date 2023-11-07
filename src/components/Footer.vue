@@ -7,7 +7,7 @@ export default {
   <div class="container-fluid">
     <div class="pt-4 my-md-5 pt-md-5 border-top">
       <div class="row">
-        <div class="col-12 col-md">
+        <div class="col-12 col-md mx-5">
           <img
             class="mb-2"
             src="/BookMeLogo-removebg-preview.png"
