@@ -1,6 +1,6 @@
 <template>
   <div class="services ps-5">
-    <v-carousel>
+    <v-carousel show-arrows="hover">
       <!-- <v-carousel-item
     src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
     cover
@@ -17,7 +17,7 @@
   ></v-carousel-item> -->
       <v-carousel-item
         v-for="image in serviceImage"
-        :src="image"
+        :src=" '/src/assets/Images/Tirsa/' + image"
         cover
       ></v-carousel-item>
     </v-carousel>
@@ -38,6 +38,7 @@
 </template>
 
 <script>
+
 export default {
   props: {
     serviceImage: Array,

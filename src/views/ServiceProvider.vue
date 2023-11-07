@@ -6,7 +6,7 @@ import Scheduling from "../components/ServiceProvider/Scheduling.vue";
 import Payment from "../components/ServiceProvider/Payment.vue";
 import Footer from "../components/Footer.vue";
 import Navbar from "../components/navbar.vue";
-
+import Chatbox from "../components/ServiceProvider/Chatbox.vue";
 import { collection, getDocs, query,where } from "firebase/firestore";
 import {db} from "../firebase/firebaseconfig"
 
@@ -24,6 +24,7 @@ export default {
       calendlyurl: '',
       productArray: [],
       reviews: [],
+      docId: '',
     };
   },
   // computed: {
@@ -74,6 +75,8 @@ querySnapshot.forEach((doc) => {
   console.log(this.calendlyurl)
   this.productArray = data.serviceList.productArray
   this.reviews = data.reviews
+  this.serviceImage = data.serviceList.serviceImage
+  this.docId = doc.id
 });
   },
   
@@ -84,6 +87,7 @@ components: {Navbar,
     Scheduling,
     Payment,
     Footer,
+    Chatbox
   },
 };
 </script>
@@ -111,15 +115,16 @@ components: {Navbar,
     </v-row>
     <v-row>
       <v-col cols="12" md="6">
-        <Reviews :reviews="reviews" />
+        <Reviews :reviews="reviews" :docId="docId"/>
       </v-col>
       <v-col cols="12" md="6">
         <Payment :productArray="productArray"/>
       </v-col>
     </v-row>
   </div>
+  <Chatbox/>
   <Footer />
-  <h2></h2>
+  
 
   <!-- <v-row>
         <v-col>
