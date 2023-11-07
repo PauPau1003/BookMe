@@ -41,6 +41,7 @@ methods:{
           <div class="section" style="background: color #4f7369;">
             <div class="container">
               <div class="row">
+                <!-- <transition name="card-slide" mode="out-in"> -->
                 <div class="col-xs-12 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300" v-for="service in services">
                   <div 
                   class="box-feature mb-4" 
@@ -58,6 +59,7 @@ methods:{
                   </div>
                   </div>
                 </div>
+              <!-- </transition> -->
                 
                 </div>
               </div>
@@ -79,7 +81,7 @@ methods:{
   margin: auto;
 }
 
-.content{
+  .content{
             background-color: #4f7369;
             border: #4f7369 1px solid;
             border-radius: 20px;
@@ -119,4 +121,13 @@ methods:{
           padding: 0;
           line-height: 0; 
         }
+      /* .card-slide-enter-active,
+      .card-slide-leave-active {
+        transition: transform 0.5s;
+      }
+
+      .card-slide-enter, .card-slide-leave-to {
+        transform: translateX(100%);
+        opacity: 0;
+      } */
 </style>

@@ -59,11 +59,11 @@ export default{
                   <!-- <a class="nav-link active text-black" aria-current="page" href="#">Home</a> -->
                 </li>
                 <li class="nav-item mx-2 ">
-                  <RouterLink to="/SPHome">Home</RouterLink>
+                  <RouterLink to="/SPHome">About</RouterLink>
                   <!-- <a class="nav-link text-black" href="#about">About</a> -->
                 </li>
                 <li class="nav-item mx-2">
-                  <RouterLink to="/SPHome">Home</RouterLink>
+                  <RouterLink to="/SPHome">Service</RouterLink>
                   <!-- <a class="nav-link text-black" href="#about">Services</a> -->
                 </li>
                 <!-- <li class="nav-item mx-2">
