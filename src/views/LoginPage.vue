@@ -159,7 +159,7 @@ label {
 
 .btn-outline-primary {
     border-color: #0DB8DE;
-    color: #0DB8DE;
+    color: #194759;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
