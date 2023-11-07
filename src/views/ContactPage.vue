@@ -48,6 +48,14 @@ export default {
       // Call AOS.refresh() to detect and apply animations to the new elements
       AOS.refresh();
     },
+    submitForm(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+
+      // Your form submission logic here, for example, sending data to a server
+
+      // Display an alert
+      alert("Form submitted successfully"); // You can use a more sophisticated alert or notification library
+    },
   },
 };
 </script>

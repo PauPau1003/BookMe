@@ -44,6 +44,10 @@
                                 <!-- Registration Form -->
                                 <form class="register" @submit.prevent="register" v-if="!loginTabActive">
                                     <div class="mb-3">
+                                    <label for="registerUsername" class="form-label">Username</label>
+                                    <input required type="email" v-model="register_form.email" class="form-control" id="registerUsername" placeholder="Enter username">
+                                    </div>
+                                    <div class="mb-3">
                                     <label for="registerEmail" class="form-label">Email address</label>
                                     <input required type="email" v-model="register_form.email" class="form-control" id="registerEmail" placeholder="Enter email">
                                     </div>
