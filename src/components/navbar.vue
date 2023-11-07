@@ -8,8 +8,8 @@
           alt="Logo"
           style="height: 40px"
       /></a>
-      <form class="d-none d-md-flex d-lg-flex" role="search">
-        <!-- Search Form -->
+      <!-- <form class="d-none d-md-flex d-lg-flex" role="search">
+
         <input
           class="formsearch form-control me-2"
           type="search"
@@ -20,7 +20,7 @@
         <button class="btn btn-outline-dark text-light" type="submit">
           Search
         </button>
-      </form>
+      </form> -->
       <!-- Toggle Button -->
       <button
         class="navbar-toggler"
