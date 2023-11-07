@@ -1,6 +1,6 @@
 <script>
 import { collection, getDocs } from "firebase/firestore";
-import {db} from "../../firebase/firebaseconfig"
+import db from "../../firebase/firebaseconfig"
 
 const querySnapshot = await getDocs(collection(db, "usersForProj"));
 
