@@ -2,7 +2,7 @@
     <div class="spnavbar">
             <spnavbar />
     </div>
-    <div class="container-fluid" style="background-color:#7EBFB3 ;border-radius: 5px;padding-bottom:10px; padding-top:25px;">
+    <div class="container-fluid" style="background-color:#4F7369 ;border-radius: 5px;padding-bottom:10px; padding-top:25px;">
         <div class="row">
             <div class="col-md-4 col-12">
                 <div class="container-fluid">

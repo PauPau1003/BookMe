@@ -3,7 +3,7 @@
 		<spnavbar />
 </div>
 
-		<div class="container-fluid" style="background-color:#7EBFB3 ;border-radius: 5px;padding-bottom:10px;">
+		<div class="container-fluid" style="background-color:#4F7369 ;border-radius: 5px;padding-bottom:10px;">
 			<div class="row mb-4">
 				<div class="col-md-6 col-12">
 					<h2 class="font-weight-bold heading mt-5" style="color: white">Your Executive Dashboard</h2>
@@ -24,24 +24,24 @@
 					<div class="col-md-3 col-5 mx-md-3 mx-3 mb-3"  data-aos="fade-up" data-aos-delay="300" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 						<h3 class="mb-3">New Sales</h3>
 						<div style="text-align: center;">
-						<h1>230</h1>
-						<h2 style="color:green; font-weight:200;">25%</h2>
+						<h1>${{ totalProductPrice }}</h1>
+						<h2 :class="salesChangeClass" style="font-weight:200;">{{ salesPercentageChange }}%</h2>
 						<p style="font-weight:100;">vs previous month</p>
 						</div>
 					</div>
 					<div class="col-md-3 col-5 mx-md-2 mx-3 mb-3"  data-aos="fade-up" data-aos-delay="500" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 							<h3 class="mb-3">Business Growth Rate</h3>
 							<div style="text-align: center;">
-								<h1>17.23%</h1>
-								<h2 style="color:green; font-weight:200;">25%</h2>
+								<h1>{{ salesPercentageChange }}%</h1>
+								<h2 :class="businessGrowthClass" style="font-weight:200;">{{ businessGrowthChange }}%</h2>
 								<p style="font-weight:100;">vs previous month</p>
 								</div>
 					</div>
 					<div class="col-md-3 col-5 mx-md-2 mx-3 mb-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 							<h3 class="mb-3">MRR</h3>
 							<div style="text-align: center;">
-								<h1>$4,596</h1>
-								<h2 style="color:green; font-weight:200;">7.8%</h2>
+								<h1>${{ totalMRR }}</h1>
+								<h2 :class="mrrChangeClass" style="font-weight:200;">{{ mrrPercentageChange }}%</h2>
 								<p style="font-weight:100;">vs previous month</p>
 								</div>
 					</div>
@@ -54,7 +54,7 @@
 				<div class="row mb-3 mx-2">
 					<div class="col-md-6 col-12 mx-md-3 mb-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 						<div>
-						<h3 class="mb-3">Business Progress</h3>
+						<h3 class="mb-3">Business Summary (This Month)</h3>
 						<div id="myBarChart"></div>
 						</div>
 					</div>
@@ -92,6 +92,11 @@ import * as Plotly from 'plotly.js-dist-min';
 		pieChart: null,
 		barChart: null,
 		lineChart:null,
+		totalProductPrice: 0,
+		totalMRR:0,
+		mrrPercentageChange:0,
+		salesPercentageChange:0,
+		businessGrowthChange:0,
       }},
 mounted() {
     AOS.init({
@@ -189,6 +194,10 @@ mounted() {
 		  const productArray = this.data_array.serviceList.productArray;
 		  this.barchartx = productArray.map((product) => product.product_name)
 		  this.barcharty = productArray.map((product) => product.pricing);
+		  this.totalProductPrice = productArray.reduce(
+        (total, product) => total + product.pricing,
+        0
+      );
 		  this.createBarChart();
 		  const mrrData = this.data_array.mrr;
 
@@ -202,7 +211,42 @@ mounted() {
       	  this.linex = mrrEntries.map((entry) => entry[0]); // Dates
       	  this.liney = mrrEntries.map((entry) => entry[1]); // Numbers
 		  this.createLineChart();
+		    // Calculate the MRR values for August 2023 and July 2023
+  const augustMRR = mrrEntries.find((entry) => entry[0] === 'August 2023');
+  const julyMRR = mrrEntries.find((entry) => entry[0] === 'July 2023');
+  const mayMRR = mrrEntries.find((entry) => entry[0] === 'May 2023');
+  const juneMRR = mrrEntries.find((entry) => entry[0] === 'June 2023');
 
+  if (augustMRR && julyMRR) {
+    const augustValue = augustMRR[1];
+    const julyValue = julyMRR[1];
+	const mayValue = mayMRR[1];
+    const juneValue = juneMRR[1];
+
+    // Calculate the difference and percentage change
+    const difference = augustValue - julyValue;
+    const percentageChange = ((difference / julyValue) * 100).toFixed(2); // You can round to 2 decimal places
+
+    // Store these values in your data
+    this.augustMRR = augustValue;
+    this.julyMRR = julyValue;
+	this.mayMRR = mayValue;
+    this.juneMRR = juneValue;
+	this.totalMRR = augustValue + julyValue + mayValue + juneValue
+    this.mrrDifference = difference;
+    this.mrrPercentageChange = percentageChange;
+  };
+
+  	const currentsales = this.totalProductPrice
+	const prevsales = this.data_array.prevmonthsales
+  	const salesdifference = currentsales - prevsales
+	const salesPercentageChange = ((salesdifference / prevsales) * 100).toFixed(2); 
+
+	this.salesPercentageChange = salesPercentageChange
+
+	const prevBusinessGrowth = this.data_array.salesPrevPercent
+	const businessGrowth = salesPercentageChange-prevBusinessGrowth
+	this.businessGrowthChange = ((businessGrowth/prevBusinessGrowth)*100).toFixed(2);
         }
       });
     },
@@ -210,10 +254,35 @@ mounted() {
   created() {
     // Leave this hook empty or use it for synchronous setup if needed
   },
+  computed: {
+  mrrChangeClass() {
+	const percentageChange = parseFloat(this.mrrPercentageChange);
+
+    return percentageChange >= 0 ? "green" : "red";
+  },
+  salesChangeClass(){
+	const salesPercentageChange =  parseFloat(this.salesPercentageChange)
+
+	return salesPercentageChange >= 0 ? "green" : "red";
+  },
+  businessGrowthClass(){
+	const businessGrowthChange =  parseFloat(this.businessGrowthChange)
+
+	return businessGrowthChange >= 0 ? "green" : "red";
+  }
+},
 };
 
 </script>
 
 <style>
+
+.green {
+  color: green; /* Set the color for positive values */
+}
+
+.red {
+  color: lightcoral; /* Set the color for negative values */
+}
 
 </style>

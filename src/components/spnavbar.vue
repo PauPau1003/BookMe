@@ -35,7 +35,7 @@
               <router-link to="/LearningAvenue" style="text-decoration: none; color:black">Learning Avenue</router-link>
             </li>
             <li class="nav-item mx-2">
-              <router-link to="/Permits&Requirements" style="text-decoration: none; color:black;">Permits/Requirements</router-link>
+              <router-link to="/Permits&Requirements" style="text-decoration: none; color:black;">Permits&Requirements</router-link>
             </li>
           </ul>
           <div
