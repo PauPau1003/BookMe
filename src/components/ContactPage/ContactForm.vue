@@ -90,6 +90,7 @@
                   type="submit"
                   value="Send Message"
                   class="btn"
+                  @click="showAlert"
                 />
               </div>
             </div>
@@ -107,7 +108,7 @@ export default {
 </script>
 
 <style>
-.icons{
-    text-align: center;
+.icons {
+  text-align: center;
 }
 </style>
