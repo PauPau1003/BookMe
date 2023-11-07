@@ -4,13 +4,13 @@ import { collection, getDocs } from "firebase/firestore";
 import {db} from "../../firebase/firebaseconfig"
 
 const querySnapshot = await getDocs(collection(db, "usersForProj"));
-
 export default{
   data(){
     return{
       services: [],
       // imageUrl: '/src/assets/Img/Tirsa/'
       filterKeyword: 'All', // Default filter category
+      filtered: [],
     }
   },
 created(){
@@ -26,13 +26,31 @@ methods:{
         console.log(serviceId)
       this.$router.push(`/service-provider/${serviceId}`);
     }
+},
+computed: {
+  filteredServices() {
+    if (this.filterKeyword === 'All') {
+      return this.services; // Display all services
+    } else {
+      // Filter services based on the filterKeyword
+      
+      for(service in this.service){
+        if(service.serviceList.serviceCategory === this.filterKeyword){
+          filtered.push(this.service.serviceCategory)
+        }
+      }
+      console.log('Filtered Services:', filtered);
+      return filtered;
+    }
+  },
 }
+
 }
 </script>
 
 <template>
 
-   <div class="container-fluid">
+  <div class="container-fluid">
         <div class="content m-3">
           <div style="text-align: center; margin: 15px; margin-bottom: 30px;">
             <h1 class="ms-5">New to buying in BookMe?</h1>
@@ -42,7 +60,7 @@ methods:{
             <div class="container">
               <div class="row">
                 <!-- <transition name="card-slide" mode="out-in"> -->
-                <div class="col-xs-12 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300" v-for="service in services">
+                <div class="col-xs-12 col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up" data-aos-delay="300" v-for="service in filteredServices">
                   <div 
                   class="box-feature mb-4" 
                   style="height: 550px;"
