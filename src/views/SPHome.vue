@@ -60,7 +60,7 @@
                     <div class="row mb-2">
                         <div class="col-md-4 col-12 mb-4" v-for="products in data_array.serviceList.productArray">
                             <div class="card">
-                                <img :src='products.product_image' class="card-img-top">
+                                <img :src="'../../src/assets/Images/TeckXuan/' + products.product_image" class="card-img-top">
                                 <div class="card-body">
                                   <h5 class="card-title">{{ products.product_name }}</h5>
                                   <p class="card-text">{{ products.product_description }}</p>
