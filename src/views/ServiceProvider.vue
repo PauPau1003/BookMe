@@ -1,34 +1,28 @@
-<script >
-import ServiceProviderProfile from '../components/serviceprovider/ServiceProviderProfile.vue';
-import Services from '../components/serviceprovider/Services.vue';
-import Reviews from '../components/serviceprovider/Reviews.vue';
-import Scheduling from '../components/serviceprovider/Scheduling.vue';
-import Payment from '../components/serviceprovider/Payment.vue';
+<script>
+import ServiceProviderProfile from "../components/ServiceProvider/ServiceProviderProfile.vue";
+import Services from "../components/ServiceProvider/Services.vue";
+import Reviews from "../components/ServiceProvider/Reviews.vue";
+import Scheduling from "../components/ServiceProvider/Scheduling.vue";
+import Payment from "../components/ServiceProvider/Payment.vue";
+import Footer from "../components/Footer.vue";
+import Navbar from "../components/navbar.vue";
+
+import { collection, getDocs, query,where } from "firebase/firestore";
+import {db} from "../firebase/firebaseconfig"
 
 
-import data from "../firebase/data.json";
-// const redirectToStripe = async () => {
-// isLoading.value = true;
-
-// const response = await fetch("/api/create-checkout-session", {
-//   method: "POST",
-// });
-// const { url } = await response.json();
-
-// window.location.href = url;
-// };
 export default {
-  
   data() {
     return {
       serviceId: 0,
       serviceDetails: {},
-      name: '',
-      username: '',
-      profileImage: '',
+      name: "",
+      username: "",
+      profileImage: "",
       serviceImage: [],
       serviceDescription: '',
       calendlyurl: '',
+      productArray: [],
     };
   },
   // computed: {
@@ -41,51 +35,57 @@ export default {
   // },
   async created() {
     // Fetch service details based on the route parameter (serviceId)
-     this.serviceId = this.$route.params.id;
+    //  this.serviceId = this.$route.params.id;
     // Fetch service details from your data source (e.g., JSON data)
     // Assign the service details to this.serviceDetails
-    for (let i = 0; i < data.length;i++){
-      console.log(data[i])
-      if (data[i].service.serviceId == this.serviceId){
-        this.serviceDetails=data[i]
-        // For service provider profile
-        this.name = this.serviceDetails.user.name
-        this.username = this.serviceDetails.user.username
-        this.profileImage = this.serviceDetails.user.profileImage
+    // for (let i = 0; i < data.length;i++){
+    //   console.log(data[i])
+    //   if (data[i].service.serviceId == this.serviceId){
+    //     this.serviceDetails=data[i]
+    //     // For service provider profile
+    //     this.name = this.serviceDetails.user.name
+    //     this.username = this.serviceDetails.user.username
+    //     this.profileImage = this.serviceDetails.user.profileImage
         
-        // For about me
-        this.serviceImage = this.serviceDetails.service.serviceImage
-        this.serviceDescription = this.serviceDetails.service.serviceDescription
+    //     // For about me
+    //     this.serviceImage = this.serviceDetails.service.serviceImage
+    //     this.serviceDescription = this.serviceDetails.service.serviceDescription
 
-        //For Scheduling
-        this.calendlyurl = this.serviceDetails.service.calendlyURL
-        console.log(this.calendlyurl)
+    //     //For Scheduling
+    //     this.calendlyurl = this.serviceDetails.service.calendlyURL
+    //     console.log(this.calendlyurl)
         
-      }
-    }
-
+    //   }
+    // }
+    // const querySnapshot = await getDocs(collection(db, "usersForProj"));
+    const collectionRef = collection(db, "usersForProj");
+    const q = query(collectionRef, where('serviceList.serviceId', "==",this.$route.params.id ));
+    const querySnapshot = await getDocs(q);
+querySnapshot.forEach((doc) => {
+  // doc.data() is never undefined for query doc snapshots
+  console.log(doc.id, " => ", doc.data());
+  const data = doc.data()
+  this.serviceDescription = data.serviceList.serviceDescription
+  this.name = data.name
+  this.username= data.username
+  this.serviceTitle = data.serviceList.serviceTitle
+  this.calendlyurl = data.calendlyURL
+  console.log(this.calendlyurl)
+  this.productArray = data.serviceList.productArray
+});
   },
   
-  methods: {
-    test(serviceId) {
-      for (user in data){
-        console.log(user)
-      }
-  }
-},
-components: {
+components: {Navbar,
     ServiceProviderProfile,
     Services,
     Reviews,
     Scheduling,
-    Payment
+    Payment,
+    Footer,
   },
 };
-
-
-
 </script>
-<template >
+<template>
   <!-- <SearchBar/>
   <Categories/>
   <Filter/>
@@ -95,11 +95,14 @@ components: {
   <!-- <button v-on:click="test(serviceId)">
     Test
   </button> -->
-  <v-breadcrumbs :items="['Home', 'Services', 'ServiceProvider']"></v-breadcrumbs>
+  <Navbar />
+  <v-breadcrumbs
+    :items="['Home', 'Services', 'ServiceProvider']"
+  ></v-breadcrumbs>
   <div>
     <v-row>
       <v-col cols="12" md="6">
-        <ServiceProviderProfile :name="name" :username="username" :profileImage="profileImage" />
+        <ServiceProviderProfile :name="name" :username="username" :profileImage="profileImage" :serviceTitle="serviceTitle" />
         <Services :serviceDescription="serviceDescription" :serviceImage="serviceImage" />
       </v-col>
       <v-col cols="12" md="6">
@@ -111,40 +114,14 @@ components: {
         <Reviews />
       </v-col>
       <v-col cols="12" md="6">
-        <Payment />
+        <Payment :productArray="productArray"/>
       </v-col>
     </v-row>
   </div>
-  
-        
-     
-        
-            
-    
-       
-    
-          <h2 >
+  <Footer />
+  <h2></h2>
 
-          </h2>
-       
-        
-        
-          
-        
-        
-          
-       
-        
-     
-           
-      
-        
-             
-           
-            
-       
-    
-      <!-- <v-row>
+  <!-- <v-row>
         <v-col>
         <ServiceProviderProfile/>
       </v-col>
@@ -161,11 +138,10 @@ components: {
       </v-col>
       </v-row>
       <Reviews/> -->
-           
-  </template>
- 
-  <style scoped>
-  /* .service-provider-profile {
+</template>
+
+<style scoped>
+/* .service-provider-profile {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -182,23 +158,22 @@ components: {
     margin-left: 20px; 
   }
    */
-   .scheduling {
-    /* Set a specific width and height for the embedded widget */
-    width: 100%;
-     /* Adjust this as needed */
-    margin: 0 auto; /* Center align the widget horizontally */
+.scheduling {
+  /* Set a specific width and height for the embedded widget */
+  width: 100%;
+  /* Adjust this as needed */
+  margin: 0 auto; /* Center align the widget horizontally */
 
-    /* You can add more styling as needed to customize the appearance */
-    background-color: #f7f7f7;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  #payment{
-    margin-left: 20pxz;
-  }
-   
-   
-  </style>
-  
-   
+  /* You can add more styling as needed to customize the appearance */
+  background-color: #4F7369;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#payment {
+  margin-left: 20pxz;
+}
+
+
+</style>

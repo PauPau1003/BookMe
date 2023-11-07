@@ -26,10 +26,10 @@
           </button>
         </div>
 
-        <div class="col-12">
+        <div class="col-12 pb-3">
           <div
             id="carouselExampleAutoplaying"
-            class="carousel slide"
+            class="carousel slide px-2"
             data-bs-ride="carousel"
           >
             <div class="carousel-inner">
@@ -40,7 +40,7 @@
                       <img
                         class="img-fluid"
                         alt="100%x280"
-                        src="images/photo_1.jpg"
+                        src="../../assets/images/TeckXuan/photo_1.jpg"
                       />
                       <div class="card-body">
                         <h4 class="card-title">Photography</h4>
@@ -54,7 +54,7 @@
                       <img
                         class="img-fluid"
                         alt="100%x280"
-                        src="images/photo_2.jpg"
+                        src="../../assets/images/TeckXuan/photo_2.jpg"
                       />
                       <div class="card-body">
                         <h4 class="card-title">Make-up</h4>
@@ -68,7 +68,7 @@
                       <img
                         class="img-fluid"
                         alt="100%x280"
-                        src="images/photo_3.jpg"
+                        src="../../assets/images/TeckXuan/photo_3.jpg"
                       />
                       <div class="card-body">
                         <h4 class="card-title">Manicure</h4>
@@ -86,7 +86,7 @@
                       <img
                         class="img-fluid"
                         alt="100%x280"
-                        src="images/photo_4.jpg"
+                        src="../../assets/images/TeckXuan/photo_4.jpg"
                       />
                       <div class="card-body">
                         <h4 class="card-title">Massage</h4>
@@ -100,7 +100,7 @@
                       <img
                         class="img-fluid"
                         alt="100%x280"
-                        src="images/photo_5.jpg"
+                        src="../../assets/images/TeckXuan/photo_5.jpg"
                       />
                       <div class="card-body">
                         <h4 class="card-title">Hairdressing</h4>
@@ -114,7 +114,7 @@
                       <img
                         class="img-fluid"
                         alt="100%x280"
-                        src="images/photo_6.jpg"
+                        src="../../assets/images/TeckXuan/photo_6.jpg"
                       />
                       <div class="card-body">
                         <h4 class="card-title">Plumbing</h4>
@@ -132,7 +132,7 @@
                       <img
                         class="img-fluid"
                         alt="100%x280"
-                        src="images/photo_7.jpg"
+                        src="../../assets/images/TeckXuan/photo_7.jpg"
                       />
                       <div class="card-body">
                         <h4 class="card-title">Electricians</h4>
@@ -146,7 +146,7 @@
                       <img
                         class="img-fluid"
                         alt="100%x280"
-                        src="images/photo_8.jpg"
+                        src="../../assets/images/TeckXuan/photo_8.jpg"
                       />
                       <div class="card-body">
                         <h4 class="card-title">Accessories and crafts</h4>
@@ -160,7 +160,7 @@
                       <img
                         class="img-fluid"
                         alt="100%x280"
-                        src="images/photo_9.jpg"
+                        src="../../assets/images/TeckXuan/photo_9.jpg"
                       />
                       <div class="card-body">
                         <h4 class="card-title">Bakes</h4>
@@ -185,7 +185,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .cardscarousel .carousel-control-prev,
 .cardscarousel .carousel-control-next {
   position: relative;
@@ -209,5 +209,18 @@ export default {
 
 .cardwrapper > img {
   max-height: 768px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardwrapper:hover > img {
+  transform: scale(1.05); /* Scale the image slightly when hovering */
+}
+
+.carousel-item {
+  transition: transform 0.3s ease-in-out; /* Add a transition */
+}
+
+.carousel-item:hover {
+  transform: scale(1.01); /* Scale the image slightly when hovering */
 }
 </style>

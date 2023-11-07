@@ -1,9 +1,4 @@
-Tirsa Christina, [29/10/2023 7:02 pm]
-<script>
-export default{
-    name: 'Navbar',
-}
-</script>
+
 
 <template>
    <nav class="navbar navbar-expand-lg navbar-dark">
@@ -86,7 +81,7 @@ export default{
       </nav>
 </template>
 
-<style>
+<style >
 body{
 
 background-blend-mode: multiply;
@@ -103,9 +98,6 @@ margin: 0;
 }
 } 
 
-.navbar{
-margin-top: 20px;
-}
 .signupBut {
 background-color: rgb(244, 241, 241);
 border: 1px ;
