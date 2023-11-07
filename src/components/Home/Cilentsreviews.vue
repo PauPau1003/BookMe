@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="person-wrap col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
+        <div class="person-wrap col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
           <div
             class="h-100 person"
             data-aos="zoom-in-up"
@@ -37,7 +37,7 @@
           </div>
         </div>
 
-        <div class="person-wrap col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
+        <div class="person-wrap col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
           <div
             class="h-100 person"
             data-aos="zoom-in-up"
@@ -63,7 +63,7 @@
           </div>
         </div>
 
-        <div class="person-wrap col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
+        <div class="person-wrap col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
           <div
             class="h-100 person"
             data-aos="zoom-in-up"

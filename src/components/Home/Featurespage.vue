@@ -69,3 +69,13 @@ export default {
   name: "Featurespage",
 };
 </script>
+
+<style scoped>
+.btn {
+  transition: transform 0.3s ease-in-out; /* Add a transition */
+}
+
+.btn:hover {
+  transform: scale(1.2); /* Scale the image slightly when hovering */
+}
+</style>

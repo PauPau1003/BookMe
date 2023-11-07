@@ -29,7 +29,7 @@
         <div class="col-12 pb-3">
           <div
             id="carouselExampleAutoplaying"
-            class="carousel slide"
+            class="carousel slide px-2"
             data-bs-ride="carousel"
           >
             <div class="carousel-inner">
@@ -221,6 +221,6 @@ export default {
 }
 
 .carousel-item:hover {
-  transform: scale(1.04); /* Scale the image slightly when hovering */
+  transform: scale(1.01); /* Scale the image slightly when hovering */
 }
 </style>
