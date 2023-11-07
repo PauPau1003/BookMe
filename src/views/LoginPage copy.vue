@@ -75,22 +75,93 @@ setup() {
     const register_form = ref({});
     const store = useStore();
     const loginTabActive = ref(true);
-
     const login = () => {
     store.dispatch('login', login_form.value);
     };
-
     const register = () => {
     store.dispatch('register', register_form.value);
     };
-
     const activateRegisterTab = () => {
     loginTabActive.value = false;
     };
-
     const activateLoginTab = () => {
     loginTabActive.value = true;
     };
+
+    //for animation
+    const emailLabel = ref(document.querySelector("#loginEmailLabel"));
+    const email = ref(document.querySelector("#loginEmail"));
+    const passwordLabel = ref(document.querySelector("#loginPasswordLabel"));
+    const password = ref(document.querySelector("#loginPassword"));
+    const showPasswordCheck = ref(document.querySelector("#showPasswordCheck"));
+    const showPasswordToggle = ref(document.querySelector("#showPasswordToggle"));
+    const mySVG = ref(document.querySelector(".svgContainer"));
+    const twoFingers = ref(document.querySelector(".twoFingers"));
+    const armL = ref(document.querySelector(".armL"));
+    const armR = ref(document.querySelector(".armR"));
+    const eyeL = ref(document.querySelector(".eyeL"));
+    const eyeR = ref(document.querySelector(".eyeR"));
+    const nose = ref(document.querySelector(".nose"));
+    const mouth = ref(document.querySelector(".mouth"));
+    const mouthBG = ref(document.querySelector(".mouthBG"));
+    const mouthSmallBG = ref(document.querySelector(".mouthSmallBG"));
+    const mouthMediumBG = ref(document.querySelector(".mouthMediumBG"));
+    const mouthLargeBG = ref(document.querySelector(".mouthLargeBG"));
+    const mouthMaskPath = ref(document.querySelector("#mouthMaskPath"));
+    const mouthOutline = ref(document.querySelector(".mouthOutline"));
+    const tooth = ref(document.querySelector(".tooth"));
+    const tongue = ref(document.querySelector(".tongue"));
+    const chin = ref(document.querySelector(".chin"));
+    const face = ref(document.querySelector(".face"));
+    const eyebrow = ref(document.querySelector(".eyebrow"));
+    const outerEarL = ref(document.querySelector(".earL .outerEar"));
+    const outerEarR = ref(document.querySelector(".earR .outerEar"));
+    const earHairL = ref(document.querySelector(".earL .earHair"));
+    const earHairR = ref(document.querySelector(".earR .earHair"));
+    const hair = ref(document.querySelector(".hair"));
+    const bodyBG = ref(document.querySelector(".bodyBGnormal"));
+    const bodyBGchanged = ref(document.querySelector(".bodyBGchanged"));
+    const activeElement = ref(null);
+    const curEmailIndex = ref(null);
+    const screenCenter = ref(null);
+    const svgCoords = ref(null);
+    const emailCoords = ref(null);
+    const emailScrollMax = ref(null);
+    const chinMin = ref(0.5);
+    const dFromC = ref(null);
+    const mouthStatus = ref("small");
+    const blinking = ref(null);
+    const eyeScale = ref(1);
+    const eyesCovered = ref(false);
+    const showPasswordClicked = ref(false);
+    const eyeLCoords = ref(null);
+    const eyeRCoords = ref(null);
+    const noseCoords = ref(null);
+    const mouthCoords = ref(null);
+    const eyeLAngle = ref(null);
+    const eyeLX = ref(null);
+    const eyeLY = ref(null);
+    const eyeRAngle = ref(null);
+    const eyeRX = ref(null);
+    const eyeRY = ref(null);
+    const noseAngle = ref(null);
+    const noseX = ref(null);
+    const noseY = ref(null);
+    const mouthAngle = ref(null);
+    const mouthX = ref(null);
+    const mouthY = ref(null);
+    const mouthR = ref(null);
+    const chinX = ref(null);
+    const chinY = ref(null);
+    const chinS = ref(null);
+    const faceX = ref(null);
+    const faceY = ref(null);
+    const faceSkew = ref(null);
+    const eyebrowSkew = ref(null);
+    const outerEarX = ref(null);
+    const outerEarY = ref(null);
+    const hairX = ref(null);
+    const hairS = ref(null);
 
     return {
     login_form,
@@ -99,8 +170,114 @@ setup() {
     register,
     loginTabActive,
     activateRegisterTab,
-    activateLoginTab
+    activateLoginTab,
+
+    //for animation
+    emailLabel,
+    email,
+    passwordLabel,
+    password,
+    showPasswordCheck,
+    showPasswordToggle,
+    mySVG,
+    twoFingers,
+    armL,
+    armR,
+    eyeL,
+    eyeR,
+    nose,
+    mouth,
+    mouthBG,
+    mouthSmallBG,
+    mouthMediumBG,
+    mouthLargeBG,
+    mouthMaskPath,
+    mouthOutline,
+    tooth,
+    tongue,
+    chin,
+    face,
+    eyebrow,
+    outerEarL,
+    outerEarR,
+    earHairL,
+    earHairR,
+    hair,
+    bodyBG,
+    bodyBGchanged,
+    activeElement,
+    curEmailIndex,
+    screenCenter,
+    svgCoords,
+    emailCoords,
+    emailScrollMax,
+    chinMin,
+    dFromC,
+    mouthStatus,
+    blinking,
+    eyeScale,
+    eyesCovered,
+    showPasswordClicked,
+    eyeLCoords,
+    eyeRCoords,
+    noseCoords,
+    mouthCoords,
+    eyeLAngle,
+    eyeLX,
+    eyeLY,
+    eyeRAngle,
+    eyeRX,
+    eyeRY,
+    noseAngle,
+    noseX,
+    noseY,
+    mouthAngle,
+    mouthX,
+    mouthY,
+    mouthR,
+    chinX,
+    chinY,
+    chinS,
+    faceX,
+    faceY,
+    faceSkew,
+    eyebrowSkew,
+    outerEarX,
+    outerEarY,
+    hairX,
+    hairS,
     };
+},
+
+methods: {
+    calculateFaceMove(e) {
+      var carPos = this.email.selectionEnd;
+      var div = document.createElement("div");
+      var span = document.createElement("span");
+      var copyStyle = getComputedStyle(this.email);
+      var caretCoords = {};
+      if (carPos == null || carPos == 0) {
+        // if browser doesn't support 'selectionEnd' property on input[type="email"], use 'value.length' property instead
+        carPos = this.email.value.length;
+      }
+      [].forEach.call(copyStyle, function (prop) {
+        div.style[prop] = copyStyle[prop];
+      });
+      div.style.position = "absolute";
+      document.body.appendChild(div);
+      div.textContent = this.email.value.substr(0, carPos);
+      span.textContent = this.email.value.substr(carPos) || ".";
+      div.appendChild(span);
+
+      if (this.email.scrollWidth <= this.emailScrollMax) {
+        caretCoords = this.getPosition(span);
+        this.dFromC = this.screenCenter - (caretCoords.x + this.emailCoords.x);
+        this.eyeLAngle = this.getAngle(
+          this.eyeLCoords.x,
+          this.eyeLCoords.y,
+          this.emailCoords.x + caretCoords.x,
+          this.emailCoords.y + 25
+        );
 }
 };
 </script>
