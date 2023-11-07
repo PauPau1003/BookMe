@@ -99,6 +99,19 @@
 <script>
 export default {
   name: "ContactForm",
+  methods: {
+    submitForm(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+
+      // Your form submission logic here, for example, sending data to a server
+
+      // Display an alert after form submission
+      alert("Form submitted successfully");
+
+      // Optionally, reset the form or perform other actions as needed
+      // For example, this.$refs.form.reset(); // Reset the form fields
+    },
+  },
 };
 </script>
 
