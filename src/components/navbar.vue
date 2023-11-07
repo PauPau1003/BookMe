@@ -85,7 +85,7 @@
             <li class="nav-item mx-2">
               <router-link
               to="/SPHome"
-              style="text-decoration: none; color: black"
+              style="text-decoration: none; color: lightcoral"
             >
               Switch to Seller
             </router-link>
