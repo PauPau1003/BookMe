@@ -96,6 +96,16 @@ const router = createRouter({
       name: 'test',
       component: () => import('../firebase/test.vue')
     },
+    {
+      path: '/PaymentFailed',
+      name: 'PaymentFailed',
+      component: () => import('../views/PaymentFailed.vue')
+    },
+    {
+      path: '/PaymentSuccess',
+      name: 'PaymentSuccess',
+      component: () => import('../views/PaymentSucess.vue')
+    }
     
   ]
 })
