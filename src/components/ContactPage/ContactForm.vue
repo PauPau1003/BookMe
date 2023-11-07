@@ -55,7 +55,7 @@
         </div>
 
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-          <form action="#">
+          <form @submit="submitForm">
             <div class="row">
               <div class="col-6 mb-3">
                 <input
@@ -86,11 +86,7 @@
               </div>
 
               <div class="col-12">
-                <input
-                  type="submit"
-                  value="Send Message"
-                  class="btn"
-                />
+                <input type="submit" value="Send Message" class="btn" />
               </div>
             </div>
           </form>
@@ -107,7 +103,7 @@ export default {
 </script>
 
 <style>
-.icons{
-    text-align: center;
+.icons {
+  text-align: center;
 }
 </style>
