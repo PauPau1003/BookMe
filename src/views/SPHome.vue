@@ -10,7 +10,7 @@
                     <div class="row mb-5"> 
                       <div class="col-12">
                         <div class="card">
-                          <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 60px;width:60px; border-radius:25px;margin:auto; margin-top:20px">
+                          <img src="../../src/assets/Images/person_1-min.jpg" class="card-img-top" style="height: 60px;width:60px; border-radius:25px;margin:auto; margin-top:20px">
                           <div class="card-body">
                           <h5 class="card-title" style="text-align: center;color:#194759;">{{ data_array.name }}</h5>
                           <p class="card-text" style="text-align: center;color: #7EBFB3;">
@@ -21,10 +21,10 @@
                           </p>
                           <hr>
                           <p class="card-text">
-                            <img src="../../src/assets/Img/Zan/location_marker.png" style="height:20px ;width:20px; margin: 5px;"> Location : {{ data_array.location }}<br><br>
-                            <img src="../../src/assets/Img/Zan/user.png" style="height:20px ;width:20px; margin: 5px;"> Member Since : {{ data_array.creationdate }}<br><br>
-                            <img src="../../src/assets/Img/Zan/clock.png" style="height:20px ;width:20px; margin: 5px;"> Avg. Response Time : {{ data_array.responsetime }} Hrs.<br><br>
-                            <img src="../../src/assets/Img/Zan/acquisition.png" style="height:20px ;width:20px; margin: 5px;"> Recent Sale(s) : {{ data_array.recentsales }} Day Ago</p>                              
+                            <img src="../../src/assets/Images/Zan/" style="height:20px ;width:20px; margin: 5px;"> Location : {{ data_array.location }}<br><br>
+                            <img src="../../src/assets/Images/Zan/user.png" style="height:20px ;width:20px; margin: 5px;"> Member Since : {{ data_array.creationdate }}<br><br>
+                            <img src="../../src/assets/Images/Zan/clock.png" style="height:20px ;width:20px; margin: 5px;"> Avg. Response Time : {{ data_array.responsetime }} Hrs.<br><br>
+                            <img src="../../src/assets/Images/Zan/acquisition.png" style="height:20px ;width:20px; margin: 5px;"> Recent Sale(s) : {{ data_array.recentsales }} Day Ago</p>                              
                             </div>
                           </div>
     
@@ -37,7 +37,7 @@
                                   <h5 class="card-title">Successfully Completed Courses</h5>
                                   <br>
                                   <div v-for="courses in data_array.Courses">
-                                  <p class="card-text" style="font-weight: bold;"><img :src="'../../src/assets/Img/Zan/' + courses.cimg" style="height:30px ;width:30px; margin: 5px; display: inline;">{{ courses.cname }}</p><br>    
+                                  <p class="card-text" style="font-weight: bold;"><img :src="'../../src/assets/Images/Zan/' + courses.cimg" style="height:30px ;width:30px; margin: 5px; display: inline;">{{ courses.cname }}</p><br>    
                                   </div>
                                 </div>
                               </div>
@@ -60,7 +60,7 @@
                     <div class="row mb-2">
                         <div class="col-md-4 col-12 mb-4" v-for="products in data_array.serviceList.productArray">
                             <div class="card">
-                                <img :src='products.product_image' class="card-img-top">
+                                <img :src="'../../src/assets/Images/Zan/' + products.product_image" class="card-img-top">
                                 <div class="card-body">
                                   <h5 class="card-title">{{ products.product_name }}</h5>
                                   <p class="card-text">{{ products.product_description }}</p>
@@ -78,7 +78,7 @@
                           <div class="carousel-item" v-for="(reviewsSet, index) in reviewsSets" :key="index" :class="{ active: index === 0 }">
                             <div class="card-group">
                               <div class="card" v-for="(review, reviewIndex) in reviewsSet" :key="reviewIndex">
-                                <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
+                                <img src="../../src/assets/Images/Zan/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
                                 <div class="card-body">
                                   <h5 class="card-title" style="text-align: center;">{{ review.reviewer }}</h5>
                                   <p class="card-text" style="padding-bottom:30px">{{ review.review }}</p>
