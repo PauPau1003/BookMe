@@ -66,7 +66,7 @@
               </div>
               <div class="col-6 mb-3">
                 <input
-                  type="email"
+                  type="emali"
                   class="form-control"
                   placeholder="Your Email"
                 />
@@ -89,7 +89,7 @@
                 <input
                   type="submit"
                   value="Send Message"
-                  class="btn btn-primary"
+                  class="btn"
                 />
               </div>
             </div>

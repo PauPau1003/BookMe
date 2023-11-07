@@ -42,7 +42,6 @@ const router = createRouter({
       component: () => import("../views/LoginPage.vue"),
     },
 
-
     {
       path: "/AboutPage",
       name: "AboutPage",
@@ -54,7 +53,6 @@ const router = createRouter({
       name: "ContactPage",
       component: () => import("../views/ContactPage.vue"),
     },
-
 
     {
       path: "/Searchpage",
@@ -88,13 +86,23 @@ const router = createRouter({
       component: () => import("../views/Permits&Requirements.vue"),
     },
     {
-      path: '/test',
-      name: 'test',
-      component: () => import('../firebase/test.vue')
+      path: "/test",
+      name: "test",
+      component: () => import("../firebase/test.vue"),
     },
-    
-  ]
-})
+  ],
+
+  // For links in the footer to be scrolled to the top
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      // If the route has a hash (e.g., #section), scroll to the element with that ID
+      return { el: to.hash, behavior: "smooth" };
+    } else {
+      // Scroll to the top of the page
+      return { top: 0,behavior: "smooth" };
+    }
+  },
+});
 
 router.beforeEach((to, from, next) => {
   if (to.path === "/loginPage" && auth.currentUser) {

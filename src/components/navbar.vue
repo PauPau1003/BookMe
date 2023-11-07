@@ -60,18 +60,19 @@
                 >Home</router-link
               >
             </li>
-            <li class="nav-item mx-2">
-              <router-link
-                to="/AboutPage"
-                style="text-decoration: none; color: black"
-                >About</router-link
-              >
-            </li>
+
             <li class="nav-item mx-2 nav">
               <router-link
                 to="/Searchpage"
                 style="text-decoration: none; color: black"
                 >Services</router-link
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <router-link
+                to="/AboutPage"
+                style="text-decoration: none; color: black"
+                >About</router-link
               >
             </li>
             <li class="nav-item mx-2">

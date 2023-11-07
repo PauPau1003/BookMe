@@ -1,17 +1,17 @@
 <template>
-  <div class="section mt-5">
+  <div class="container-fluid section pt-5 pb-5">
     <div class="row justify-content-evenly mb-5 mx-0">
       <div class="col-lg-7 mb-5 mb-lg-0">
         <div data-aos="fade-up" data-aos-duration="1000">
           <img
             src="../../assets/images/TeckXuan/customers.jpg"
             alt="Image"
-            class="img-fluid  max-img"
+            class="img-fluid max-img"
           />
         </div>
       </div>
       <div class="col-lg-4 ps-3">
-        <div class="fw-bolder mb-5 fst-italic">
+        <div class="fw-bolder mb-5 pb-2 fst-italic">
           <h1 data-aos="fade-up" data-aos-duration="1000">Customers</h1>
         </div>
         <div
@@ -75,10 +75,4 @@ export default {
 };
 </script>
 
-<style>
-h2:hover {
-  color: gray;
-}
-
-</style>
-
+<style scoped></style>

@@ -77,12 +77,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default {
-  data() {
-    return {
-      paymentSuccessDialog: false,
-      paymentUnsuccessfulDialog: false,
-    };
-  },
   components: {
     Navbar,
     FirstImage,
@@ -95,13 +89,25 @@ export default {
 
   mounted() {
     AOS.init({
-      //   offset: 100, // Adjust this value as needed
-      //   duration: 1000, // Animation duration in milliseconds
       easing: "ease", // Animation easing function
       // once: true, // Whether the animation should only occur once
     });
+    AOS.refresh();
   },
+
+  data() {
+    return {
+      paymentSuccessDialog: false,
+      paymentUnsuccessfulDialog: false,
+    };
+  },
+
   methods: {
+    updateContentDynamically() {
+      // Add new elements to the DOM dynamically
+      // Call AOS.refresh() to detect and apply animations to the new elements
+      AOS.refresh();
+    },
     showPaymentSuccessModal() {
       this.paymentSuccessDialog = true;
     },

@@ -14,7 +14,8 @@
           <div
             class="h-100 person"
             data-aos="zoom-in-up"
-            data-aos-delay="400"
+            data-aos-delay="200"
+            data-aos-offset ="100"
             style="text-align: center"
           >
             <img
@@ -40,7 +41,8 @@
           <div
             class="h-100 person"
             data-aos="zoom-in-up"
-            data-aos-delay="450"
+            data-aos-delay="250"
+            data-aos-offset ="100"
             style="text-align: center"
           >
             <img
@@ -65,7 +67,8 @@
           <div
             class="h-100 person"
             data-aos="zoom-in-up"
-            data-aos-delay="500"
+            data-aos-delay="300"
+            data-aos-offset ="100"
             style="text-align: center"
           >
             <img
@@ -92,7 +95,8 @@
     <div
       class="row justify-content-center footer-cta"
       data-aos="fade-up"
-      data-aos-delay="200"
+      data-aos-delay="100"
+      data-aos-offset ="100"
     >
       <div class="col-lg-7 mx-auto text-center">
         <h2 class="mb-4">
@@ -110,6 +114,16 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+.btn {
+  transition: transform 0.3s ease-in-out; /* Add a transition */
+}
+
+.btn:hover {
+  transform: scale(1.2); /* Scale the image slightly when hovering */
+}
+</style>
 <script>
 export default {
   name: "Cilentsreview",

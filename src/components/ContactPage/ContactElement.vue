@@ -8,8 +8,8 @@
           <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
             <ol class="breadcrumb text-center justify-content-center">
               <li class="breadcrumb-item">
-                <a style="color: white; text-decoration: none" href="index.html"
-                  >Home</a
+                <router-link to="/" style="text-decoration: none; color: white"
+                  >Home</router-link
                 >
               </li>
               <li
@@ -24,7 +24,6 @@
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -55,5 +54,4 @@ export default {
   height: 100%;
   z-index: -1; /* Place it behind the content */
 }
-
 </style>

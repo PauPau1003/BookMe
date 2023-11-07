@@ -1,10 +1,11 @@
 <template>
-  <div class="features container-fluid mt-5 mb-5">
+  <div class="features container-fluid pt-5 pb-5">
     <div class="row">
       <div class="col-md-4">
         <div
           data-aos="flip-left"
           data-aos-delay="200"
+          data-aos-offset="100"
           class="card custom-card1 m-3"
           style="max-width: none"
         >
@@ -23,6 +24,7 @@
         <div
           data-aos="flip-left"
           data-aos-delay="200"
+          data-aos-offset="100"
           class="card custom-card1 m-3"
           style="max-width: none"
         >
@@ -41,6 +43,7 @@
         <div
           data-aos="flip-left"
           data-aos-delay="200"
+          data-aos-offset="100"
           class="card custom-card1 m-3"
           style="max-width: none"
         >
