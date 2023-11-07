@@ -17,14 +17,14 @@
                             Customer is #1 Priority!
                           </p>
                             <p style="text-align: center;">
-                            {{  }} <small class="text-muted">({{ (data_array.reviews).length }} Reviews)</small>
+                            {{ averageRating }} <small class="text-muted">({{ (data_array.reviews).length }} Reviews)</small>
                           </p>
                           <hr>
                           <p class="card-text">
-                            <img src="../../src/assets/Img/location_marker.png" style="height:20px ;width:20px; margin: 5px;"> Location : {{ data_array.location }}<br><br>
-                            <img src="../../src/assets/Img/user.png" style="height:20px ;width:20px; margin: 5px;"> Member Since : {{ data_array.creationdate }}<br><br>
-                            <img src="../../src/assets/Img/clock.png" style="height:20px ;width:20px; margin: 5px;"> Avg. Response Time : {{ data_array.responsetime }} Hrs.<br><br>
-                            <img src="../../src/assets/Img/acquisition.png" style="height:20px ;width:20px; margin: 5px;"> Recent Sale(s) : {{ data_array.recentsales }} Day Ago</p>                              
+                            <img src="../../src/assets/Img/Zan/location_marker.png" style="height:20px ;width:20px; margin: 5px;"> Location : {{ data_array.location }}<br><br>
+                            <img src="../../src/assets/Img/Zan/user.png" style="height:20px ;width:20px; margin: 5px;"> Member Since : {{ data_array.creationdate }}<br><br>
+                            <img src="../../src/assets/Img/Zan/clock.png" style="height:20px ;width:20px; margin: 5px;"> Avg. Response Time : {{ data_array.responsetime }} Hrs.<br><br>
+                            <img src="../../src/assets/Img/Zan/acquisition.png" style="height:20px ;width:20px; margin: 5px;"> Recent Sale(s) : {{ data_array.recentsales }} Day Ago</p>                              
                             </div>
                           </div>
     
@@ -37,7 +37,7 @@
                                   <h5 class="card-title">Successfully Completed Courses</h5>
                                   <br>
                                   <div v-for="courses in data_array.Courses">
-                                  <p class="card-text" style="font-weight: bold;"><img :src='courses.cimg' style="height:30px ;width:30px; margin: 5px; display: inline;">{{ courses.cname }}</p><br>    
+                                  <p class="card-text" style="font-weight: bold;"><img :src="'../../src/assets/Img/Zan/' + courses.cimg" style="height:30px ;width:30px; margin: 5px; display: inline;">{{ courses.cname }}</p><br>    
                                   </div>
                                 </div>
                               </div>
@@ -77,115 +77,29 @@
                     <div class="row mb-2">
                       <h2 style="color: white;">Customer Reviews</h2>
                       <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
                         <div class="carousel-inner">
-                          <div class="carousel-item active" data-bs-interval="10000">
-                           <div class="card-group">
-                            <div class="card">
-                              <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
-                             <div class="card-body">
-                             <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
-                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
-                             <p class="card-text"><small class="text-muted">5.0/5.0 Last updated 3 mins ago</small></p>
+                          <div class="carousel-item" v-for="(reviewsSet, index) in reviewsSets" :key="index" :class="{ active: index === 0 }">
+                            <div class="card-group">
+                              <div class="card" v-for="(review, reviewIndex) in reviewsSet" :key="reviewIndex">
+                                <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
+                                <div class="card-body">
+                                  <h5 class="card-title" style="text-align: center;">{{ review.reviewer }}</h5>
+                                  <p class="card-text" style="padding-bottom:30px">{{ review.review }}</p>
+                                  <div class="rating-container">
+                                  <p class="card-text"><small class="text-muted">{{ review.rating }}/5.0 <br><v-rating half-increments readonly :length="5" :size="30" :model-value="review.rating" color="warning"/></small></p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="card">
-                          <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
-                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
-                             <p class="card-text"><small class="text-muted">5.0/5.0 Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
-                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
-                             <p class="card-text"><small class="text-muted">5.0/5.0 Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
-                      </div>
-                      
-                          </div>
-                          <div class="carousel-item">
-                      <div class="card-group">
-                        <div class="card">
-                          <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
-                            <p class="card-text"><small class="text-muted">5.0/5.0 Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
-                            <p class="card-text"><small class="text-muted">5.0/5.0 Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
-                            <p class="card-text"><small class="text-muted">5.0/5.0 Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
-                      </div>
-                      
-                          </div>
-                          <div class="carousel-item">
-                        
-                      
-                      <div class="card-group">
-                        <div class="card">
-                          <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
-                            <p class="card-text"><small class="text-muted">5.0/5.0 Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
-                            <p class="card-text"><small class="text-muted">5.0/5.0 Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <img src="../../src/assets/Img/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Jason Tourney</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi libero suscipit non pariatur odio corrupti iusto id sapiente nostrum rerum? Autem error ullam ipsum impedit soluta voluptatem earum reprehenderit deserunt!</p>
-                            <p class="card-text"><small class="text-muted">5.0/5.0 Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
-                      </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
                       </div>
                     </div>
                 </div>
             </div>
         </div>
       </div>
+
     
             
             
@@ -211,6 +125,8 @@
         data_array: {},
         name: '',
         email: null,
+        reviews: [],
+        averageRating: 0,
       }
     },
     methods:{
@@ -235,10 +151,38 @@
       })
 
       },
+      computed: {
+    reviewsSets() {
+      // Group reviews into sets of three
+      const sets = [];
+      for (let i = 0; i < this.data_array.reviews.length; i += 3) {
+        sets.push(this.data_array.reviews.slice(i, i + 3));
+      }
+      return sets;
+    },
+    averageRating() {
+      if (this.data_array.reviews.length === 0) {
+        return 0; // Return 0 if there are no reviews to avoid division by zero.
+      }
+
+      const totalRating = this.data_array.reviews.reduce((sum, review) => sum + review.rating, 0);
+      this.averageRating = (totalRating / this.data_array.reviews.length).toFixed(1);
+      return (totalRating / this.data_array.reviews.length).toFixed(1); // Round to one decimal place.
     }
+  }
+  }
     
 </script>
     
 <style>
-    
+.rating-container {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: white; /* Set text color to white */
+}
 </style>
