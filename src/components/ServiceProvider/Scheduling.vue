@@ -17,10 +17,11 @@ export default {
 </script>
 
 <template>
+  <h2 class="calender-heading text-center">Schedule an Appointment</h2>
   <div class="m-4" style="background-color: #4f7369; border-radius: 20px;">
-    <h2 class="calender-heading text-center">Schedule an Appointment</h2>
+    
 
-    <div id="calendar" style="min-width: 320px; height: 890px;"></div>
+    <div id="calendar" style="min-width: 320px; height: 910px; padding: 10px;"></div>
   <!-- <CalendlyVue url="dominicj-2022" @event="logEvent" @event-details="logEvent" @error="logEvent"></CalendlyVue> -->
   </div>
 
@@ -59,6 +60,6 @@ export default {
 
 .calender-heading {
   margin-top: 98px;
-  color:#4F7369;
+
 }
 </style>

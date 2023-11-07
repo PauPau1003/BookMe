@@ -8,7 +8,7 @@ import Footer from "../components/Footer.vue";
 import Navbar from "../components/navbar.vue";
 import Chatbox from "../components/ServiceProvider/Chatbox.vue";
 import { collection, getDocs, query,where } from "firebase/firestore";
-import {db} from "../firebase/firebaseconfig"
+import db from "../firebase/firebaseconfig"
 
 
 export default {
@@ -25,6 +25,7 @@ export default {
       productArray: [],
       reviews: [],
       docId: '',
+      longDescription: '',
     };
   },
   // computed: {
@@ -77,6 +78,9 @@ querySnapshot.forEach((doc) => {
   this.reviews = data.reviews
   this.serviceImage = data.serviceList.serviceImage
   this.docId = doc.id
+  this.profileImage = data.profileImage
+  this.longDescription = data.serviceList.longDescription
+  console.log(data.profileImage)
 });
   },
   
@@ -107,7 +111,7 @@ components: {Navbar,
     <v-row>
       <v-col cols="12" md="6">
         <ServiceProviderProfile :name="name" :username="username" :profileImage="profileImage" :serviceTitle="serviceTitle" />
-        <Services :serviceDescription="serviceDescription" :serviceImage="serviceImage" />
+        <Services :longDescription="longDescription" :serviceImage="serviceImage" />
       </v-col>
       <v-col cols="12" md="6">
         <Scheduling :calendlyurl="calendlyurl" />
@@ -122,7 +126,7 @@ components: {Navbar,
       </v-col>
     </v-row>
   </div>
-  <Chatbox/>
+  <Chatbox :name="name" :profileImage="profileImage"/>
   <Footer />
   
 

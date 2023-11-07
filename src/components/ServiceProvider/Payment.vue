@@ -4,19 +4,28 @@
 export default {
   data() {
     return {
-      tab: null,
+      tab: 0,
     };
   },
   methods: {
-     async redirectToStripe() {
+     async redirectToStripe(product) {
 
-      console.log(this.productArray)
-const response = await fetch("/api/create-checkout-session", {
+      console.log(product)
+      const queryParams = new URLSearchParams();
+  queryParams.append("stripePriceId", product.stripePriceId);
+
+  const url = `/api/create-checkout-session?${queryParams.toString()}`;
+
+const response = await fetch(url, {
   method: "POST",
+  // headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(product), // Pass the product object directly
 });
-const { url } = await response.json();
+const { url:stripeUrl } = await response.json();
 
-window.location.href = url;
+window.location.href = stripeUrl;
 }
 
   },
@@ -39,10 +48,11 @@ window.location.href = url;
         <v-window-item :value="index" v-for="(product, index) in productArray">
           {{ product.product_description }}<br>
           <span class="price">Price: $ {{ product.pricing }}</span>
+          <v-btn @click="redirectToStripe(product)" color="#194759" class="m-3">Pay Now!</v-btn>
         </v-window-item>
       </v-window>
     </v-card-text>
-    <v-btn @click="redirectToStripe" color="#194759" class="m-3">Pay Now!</v-btn>
+    
   </v-card>
 </template>
 

@@ -10,12 +10,11 @@
     import Talk from 'talkjs';
     export default {
         name: 'Chatbox',
-        // props: {
-        //     currentUser: {
-        //       type: Object,
-        //       required: true
-        //   }
-        // },
+        props: {
+            name: String,
+            profileImage: String,
+          },
+        
         data(){
             return{
                 currentUser: {
@@ -43,9 +42,9 @@
 
           const other = new Talk.User({
             id: '654321',
-            name: 'Sebastian',
+            name: this.name,
             email: 'Sebastian@example.com',
-            photoUrl: 'https://demo.talkjs.com/img/sebastian.jpg',
+            photoUrl: '/src/assets/Images/Tirsa/' + this.profileImage,
             welcomeMessage: 'Hey, how can I help?',
             role: 'default',
           });

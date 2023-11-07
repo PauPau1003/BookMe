@@ -37,7 +37,7 @@
 // import { useStore } from 'vuex';
 // const store = useStore();
 //     const currentUser = store.state.user
-import { db } from '@/firebase/firebaseconfig'; // Import your Firestore instance
+import  db  from '@/firebase/firebaseconfig'; // Import your Firestore instance
 import {auth} from '@/firebase/firebaseconfig'
 import {doc, updateDoc, arrayUnion,onSnapshot} from "firebase/firestore";
 const user = auth.currentUser

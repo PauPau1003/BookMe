@@ -8,14 +8,14 @@
           <!-- Left Column: Image Avatar -->
           <v-col cols="2" class="profileimage">
             <v-avatar size="80">
-              <v-img :src="profileImage"></v-img>
+              <v-img :src= "'/src/assets/Images/Tirsa/' + profileImage"></v-img>
             </v-avatar>
           </v-col>
 
           <!-- Right Column: Name and Username -->
           <v-col cols="10" class="align-text-bottom">
             <div class="name">{{ name }}</div>
-            <div class="username">{{ username }}</div>
+            <div class="username">@{{ username }}</div>
           </v-col>
         </v-row>
       </v-container>

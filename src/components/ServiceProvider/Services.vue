@@ -1,6 +1,6 @@
 <template>
   <div class="services ps-5">
-    <v-carousel show-arrows="hover">
+    <v-carousel show-arrows="hover" v-model="activeIndex">
       <!-- <v-carousel-item
     src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
     cover
@@ -16,7 +16,8 @@
     cover
   ></v-carousel-item> -->
       <v-carousel-item
-        v-for="image in serviceImage"
+      :key="index"
+        v-for="(image,index) in serviceImage"
         :src=" '/src/assets/Images/Tirsa/' + image"
         cover
       ></v-carousel-item>
@@ -32,7 +33,7 @@
         </li>
       </ul> -->
     <p >
-      {{ serviceDescription }}
+      {{ longDescription }}
     </p>
   </div>
 </template>
@@ -42,16 +43,15 @@
 export default {
   props: {
     serviceImage: Array,
-    serviceDescription: String,
+    longDescription: String,
   },
 
-  methods: {
-    scheduleService(service) {
-      // Implement the logic to schedule the selected service here
-      // You can use an event to notify the parent component about the selected service.
-      this.$emit("schedule-service", service);
-    },
-  },
+  
+  data(){
+    return{
+      activeIndex: 0
+    }
+  }
 };
 </script>
 
