@@ -70,9 +70,6 @@
                                 </ul>
                               </div>
                         </div>
-                        <div>
-                        <button type="button" class="btn btn-light" style="color:#194759; text-decoration: underline;">Add Product</button>
-                      </div>
                     </div>
                     <div class="row mb-2">
                       <h2 style="color: white;">Customer Reviews</h2>
@@ -109,12 +106,15 @@
     
 <script>
 
-    import { collection, getDocs } from "firebase/firestore"; 
+    import { arrayUnion, collection, doc, getDocs ,updateDoc} from "firebase/firestore"; 
     import db from "../firebase/firebaseconfig" 
     import spnavbar from "../components/spnavbar.vue";
     import { auth } from "../firebase/firebaseconfig.js";
 
     const querySnapshot = await getDocs(collection(db, "usersForProj")); 
+    
+
+
 
       export default {
         components: {
@@ -139,7 +139,7 @@
       } else {
         this.email = null; // If no user is logged in, set email to null
       }
-    }
+    },    
     },
     created(){
       this.fetchEmail();
