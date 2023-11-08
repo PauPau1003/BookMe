@@ -21,7 +21,7 @@ const USER_SHOPPING_CART = [
   
 ];
 
-const domainUrl = process.env.DOMAIN;
+
 
 const stripe = require("stripe")('sk_test_51O44ptCX4vBGwQY3FDkBOMT7JywR11jiCqmt01uDpnGHZZQepjGUNuLHIPk3i7EnB47kEcv8BvhfaGh1nMNvGBOZ006240zYum');
 
@@ -33,18 +33,17 @@ app.get("/shopping-cart", (req, res) => {
 // Create a Checkout Session
 app.post("/create-checkout-session", async (req, res) => {
   // Make an array of just our Stripe Price ID and quantities
-  const lineItems = USER_SHOPPING_CART.map((item) => {
-    return {
-      price: item.stripePriceId,
-      quantity: item.quantity,
-    };
-  });
+  const stripePriceId = req.query.stripePriceId;
+  const lineItems = {
+    price: stripePriceId,
+    quantity: 1,
+  }
 
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
-    line_items: lineItems,
-    success_url: `http://localhost:5173/`,
-    cancel_url: `http://localhost:5173/service-provider`,
+    line_items: [lineItems],
+    success_url: `http://localhost:5173/payment-success`,
+    cancel_url: `http://localhost:5173/payment-failed`,
   });
   return res.send({ url: session.url });
 });

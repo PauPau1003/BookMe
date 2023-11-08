@@ -1,15 +1,10 @@
-Tirsa Christina, [29/10/2023 7:02 pm]
-<script>
-export default{
-    name: 'Navbar',
-}
-</script>
+
 
 <template>
    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <!--Logo-->
-          <img src="images/BookMeLogo-removebg-preview.png" alt="" width="150" height="100">
+          <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px"></a>
           <form class="d-none d-md-flex d-lg-flex pt-3" role="search">
             <input
               class="formsearch form-control me-2"
@@ -86,7 +81,7 @@ export default{
       </nav>
 </template>
 
-<style>
+<style >
 body{
 
 background-blend-mode: multiply;
@@ -103,9 +98,6 @@ margin: 0;
 }
 } 
 
-.navbar{
-margin-top: 20px;
-}
 .signupBut {
 background-color: rgb(244, 241, 241);
 border: 1px ;

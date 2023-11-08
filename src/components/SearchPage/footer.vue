@@ -10,10 +10,10 @@
           <div class="col-12 col-md">
             <img
               class="mb-2"
-              src="/docs/4.3/assets/brand/bootstrap-solid.svg"
+              src="/BookMeLogo-removebg-preview.png"
               alt=""
-              width="24"
-              height="24"
+              width="125"
+              height="50"
             />
             <small class="d-block mb-3 text-muted">© 2017-2019</small>
           </div>
@@ -51,7 +51,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 body{
 
 background-blend-mode: multiply;
