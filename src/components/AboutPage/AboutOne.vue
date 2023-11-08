@@ -4,7 +4,7 @@
       <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
         <div data-aos="fade-up" data-aos-duration="1000">
           <img
-            src="../../assets/images/TeckXuan/serviceprovider.jpg"
+            src="../../assets/Images/TeckXuan/serviceprovider.jpg"
             alt="Image"
             class="img-fluid max-img"
           />
