@@ -7,7 +7,7 @@ import Payment from "../components/ServiceProvider/Payment.vue";
 import Footer from "../components/Footer.vue";
 import Navbar from "../components/navbar.vue";
 import Chatbox from "../components/ServiceProvider/Chatbox.vue";
-import { collection, getDocs, query,where } from "firebase/firestore";
+import { collection, query,where,onSnapshot } from "firebase/firestore";
 import db from "../firebase/firebaseconfig"
 
 
@@ -63,7 +63,7 @@ export default {
     // const querySnapshot = await getDocs(collection(db, "usersForProj"));
     const collectionRef = collection(db, "usersForProj");
     const q = query(collectionRef, where('serviceList.serviceId', "==",this.$route.params.id ));
-    const querySnapshot = await getDocs(q);
+    const unsubscribe =  onSnapshot(q,(querySnapshot)=>{;
 querySnapshot.forEach((doc) => {
   // doc.data() is never undefined for query doc snapshots
   console.log(doc.id, " => ", doc.data());
@@ -82,7 +82,7 @@ querySnapshot.forEach((doc) => {
   this.longDescription = data.serviceList.longDescription
   console.log(data.name)
 });
-  },
+  })},
   
 components: {Navbar,
     ServiceProviderProfile,
