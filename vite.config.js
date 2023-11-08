@@ -7,7 +7,10 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [
     vue(),
-  ],
+  ],build:{
+    target: "esnext" // or "es2019",
+
+   },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

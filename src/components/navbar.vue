@@ -121,9 +121,9 @@ import "bootstrap/dist/js/bootstrap.bundle.js";
 import "bootstrap/dist/js/bootstrap.js";
 import { collection, getDocs, getFirestore,query,where} from "firebase/firestore"; 
 
-import { auth } from "../firebase/firebaseconfig.js";
-
-import {db} from "../firebase/firebaseconfig"
+import {auth} from "../firebase/firebaseconfig.js";
+import db from "../firebase/firebaseconfig.js"
+// import {db} from "../firebase/firebaseconfig"
 const querySnapshot = await getDocs(collection(db, "usersForProj")); 
 
 export default {

@@ -7,7 +7,7 @@ import {
   signOut 
 } from 'firebase/auth'
 
-import {db} from "../firebase/firebaseconfig"
+import db from "../firebase/firebaseconfig.js"
 import { doc, setDoc,addDoc,collection} from "firebase/firestore";
 
 export default createStore({

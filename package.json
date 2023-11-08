@@ -29,6 +29,6 @@
   "devDependencies": {
     "@faker-js/faker": "^8.2.0",
     "@vitejs/plugin-vue": "^4.3.4",
-    "vite": "^4.4.9"
+    "vite": "^4.5.0"
   }
 }
