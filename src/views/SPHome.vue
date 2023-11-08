@@ -1,5 +1,5 @@
 <template>
-    <div class="spnavbar nav-fill">
+    <div class="spnavbar ">
             <spnavbar />
     </div>
     <div class="container-fluid" style="background-color:#4F7369 ;border-radius: 5px;">
