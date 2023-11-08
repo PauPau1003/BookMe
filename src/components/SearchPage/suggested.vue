@@ -1,6 +1,11 @@
 <script>
 export default {
   name: "Suggested",
+  methods:{
+  selectCategory(category){
+    console.log(category)
+  }
+ }
 };
 </script>
 

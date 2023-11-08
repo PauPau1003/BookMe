@@ -41,6 +41,11 @@ const router = createRouter({
       name: "LoginPage", // eslint-disable-next-line
       component: () => import("../views/LoginPage.vue"),
     },
+    {
+      path: "/HomeLandingPage",
+      name: "HomeLandingPage",
+      component: () => import("../views/HomeLandingPage.vue"),
+    },
 
     {
       path: "/AboutPage",
