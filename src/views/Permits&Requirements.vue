@@ -8,10 +8,10 @@
 	<p style="margin-left: 10px;color:#4F7369">You may refer to the following links at your own leisure to finish setting up your business!</p>
     <br>
 
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row" v-for="websites in data_array.permits">
 			<div class="col-12 mb-5" style="text-align: center;">
-				<a :href='websites.url' style="text-decoration:underline;font-size:xx-large;color:#4F7369">{{ websites.name }}</a><br><br>
+				<a :href='websites.url' target="_blank" style="text-decoration:underline;font-size:xx-large;color:#4F7369">{{ websites.name }}</a><br><br>
 				<p>
 					{{ websites.description }}
 				</p>
