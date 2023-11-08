@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top-navbar nav-fill">
     <div class="container-fluid" style="margin-left:0px; margin-right:0px;">
       <!-- Logo -->
       <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px; width:100px;"></a>
