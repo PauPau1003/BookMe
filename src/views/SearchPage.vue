@@ -32,7 +32,7 @@
 import Footer from "../components/Footer.vue";
 import Navbar from "../components/navbar.vue";
 import SellerContent from "../components/SearchPage/SellerContent.vue";
-import Suggested from "../components/SearchPage/Suggested.vue";
+import Suggested from "../components/SearchPage/suggested.vue";
 
 export default {
   components: {
