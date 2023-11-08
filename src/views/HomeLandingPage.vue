@@ -36,7 +36,7 @@ import Featurespage from "@/components/Home/Featurespage.vue";
 import FirstImage from "@/components/Home/FirstImage.vue";
 import Footer from "@/components/Footer.vue";
 import MoreFeatures from "@/components/Home/MoreFeatures.vue";
-import Navbar from "@/components/Navbar.vue";
+import Navbar from "@/components/navbar.vue";
 
 import "../assets/icomoon/style.css";
 import AOS from "aos";
