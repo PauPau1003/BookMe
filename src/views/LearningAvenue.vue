@@ -11,8 +11,7 @@
             <div class="col-md-5 col-12 mb-5">
                 <h3 style="text-decoration:underline;font-weight:bold;">Crafting Your Own Logo By Hand!</h3>
                 <br>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta perspiciatis quos nulla commodi labore cum atque quas, voluptas quisquam error eaque tempore nam natus, saepe quidem velit fuga. Numquam, distinctio?
-                    <br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium voluptatem non enim perspiciatis harum nisi porro ea ducimus repudiandae, maxime distinctio hic libero nemo atque. Eos ducimus fugiat nam id!
+                <p>"Crafting Your Own Logo by Hand" is a unique course that embraces the art of creating logos through traditional, manual techniques. This program is tailored for those who appreciate the authenticity and personal touch of handcrafted design. Throughout the course, you'll delve into the history of logo design and master various artistic mediums, from calligraphy to illustration. With expert guidance, you'll learn how to translate your creative concepts into tangible, hand-drawn logos that embody character and originality. Whether you're a budding designer or an art enthusiast, this course empowers you to craft timeless, handcrafted logos with individuality and flair.
                 </p>
                 <button type="button" class="btn btn-success" style="color:white;">Finish Course</button>
             </div>
@@ -36,8 +35,7 @@
                 <div class="col-md-5 col-12 mb-5">
                     <h3 style="text-decoration:underline;font-weight:bold;">Master Adobe Photoshop With Us!</h3>
                     <br>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam itaque expedita provident dolore recusandae error quia laborum possimus, deserunt similique voluptatem ullam ratione quos! Cumque labore nemo aspernatur sapiente architecto!
-                        <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta perspiciatis quos nulla commodi labore cum atque quas, voluptas quisquam error eaque tempore nam natus, saepe quidem velit fuga. Numquam, distinctio?</p>
+                    <p>"Master Adobe Photoshop with Us" is an immersive course focused on unlocking your creative prowess in digital image editing. This program provides a comprehensive exploration of Adobe Photoshop, imparting the skills to excel in digital art and photo editing. You will dive into image manipulation, retouching, and graphic design, learning to utilize the diverse array of tools and features within Photoshop. Expert guidance and hands-on exercises will boost your proficiency, catering to beginners and seasoned designers alike. Join us in mastering Adobe Photoshop and elevate your abilities for personal and professional projects.</p>
                     <button type="button" class="btn btn-success" style="color:white;">Finish Course</button>
                 </div>
             </div>
@@ -47,8 +45,9 @@
             <div class="col-md-5 col-12 mb-5">
                 <h3 style="text-decoration:underline;font-weight:bold;">Learn How To Analyse Your Data! (Beginner)</h3>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nostrum voluptatem molestiae consequuntur sequi laborum ipsa tenetur cum excepturi iste. Magnam placeat nesciunt iure suscipit facere totam laudantium qui vero?
-                    <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta perspiciatis quos nulla commodi labore cum atque quas, voluptas quisquam error eaque tempore nam natus, saepe quidem velit fuga. Numquam, distinctio?</p>
+                <p>This course is tailored for individuals new to Google Analytics and digital marketing. You will learn the fundamentals of tracking website traffic, understanding user behavior, and measuring online performance.
+
+Through practical exercises and expert instruction, you'll gain hands-on experience navigating the Google Analytics platform. Whether you're a business owner, marketer, or a newcomer to data analysis, this course will equip you with the essential skills to make informed, data-driven decisions and optimize your online presence. Join us on this beginner-friendly journey to demystify the world of web analytics with Google Analytics.</p>
                 <button type="button" class="btn btn-success" style="color:white;">Finish Course</button>
             </div>
 
@@ -71,8 +70,9 @@
                 <div class="col-md-5 col-12 mb-5">
                     <h3 style="text-decoration:underline;font-weight:bold;">Learn The Best Ways to Manage Your Finances Now!</h3>
                     <br>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus dolorem, iusto nisi ullam fuga et, veritatis fugit illo consequuntur aliquam deserunt deleniti vero quis! Maiores architecto sint doloremque non consectetur!
-                        <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta perspiciatis quos nulla commodi labore cum atque quas, voluptas quisquam error eaque tempore nam natus, saepe quidem velit fuga. Numquam, distinctio?</p>
+                    <p>This course covers key aspects of financial management, including budgeting, investment strategies, and understanding financial statements.
+
+Through clear explanations and practical exercises, you'll gain a solid understanding of financial concepts, enabling you to make informed decisions about personal or business finances. Whether you're a novice investor, an aspiring financial planner, or simply someone looking to strengthen your financial acumen, this course is your starting point for building a secure financial future. Join us in demystifying financial management and taking control of your financial well-being.</p>
                     <button type="button" class="btn btn-success" style="color:white;">Finish Course</button>
                 </div>
             </div>
@@ -80,8 +80,9 @@
                 <div class="col-md-5 col-12 mb-5">
                     <h3 style="text-decoration:underline;font-weight:bold;">Communications is Key! (Professsional)</h3>
                     <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sunt dicta ullam accusamus amet eligendi qui nulla magnam vel explicabo alias dolores, nam in inventore temporibus aliquid neque voluptates fugiat?
-                        <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta perspiciatis quos nulla commodi labore cum atque quas, voluptas quisquam error eaque tempore nam natus, saepe quidem velit fuga. Numquam, distinctio?</p>
+                    <p>"Professional Communications Mastery" is a concise and effective course tailored for those seeking to refine their communication skills. This program covers essential strategies for effective business communication, including verbal, written, and digital communication.
+
+Through focused lessons and practical exercises, you'll enhance your ability to convey ideas, build relationships, and present yourself professionally. Whether you're a budding professional, an entrepreneur, or anyone aiming to excel in a business setting, this course equips you with the skills to communicate confidently and effectively. Join us to master the art of professional communication.</p>
                     <button type="button" class="btn btn-success" style="color:white;">Finish Course</button>
                 </div>
     
@@ -92,8 +93,6 @@
                     <iframe width="100%" height="370" src="https://www.youtube.com/embed/WESGDi_ajUU?si=NOXnjpCek8DziKto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 </div>
-
-
     </div>
     
     
