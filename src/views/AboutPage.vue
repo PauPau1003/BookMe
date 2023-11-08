@@ -34,8 +34,8 @@ import AboutText from "@/components/AboutPage/AboutText.vue";
 import AboutOne from "@/components/AboutPage/AboutOne.vue";
 import AboutTwo from "@/components/AboutPage/AboutTwo.vue";
 import AboutEnd from "@/components/AboutPage/AboutEnd.vue";
-import Footer from "@/components/footer.vue";
-import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue";
+import Navbar from "@/components/navbar.vue";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
