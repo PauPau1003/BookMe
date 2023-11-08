@@ -9,14 +9,14 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img
-          src="../../assets/images/TeckXuan/barbers-in-singapore.jpg"
+          src="../../assets/Images/TeckXuan/barbers-in-singapore.jpg"
           class="d-block w-100"
           alt="Image 1"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../assets/images/TeckXuan/photographer.jpg"
+          src="../../assets/Images/TeckXuan/photographer.jpg"
           class="d-block w-100"
           alt="Image
           2"
@@ -24,14 +24,14 @@
       </div>
       <div class="carousel-item">
         <img
-          src="../../assets/images/TeckXuan/plumber.jpg"
+          src="../../assets/Images/TeckXuan/plumber.jpg"
           class="d-block w-100"
           alt="Image 3"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="../../assets/images/TeckXuan/bake.jpg"
+          src="../../assets/Images/TeckXuan/bake.jpg"
           class="d-block w-100"
           alt="Image 4"
         />

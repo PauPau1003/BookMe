@@ -19,7 +19,7 @@
             style="text-align: center"
           >
             <img
-              src="../../assets/images/TeckXuan/person_1-min.jpg"
+              src="../../assets/Images/TeckXuan/person_1-min.jpg"
               alt="Image"
               class="img-fluid rounded-circle"
               style="width: 100px; height: 100px; border-radius: 50%"
@@ -46,7 +46,7 @@
             style="text-align: center"
           >
             <img
-              src="../../assets/images/TeckXuan/person_2-min.jpg"
+              src="../../assets/Images/TeckXuan/person_2-min.jpg"
               alt="Image"
               class="img-fluid rounded-circle"
               style="width: 100px; height: 100px; border-radius: 50%"
@@ -72,7 +72,7 @@
             style="text-align: center"
           >
             <img
-              src="../../assets/images/TeckXuan/person_4-min.jpg"
+              src="../../assets/Images/TeckXuan/person_4-min.jpg"
               alt="Image"
               class="img-fluid rounded-circle"
               style="width: 100px; height: 100px; border-radius: 50%"
