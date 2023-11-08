@@ -23,5 +23,4 @@ export default db
 
 export {auth};
 
-export {db};
 export{app};

@@ -41,6 +41,11 @@ const router = createRouter({
       name: "LoginPage", // eslint-disable-next-line
       component: () => import("../views/LoginPage.vue"),
     },
+    {
+      path: "/HomeLandingPage",
+      name: "HomeLandingPage",
+      component: () => import("../views/HomeLandingPage.vue"),
+    },
 
     {
       path: "/AboutPage",
@@ -60,7 +65,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import("../views/Searchpage.vue"),
+      component: () => import("../views/SearchPage.vue"),
       // meta:{
       //   requiresAuth:true
       // }
@@ -90,9 +95,21 @@ const router = createRouter({
       name: "test",
       component: () => import("../firebase/test.vue"),
     },
+    {
+      path: "/payment-success",
+      name: "payment-success",
+      component: () => import("../views/PaymentSuccessful.vue"),
+    },
+    
+    {
+      path: "/payment-failed",
+      name: "payment-failed",
+      component: () => import("../views/PaymentFailed.vue"),
+    },
+    
+    
+    
   ],
-
-  // For links in the footer to be scrolled to the top
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
       // If the route has a hash (e.g., #section), scroll to the element with that ID
@@ -102,7 +119,8 @@ const router = createRouter({
       return { top: 0,behavior: "smooth" };
     }
   },
-});
+})
+
 
 router.beforeEach((to, from, next) => {
   if (to.path === "/loginPage" && auth.currentUser) {

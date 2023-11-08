@@ -1,8 +1,8 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top-navbar nav-fill">
     <div class="container-fluid" style="margin-left:0px; margin-right:0px;">
       <!-- Logo -->
-      <a class="navbar-brand"><img src="../../src/assets/Img/Zan/BookMeLogo.png" alt="Logo" style="height: 100px; width:150px;"></a>
+      <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px; width:100px;"></a>
       <!-- Toggle Button -->
       <button
         class="navbar-toggler"
@@ -41,7 +41,7 @@
           <div
             class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
           >
-          <router-link to="/HomeLandingPage" style="text-decoration: none; color:green;">Switch to Buying</router-link>
+          <router-link to="/" style="text-decoration: none; color:green;">Switch to Buying</router-link>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 
 body{
 

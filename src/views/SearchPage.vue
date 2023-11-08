@@ -7,9 +7,9 @@
     <Categories />
   </div> -->
 
-  <div class="Suggested">
-    <Suggested />
-  </div>
+  <!-- <div class="Suggested">
+    <Suggested v-model="category"/>
+  </div> -->
 <!-- 
   <div class="Filter">
     <Filter />
@@ -32,16 +32,21 @@
 import Footer from "../components/Footer.vue";
 import Navbar from "../components/navbar.vue";
 import SellerContent from "../components/SearchPage/SellerContent.vue";
-import Suggested from "../components/SearchPage/Suggested.vue";
+// import Suggested from "../components/SearchPage/Suggested.vue";
 
 export default {
+  
   components: {
     // Categories,
     // Filter,
     Footer,
     Navbar,
     SellerContent,
-    Suggested,
   },
+ methods:{
+  selectCategory(category){
+    console.log(category)
+  }
+ }
 };
 </script>

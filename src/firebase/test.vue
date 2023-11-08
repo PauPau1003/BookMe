@@ -5,7 +5,7 @@
 </template>
 <script>
 import data from './data2.json'
-import {db} from './firebaseconfig.js'
+import db from './firebaseconfig.js'
 import { collection, addDoc } from "firebase/firestore"; 
 const usersForProj = data.usersforProj
 
