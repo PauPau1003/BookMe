@@ -28,10 +28,10 @@ import "../assets/icomoon/style.css";
 
 export default {
   components: {
-    navbar,
+    spnavbar,
     ContactElement,
     ContactForm,
-    Footer,
+    spfooter,
   },
 
   mounted() {
