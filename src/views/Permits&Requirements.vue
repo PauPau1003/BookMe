@@ -4,8 +4,8 @@
     </div>
     
             
-    <h1 style="margin-left: 10px; color:#194759;">Guide to Permits & Licensing in Singapore</h1>
- <p style="margin-left: 10px;color:#4F7369">You may refer to the following links at your own leisure to finish setting up your business!</p>
+    <h1 class="ps-5 pt-5" style="color:#194759">Guide to Permits & Licensing in Singapore</h1>
+ <p class="ps-5" style="color:#4F7369">You may refer to the following links at your own leisure to finish setting up your business!</p>
     <br>
 
  <div class="container">
