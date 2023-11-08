@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row justify-content-center text-center mb-3">
         <div class="col-lg-6 mb-2">
-          <h2 class="headercolour font-weight-bold heading mb-4 mt-4">
+          <h2 class="headercolour font-weight-bold heading mb-4 mt-6">
             Our Clients
           </h2>
           <p class="text-black-50">Let's hear what they say</p>
@@ -102,13 +102,8 @@
         <h2 class="mb-4">
           Be a part of our growing community to promote sustainable growth
         </h2>
-        <p>
-          <!-- <a
-            href="#"
-            target="_blank"
-            
-            >Become a Service Provider</a -->
-            <router-link to="/ContactPage" class="btn btn-primary text-white py-3 px-4"
+        <p class="pb-5">
+            <router-link to="/ContactPage" class="btn text-white py-3 px-4"
                 >Become a Service Provider</router-link>
           
         </p>
@@ -118,7 +113,7 @@
 </template>
 
 <style scoped>
-/* class="btn btn-primary text-white py-3 px-4" */
+
 .btn {
   transition: transform 0.3s ease-in-out; /* Add a transition */
 }
