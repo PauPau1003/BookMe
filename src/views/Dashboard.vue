@@ -9,7 +9,7 @@
 					<h2 class="font-weight-bold heading mt-5" style="color: white">Your Executive Dashboard</h2>
 				</div>
 				</div>
-				<div class="row mb-3 mx-2">
+				<div class="row mb-3 mx-md-5">
 					<div class="col-md-3 col-12 mx-md-3 mb-3" data-aos="fade-up" data-aos-delay="300" style="height:80%;border: 2px solid white; border-radius:5px;background-color: white; ">
 						<p><small class="text-muted">Auto date range</small><br><img src="../../src/assets/Images/Zan/calendar.png" style="width:20px ; height:20px;"> This Month</p>
 					</div>
@@ -20,7 +20,7 @@
 						<p><small class="text-muted">Posts</small><br>All</p>
 					</div>
 				</div>
-				<div class="row mb-3 mx-2">
+				<div class="row mb-3 mx-md-5">
 					<div class="col-md-3 col-12 mx-md-3 mb-3"  data-aos="fade-up" data-aos-delay="300" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 						<h3 class="mb-3">New Sales</h3>
 						<div style="text-align: center;">
@@ -29,7 +29,7 @@
 						<p style="font-weight:100;">vs previous month</p>
 						</div>
 					</div>
-					<div class="col-md-3 col-12 mx-md-2 mb-3"  data-aos="fade-up" data-aos-delay="500" style="border: 2px solid white; border-radius:5px;background-color: white; ">
+					<div class="col-md-3 col-12 mx-md-5 mb-3"  data-aos="fade-up" data-aos-delay="500" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 							<h3 class="mb-3">Business Growth Rate</h3>
 							<div style="text-align: center;">
 								<h1>{{ salesPercentageChange }}%</h1>
@@ -37,7 +37,7 @@
 								<p style="font-weight:100;">vs previous month</p>
 								</div>
 					</div>
-					<div class="col-md-3 col-12 mx-md-2 mb-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
+					<div class="col-md-2 col-12 mx-md-5 mb-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 							<h3 class="mb-3">MRR</h3>
 							<div style="text-align: center;">
 								<h1>${{ totalMRR }}</h1>
@@ -45,23 +45,23 @@
 								<p style="font-weight:100;">vs previous month</p>
 								</div>
 					</div>
-					<div class="col-md-2 col-12 mx-md-2 mb-3"  data-aos="fade-up" data-aos-delay="600" style="border: 2px solid white; border-radius:5px;background-color: white; ">
+					<div class="col-md-2 col-12 mx-md-5 mb-3"  data-aos="fade-up" data-aos-delay="600" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 							<h3 class="mb-3">Webpage Views</h3>
 							<div id="myDiv"></div>
 
 					</div>	
 				</div>
 				<div class="row mb-3 mx-2">
-					<div class="col-md-6 col-12 mx-md-3 mb-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
+					<div class="col-md-6 col-12 mx-md-5 mb-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 						<div>
 						<h3 class="mb-3">Business Summary (This Month)</h3>
-						<div id="myBarChart"></div>
+						<div id="myBarChart" style="width:100%;"></div>
 						</div>
 					</div>
-					<div class="col-md-5 col-12 mx-md-2 mb-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
+					<div class="col-md-5 col-12 mx-md-5 mb-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 						<div>
 						<h3 class="mb-3">MRR</h3>
-						<div id="myLineChart"></div>
+						<div id="myLineChart" style="width:100%;"></div>
 					</div>
 					</div>
 				</div>
