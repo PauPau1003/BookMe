@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top-navbar nav-fill">
     <div class="container-fluid" style="margin-left:0px; margin-right:0px;">
       <!-- Logo -->
-      <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px; width:100px;"></a>
+      <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px; padding-left:60px;"></a>
       <!-- Toggle Button -->
       <button
         class="navbar-toggler"
@@ -41,7 +41,16 @@
           <div
             class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
           >
-          <router-link to="/" style="text-decoration: none; color:green;">Switch to Buying</router-link>
+          <router-link to="/" style="text-decoration: none; color:green;padding-right: 50px; font-size:20px;">Switch to Buying</router-link>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button
+              @click="$store.dispatch('logout')"
+              class="btn"
+              style="height: 38px; margin-right:60px;"
+            >
+              Logout
+            </button>
           </div>
         </div>
       </div>
@@ -76,7 +85,9 @@ margin: 0;
 } 
 
 .navbar{
-margin-top: 20px;
+  background-color: #ebf2f1;
+  margin-top: 0px;
+  padding-top: 10px;
 }
 .signupBut {
 background-color: rgb(244, 241, 241);
@@ -115,6 +126,13 @@ border-color: black;
 
 .navbar .text-white {
 color: black; /* Change the text color to black */
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: #194759 !important;
+  color: #ebf2f1 !important;
+  border: none !important;
 }
 
 </style>

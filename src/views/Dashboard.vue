@@ -21,7 +21,7 @@
 					</div>
 				</div>
 				<div class="row mb-3 mx-2">
-					<div class="col-md-3 col-5 mx-md-3 mx-3 mb-3"  data-aos="fade-up" data-aos-delay="300" style="border: 2px solid white; border-radius:5px;background-color: white; ">
+					<div class="col-md-3 col-12 mx-md-3 mb-3"  data-aos="fade-up" data-aos-delay="300" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 						<h3 class="mb-3">New Sales</h3>
 						<div style="text-align: center;">
 						<h1>${{ totalProductPrice }}</h1>
@@ -29,7 +29,7 @@
 						<p style="font-weight:100;">vs previous month</p>
 						</div>
 					</div>
-					<div class="col-md-3 col-5 mx-md-2 mx-3 mb-3"  data-aos="fade-up" data-aos-delay="500" style="border: 2px solid white; border-radius:5px;background-color: white; ">
+					<div class="col-md-3 col-12 mx-md-2 mb-3"  data-aos="fade-up" data-aos-delay="500" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 							<h3 class="mb-3">Business Growth Rate</h3>
 							<div style="text-align: center;">
 								<h1>{{ salesPercentageChange }}%</h1>
@@ -37,7 +37,7 @@
 								<p style="font-weight:100;">vs previous month</p>
 								</div>
 					</div>
-					<div class="col-md-3 col-5 mx-md-2 mx-3 mb-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
+					<div class="col-md-3 col-12 mx-md-2 mb-3"  data-aos="fade-up" data-aos-delay="400" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 							<h3 class="mb-3">MRR</h3>
 							<div style="text-align: center;">
 								<h1>${{ totalMRR }}</h1>
@@ -45,7 +45,7 @@
 								<p style="font-weight:100;">vs previous month</p>
 								</div>
 					</div>
-					<div class="col-md-2 col-5 mx-md-2 mx-3 mb-3"  data-aos="fade-up" data-aos-delay="600" style="border: 2px solid white; border-radius:5px;background-color: white; ">
+					<div class="col-md-2 col-12 mx-md-2 mb-3"  data-aos="fade-up" data-aos-delay="600" style="border: 2px solid white; border-radius:5px;background-color: white; ">
 							<h3 class="mb-3">Webpage Views</h3>
 							<div id="myDiv"></div>
 
