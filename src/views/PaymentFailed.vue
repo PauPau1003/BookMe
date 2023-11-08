@@ -5,7 +5,7 @@
 
 <template>
   <div class="container">
-        <img src="/src/assets/Img/Tirsa/sadface.png" width="100" height="100" class="m-5">
+        <img src="/src/assets/Images/Tirsa/sadface.png" width="100" height="100" class="m-5">
         <h1 class="text-danger">Sorry, payment failed!</h1>
         <p>Unfortunately payment is rejected</p>
         <p>Page will be automatically redirected to the main page or click button</p>
