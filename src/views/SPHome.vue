@@ -4,13 +4,11 @@
   </div>
   <div class="container-fluid" style="background-color:#4F7369 ;border-radius: 5px;">
       <div class="row">
-          <div class="col-md-4 col-12 " style="background-color: #4F7369; min-height: 100vh;">
-              <div class="container-fluid">
-                  <!-- profile display take from waihong -->
-                  
+          <div class="col-md-4 col-12 " style="background-color: #4F7369;">
+              <div class="container-fluid mx-md-5">                
                   <div class="row mb-5"> 
                     <div class="col-12 d-flex justify-content-center">
-                      <div class="card mx=auto" style="width: 400px; margin-top: 150px; height: 460px;">
+                      <div class="card mx=auto" style="width: 400px; margin-top: 70px; height: 460px;">
                         <img :src="'/src/assets/Images/Tirsa/'+data_array.profileImage" class="card-img-top" style="height: 60px;width:60px; border-radius:25px;margin:auto; margin-top:20px">
                         <div class="card-body">
                         <h5 class="card-title" style="text-align: center;color:#194759;">{{ data_array.name }}</h5>
@@ -47,10 +45,8 @@
               </div>
 
           </div>
-          <!-- <div class="col-1">
 
-          </div> -->
-          <div class="col-md-7 col-12">
+          <div class="col-md-7 col-12 mx-md-2">
               <div class="container-fluid m-5">
                   <div class="row mb-2">
                       <div class="col-12">

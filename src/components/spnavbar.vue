@@ -23,7 +23,7 @@
         aria-labelledby="offcanvasNavbarLabel"
       >
         <!-- Sidebar Body -->
-        <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+        <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0" style="background-color:#ebf2f1">
           <ul class="navbar-nav fs-5 flex-grow-1 pe-3">
             <li class="nav-item mx-2">
               <router-link to="/SPHome" style="text-decoration: none; color:black;">Home</router-link>
