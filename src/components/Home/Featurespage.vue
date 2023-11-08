@@ -16,7 +16,9 @@
               Unlock a world of possibilities with our diverse range of
               services, tailored to meet your every need.
             </p>
-            <a href="#" class="btn">Learn More</a>
+            <router-link to="/Searchpage" class="btn"
+                >Learn More</router-link
+              >
           </div>
         </div>
       </div>
@@ -35,7 +37,9 @@
               Unlock Your Business Potential: Elevate Your Sales with Our
               Cutting-Edge Platform! Sell your service with us!
             </p>
-            <a href="#" class="btn">Learn More</a>
+            <router-link to="/ContactPage" class="btn"
+                >Learn More</router-link
+              >
           </div>
         </div>
       </div>
@@ -54,7 +58,9 @@
               Experience excellence in service and support like never before -
               where your needs are our priority.
             </p>
-            <a href="#" class="btn">Learn More</a>
+            <router-link to="/ContactPage" class="btn"
+                >Learn More</router-link
+              >
           </div>
         </div>
       </div>

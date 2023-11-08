@@ -45,7 +45,7 @@
                       <div class="card-body">
                         <h4 class="card-title">Photography</h4>
                         <p class="card-text">Get the shots you desire!</p>
-                        <a href="#" class="btn">See details</a>
+                    
                       </div>
                     </div>
                   </div>
@@ -59,7 +59,6 @@
                       <div class="card-body">
                         <h4 class="card-title">Make-up</h4>
                         <p class="card-text">Look your best!</p>
-                        <a href="#" class="btn">See details</a>
                       </div>
                     </div>
                   </div>
@@ -73,7 +72,6 @@
                       <div class="card-body">
                         <h4 class="card-title">Manicure</h4>
                         <p class="card-text">Transform your fingertips!</p>
-                        <a href="#" class="btn">See details</a>
                       </div>
                     </div>
                   </div>
@@ -91,7 +89,6 @@
                       <div class="card-body">
                         <h4 class="card-title">Massage</h4>
                         <p class="card-text">Relax and unwind!</p>
-                        <a href="#" class="btn">See details</a>
                       </div>
                     </div>
                   </div>
@@ -105,7 +102,6 @@
                       <div class="card-body">
                         <h4 class="card-title">Hairdressing</h4>
                         <p class="card-text">Redefine your style!</p>
-                        <a href="#" class="btn">See details</a>
                       </div>
                     </div>
                   </div>
@@ -119,7 +115,6 @@
                       <div class="card-body">
                         <h4 class="card-title">Plumbing</h4>
                         <p class="card-text">Get your pipes fixed!</p>
-                        <a href="#" class="btn">See details</a>
                       </div>
                     </div>
                   </div>
@@ -137,7 +132,6 @@
                       <div class="card-body">
                         <h4 class="card-title">Electricians</h4>
                         <p class="card-text">Light it up!</p>
-                        <a href="#" class="btn">See details</a>
                       </div>
                     </div>
                   </div>
@@ -151,7 +145,6 @@
                       <div class="card-body">
                         <h4 class="card-title">Accessories and crafts</h4>
                         <p class="card-text">Elevate your look!</p>
-                        <a href="#" class="btn">See details</a>
                       </div>
                     </div>
                   </div>
@@ -165,7 +158,6 @@
                       <div class="card-body">
                         <h4 class="card-title">Bakes</h4>
                         <p class="card-text">Satisfy your cravings!</p>
-                        <a href="#" class="btn">See details</a>
                       </div>
                     </div>
                   </div>
