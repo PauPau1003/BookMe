@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Navbar from "@/components/Navbar.vue";
+import Navbar from "@/components/navbar.vue";
 import ContactElement from "@/components/ContactPage/ContactElement.vue";
 import ContactForm from "@/components/ContactPage/ContactForm.vue";
 import Footer from "@/components/footer.vue";
