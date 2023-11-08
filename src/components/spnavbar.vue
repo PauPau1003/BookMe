@@ -1,8 +1,8 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top-navbar nav-fill">
-    <div class="container-fluid" style="margin-left:0px; margin-right:0px;">
-      <!-- Logo -->
-      <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px; width:100px;"></a>
+    <div class="container-fluid">
+      
+      <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px"></a>
       <!-- Toggle Button -->
       <button
         class="navbar-toggler"
@@ -35,7 +35,7 @@
               <router-link to="/LearningAvenue" style="text-decoration: none; color:black">Learning Avenue</router-link>
             </li>
             <li class="nav-item mx-2">
-              <router-link to="/Permits&Requirements" style="text-decoration: none; color:black;">Permits&Requirements</router-link>
+              <router-link to="/Permits&Requirements" style="text-decoration: none; color:black;">Permits & Requirements</router-link>
             </li>
           </ul>
           <div
@@ -58,63 +58,62 @@ export default {
 </script>
 
 <style scoped>
-
-body{
-
-background-blend-mode: multiply;
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-margin: 0;
+body {
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
 }
 
-@media(max-width:991px){
-.sidebar.offcanvas{
-    background-color:rgba(255,255,255,0.15);
+@media (max-width: 991px) {
+  .sidebar.offcanvas {
+    background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
+  }
 }
-} 
 
-.navbar{
-margin-top: 20px;
+.navbar {
+  background-color: #ebf2f1;
+  margin-top: 0px;
+  padding-top: 10px;
 }
-.signupBut {
-background-color: rgb(244, 241, 241);
-border: 1px ;
-border-color: green;
-color: rgb(56, 56, 56);
-}
+
 .form-search.form-control {
-width:300px
+  width: 300px;
 }
 
-/* .maincontent{
-background: url('images/bg.jpg') rgba(0,0,0,0.3);
-} */
+.maincontent {
+  background: url("/bg.jpg") rgba(0, 0, 0, 0.3);
+}
 
-.sticky-top-navbar {
-position: sticky;
-top: 0; /* Stick to the top of the viewport */
-z-index: 100; /* Adjust the z-index as needed */
+.btn {
+  border-radius: 10px;
+  background-color: #194759 !important;
+  color: #ebf2f1 !important;
+  border: none !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-color: black !important;
+  color: black !important;
 }
 
 /* Target specifically the "Home" link */
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
-color: black !important;
+  color: black !important;
 }
 
-
 .navbar-toggler-icon {
-
-border-color: black;
+  border-color: black;
 }
 
 .navbar .text-white {
-color: black; /* Change the text color to black */
+  color: black; /* Change the text color to black */
 }
 
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
 </style>

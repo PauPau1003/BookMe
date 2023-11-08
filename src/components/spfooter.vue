@@ -1,11 +1,11 @@
 <script>
 export default {
-  name: "Footer",
+  name: "spfooter",
 };
 </script>
 <template>
-  <div class="footer-style container-fluid">
-    <div class="pt-4 pt-md-5 border-top">
+  <div class="SPfooter container-fluid">
+    <div class=" pt-4 pt-md-5 border-top">
       <div class="row">
         <div class="col-12 col-md mx-5">
           <img
@@ -21,16 +21,16 @@ export default {
           <h5>Features</h5>
           <ul class="list-unstyled text-small">
             <li class="nav-item">
-              <router-link to="/" class="text-muted">Home</router-link>
+              <router-link to="/SPHome" class="text-muted">Home</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/AboutPage" class="text-muted"
+              <router-link to="/SPAboutPage" class="text-muted"
                 >About</router-link
               >
             </li>
             <li class="nav-item">
-              <router-link to="/SearchPage" class="text-muted"
-                >Services</router-link
+              <router-link to="/Dashboard" class="text-muted"
+                >Dashboard</router-link
               >
             </li>
           </ul>
@@ -39,13 +39,18 @@ export default {
           <h5>Support</h5>
           <ul class="list-unstyled text-small">
             <li class="nav-item">
-              <router-link to="/ContactPage" class="text-muted"
+              <router-link to="/SPContactPage" class="text-muted"
                 >Contact Us</router-link
               >
             </li>
             <li class="nav-item">
-              <router-link to="/ContactPage" class="text-muted"
-                >Selling on Book Me</router-link
+              <router-link to="/LearningAvenue" class="text-muted"
+                >Learning Avenue</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link to="/Permits&Requirements" class="text-muted"
+                >Permits & Requirements</router-link
               >
             </li>
             <li><a class="text-muted" href="#">Terms and Condition</a></li>
@@ -57,7 +62,7 @@ export default {
 </template>
 
 <style>
-.footerstyle{
-  background-color: #EBF2F1;
+.SPfooter{
+  background-color: #ebf2f1;
 }
 </style>
