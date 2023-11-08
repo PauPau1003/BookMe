@@ -225,6 +225,7 @@ import {
 } from "firebase/firestore";
 import db from "../firebase/firebaseconfig";
 import spnavbar from "../components/spnavbar.vue";
+import spfooter from "../components/spfooter.vue";
 import { auth } from "../firebase/firebaseconfig.js";
 
 const querySnapshot = await getDocs(collection(db, "usersForProj"));
@@ -232,6 +233,7 @@ const querySnapshot = await getDocs(collection(db, "usersForProj"));
 export default {
   components: {
     spnavbar,
+    spfooter,
   },
   data() {
     return {

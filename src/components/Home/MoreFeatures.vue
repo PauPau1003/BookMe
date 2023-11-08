@@ -2,7 +2,7 @@
   <div class="section">
     <div class="row justify-content-center text-center mb-3">
       <div class="col-lg-5">
-        <h2 class="pt-4 font-weight-bold heading headercolour mb-4">
+        <h2 class="pt-6 font-weight-bold heading headercolour mb-4">
           Let's find the service that you are looking for!
         </h2>
         <p>It's not that hard to find the one you need!</p>
@@ -28,7 +28,7 @@
           <span class="wrap-icon me-5">
             <span class="icon-search display-5"></span>
           </span>
-          <div class="feature-text">
+          <div class="feature-text pb-5">
             <h2 class="heading">Ease of search and booking</h2>
             <p>
               Streamline your search and booking experience with effortless
@@ -46,7 +46,7 @@
           <span class="wrap-icon me-5">
             <span class="icon-person display-5"></span>
           </span>
-          <div class="feature-text">
+          <div class="feature-text pb-5 ">
             <h2 class="heading">Wide variety of services</h2>
             <p>
               Find a wide range of service that caters to your specific needs!
@@ -63,7 +63,7 @@
           <span class="wrap-icon me-5">
             <span class="icon-security display-5"></span>
           </span>
-          <div class="feature-text">
+          <div class="feature-text pb-5">
             <h2 class="heading">Hassle-free and safe payment</h2>
             <p>
               Say goodbye to the complexities of traditional transactions and

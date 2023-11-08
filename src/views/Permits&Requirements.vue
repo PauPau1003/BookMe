@@ -23,29 +23,30 @@
     
     
 </template>
-    
+
 <script>
+import { collection, getDocs } from "firebase/firestore";
+import db from "../firebase/firebaseconfig";
+import spnavbar from "../components/spnavbar.vue";
+import spfooter from "../components/spfooter.vue";
+import { auth } from "../firebase/firebaseconfig.js";
 
-    import { collection, getDocs } from "firebase/firestore"; 
-    import db from "../firebase/firebaseconfig" 
-    import spnavbar from "../components/spnavbar.vue";
-    import { auth } from "../firebase/firebaseconfig.js";
+const querySnapshot = await getDocs(collection(db, "usersForProj"));
 
-    const querySnapshot = await getDocs(collection(db, "usersForProj")); 
-
-      export default {
-        components: {
-        spnavbar,
-    },
-    data(){
-      return{
-        data_array: {},
-        name: '',
-        email: null,
-      }
-    },
-    methods:{
-      fetchEmail() {
+export default {
+  components: {
+    spnavbar,
+    spfooter,
+  },
+  data() {
+    return {
+      data_array: {},
+      name: "",
+      email: null,
+    };
+  },
+  methods: {
+    fetchEmail() {
       const user = auth.currentUser; // Get the currently logged-in user
 
       if (user) {
@@ -54,22 +55,18 @@
       } else {
         this.email = null; // If no user is logged in, set email to null
       }
-    }
     },
-    created(){
-      this.fetchEmail();
-      querySnapshot.forEach((doc)=>{
-        if (doc.data().email == this.email){
-          this.data_array = (doc.data())
-          console.log(this.data_array)
-        }
-      })
-
-      },
-    }
-    
+  },
+  created() {
+    this.fetchEmail();
+    querySnapshot.forEach((doc) => {
+      if (doc.data().email == this.email) {
+        this.data_array = doc.data();
+        console.log(this.data_array);
+      }
+    });
+  },
+};
 </script>
-    
-<style>
-    
-</style>
+
+<style></style>

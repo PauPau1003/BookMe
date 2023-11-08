@@ -123,7 +123,7 @@ export default {
 };
 </script>
 
-<style>
+<style >
 body {
   background-blend-mode: multiply;
   background-position: center;
@@ -140,7 +140,7 @@ body {
 }
 
 .navbar {
-  background-color: #ebf2f1;
+  background-color: #EBF2F1;
   margin-top: 0px;
   padding-top: 10px;
 }
@@ -182,5 +182,4 @@ body {
   flex-direction: column;
   align-items: center; /* Center content horizontally */
 }
-
 </style>

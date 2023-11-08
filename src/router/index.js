@@ -100,15 +100,22 @@ const router = createRouter({
       name: "payment-success",
       component: () => import("../views/PaymentSuccessful.vue"),
     },
-    
+
     {
       path: "/payment-failed",
       name: "payment-failed",
       component: () => import("../views/PaymentFailed.vue"),
     },
-    
-    
-    
+    {
+      path: "/SPAboutPage",
+      name: "SPAboutPage",
+      component: () => import("../views/SPAboutPage.vue"),
+    },
+    {
+      path: "/SPContactPage",
+      name: "SPContactPage",
+      component: () => import("../views/SPContactPage.vue"),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
@@ -116,11 +123,10 @@ const router = createRouter({
       return { el: to.hash, behavior: "smooth" };
     } else {
       // Scroll to the top of the page
-      return { top: 0,behavior: "smooth" };
+      return { top: 0, behavior: "smooth" };
     }
   },
-})
-
+});
 
 router.beforeEach((to, from, next) => {
   if (to.path === "/loginPage" && auth.currentUser) {
