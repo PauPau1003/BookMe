@@ -2,14 +2,15 @@
     <div class="spnavbar">
             <spnavbar />
     </div>
-    <div class="container-fluid" style="background-color:#4F7369 ;border-radius: 5px;padding-bottom:10px; padding-top:25px;">
+    <div class="container-fluid" style="background-color:#4F7369 ;border-radius: 5px;">
         <div class="row">
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 " style="background-color: #4F7369; min-height: 100vh;">
                 <div class="container-fluid">
                     <!-- profile display take from waihong -->
+                    
                     <div class="row mb-5"> 
-                      <div class="col-12">
-                        <div class="card">
+                      <div class="col-12 d-flex justify-content-center">
+                        <div class="card mx=auto" style="width: 400px; margin-top: 150px; height: 460px;">
                           <img :src="'/src/assets/Images/Tirsa/'+data_array.profileImage" class="card-img-top" style="height: 60px;width:60px; border-radius:25px;margin:auto; margin-top:20px">
                           <div class="card-body">
                           <h5 class="card-title" style="text-align: center;color:#194759;">{{ data_array.name }}</h5>
@@ -31,8 +32,8 @@
                     </div>
                     </div>
                     <div class="row mb-5">
-                        <div class="col-12">
-                            <div class="card overflow-auto">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="card overflow-auto mx-auto" style="width: 400px;">
                                 <div class="card-body">
                                   <h5 class="card-title">Successfully Completed Courses</h5>
                                   <br>
@@ -41,20 +42,19 @@
                                   </div>
                                 </div>
                               </div>
-        
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="col-1">
+            <!-- <div class="col-1">
 
-            </div>
+            </div> -->
             <div class="col-md-7 col-12">
-                <div class="container-fluid">
+                <div class="container-fluid m-5">
                     <div class="row mb-2">
                         <div class="col-12">
-                            <p style="font-weight: bold;border: 1px solid rgb(205, 200, 200); border-radius:5px ; padding: 5px;color:white;">{{ data_array.name }}'s Services</p>
+                            <p style="font-weight: bold; font-size: 40px; padding: 5px;color:white;float: inline-start; text-decoration: underline;">{{ data_array.name }}'s Services</p>
                         </div>
                     </div>
                     <div class="row mb-2">
@@ -72,13 +72,13 @@
                         </div>
                     </div>
                     <div class="row mb-2">
-                      <h2 style="color: white;">Customer Reviews</h2>
+                      <h2 style="color: white; font-weight: 500; margin-top: 50px; margin-bottom: 20px; margin-left: 5px;">Customer Reviews</h2>
                       <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item" v-for="(reviewsSet, index) in reviewsSets" :key="index" :class="{ active: index === 0 }">
                             <div class="card-group">
                               <div class="card" v-for="(review, reviewIndex) in reviewsSet" :key="reviewIndex">
-                                <img src="/src/assets/Images/TeckXuan/person_1-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
+                                <img src="/src/assets/Images/TeckXuan/person_4-min.jpg" class="card-img-top" style="height: 50px;width:50px; border-radius:25px;margin:auto; margin-top:20px">
                                 <div class="card-body">
                                   <h5 class="card-title" style="text-align: center;">{{ review.reviewerName }}</h5>
                                   <p class="card-text" style="padding-bottom:30px">{{ review.review }}</p>
