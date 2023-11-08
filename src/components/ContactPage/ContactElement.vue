@@ -43,7 +43,7 @@ export default {
 }
 
 .background-image {
-  background-image: url("../../assets/images/TeckXuan/contact.jpg");
+  background-image: url("../../assets/Images/TeckXuan/contact.jpg");
   background-size: cover;
   background-position: center;
   filter: brightness(0.7); /* Adjust the brightness as needed */
