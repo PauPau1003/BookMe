@@ -41,7 +41,7 @@
           <div
             class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
           >
-          <router-link to="/HomeLandingPage" style="text-decoration: none; color:green;">Switch to Buying</router-link>
+          <router-link to="/" style="text-decoration: none; color:green;">Switch to Buying</router-link>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 
 body{
 

@@ -2,11 +2,12 @@
 
 <template>
     <div ref="talkjs" style="width: 1000px; margin: 30px; height: 500px">
-      <i>Loading chat...</i>
+
     </div>
 </template>
 
 <script>
+
     import Talk from 'talkjs';
     export default {
         name: 'Chatbox',
@@ -39,7 +40,7 @@
             appId: 'tjfjGqJk',
             me: me,
           });
-
+          console.log(this.name)
           const other = new Talk.User({
             id: '654321',
             name: this.name,
