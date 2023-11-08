@@ -32,6 +32,7 @@
         <span class="navbar-toggler-icon">
           <i class="fa fa-bars" aria-hidden="true" style="color: #1c1c1c"></i>
         </span>
+        <span v-if="data_array.username">Welcome, {{ data_array.username }}</span>
       </button>
       <!-- Sidebar -->
       <div
@@ -91,6 +92,7 @@
             >
               Logout
             </button>
+            <span v-if="data_array.username">Welcome, {{ data_array.username }}</span>
           </div>
         </div>
       </div>
@@ -109,10 +111,64 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "bootstrap/dist/js/bootstrap.js";
+import { collection, getDocs, getFirestore,query,where} from "firebase/firestore"; 
+
+import { auth } from "../firebase/firebaseconfig.js";
+
+import {db} from "../firebase/firebaseconfig"
+const querySnapshot = await getDocs(collection(db, "usersForProj")); 
 
 export default {
+  
   name: "navbar",
+  data() {
+  return {
+    data_array: {},
+    name: '',
+    email: null,
+  };
+},
+methods: {
+  fetchEmail() {
+    const user = auth.currentUser; // Get the currently logged-in user
+
+    if (user) {
+      // If a user is logged in
+      this.email = user.email; // Set the email to the user's email
+     
+      
+    } else {
+      this.email = null; // If no user is logged in, set email to null
+    }
+  },
+},
+created() {
+  this.fetchEmail();
+  const db = getFirestore(); // Get Firestore instance
+  const collectionRef = collection(db, 'usersForProj'); // Replace 'your_collection_name' with the actual name of your Firestore collection
+
+  // Now, you can query the Firestore collection using the user's email
+  // Make sure to replace 'email' with the actual field name in your Firestore documents
+  const q = query(collectionRef, where('email', '==', this.email));
+
+  getDocs(q)
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        this.data_array = doc.data();
+        console.log(this.data_array);
+      });
+    })
+    .catch((error) => {
+      console.error('Error getting documents: ', error);
+    });
+},
+
 };
+
+
+
+      
+
 </script>
 
 <style>

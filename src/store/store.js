@@ -71,8 +71,91 @@ export default createStore({
       const colRef= collection(db,"usersForProj")
 
       const dataObj={
-        email:email,
-        username: username
+        email: email,
+        username: username,
+        contactInformation: "",
+        is_service_provider: true,
+        location: "",
+        userid: "",
+        profileImage: "",
+        calendlyURL: "",
+        mrr: {},
+        permits: {
+          website1: {
+            desciption: "",
+            name: "",
+            url: "",
+          },
+          website2: {
+            name: "",
+            description: "",
+            url: "",
+          },
+          website3: {
+            name: "",
+            description: "",
+            url: "",
+          },
+          website4: {
+            name: "",
+            description: "",
+            url: "",
+          },
+          website5: {
+            name: "",
+            description: "",
+            url: "",
+          },
+        },
+        prevmonthsales: "",
+        recentsales: "",
+        responsetime: "",
+        salesPrevPercent: "",
+        Courses: {
+          Course1: {
+            cname: "",
+            cimg: "",
+          },
+          Course2: {
+            cname: "",
+            cimg: "",
+          },
+        },
+        webpage: {
+          referral: "",
+          direct: "",
+          organic: "",
+        },
+        name: "",
+        creationdate: "",
+        reviews: [],
+        serviceList: {
+          serviceTitle: "",
+          serviceDescription: "",
+          serviceImage: [],
+          serviceId: "",
+          serviceCategory: "",
+          productArray: [
+            {
+              product_image: "",
+              product_description: "",
+              product_name: "",
+              pricing: "",
+            },
+            {
+              product_image: "",
+              product_description: "",
+              product_name: "",
+              pricing: "",
+            },
+            {
+              product_image: "",
+              product_description: "",
+              product_name: "",
+              pricing: "",
+            },
+          ],
+        },
       }
 
       const docRef=await addDoc(colRef,dataObj)
