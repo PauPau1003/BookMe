@@ -131,13 +131,13 @@ body {
   background-repeat: no-repeat;
   margin: 0;
 }
-
+/* 
 @media (max-width: 991px) {
   .sidebar.offcanvas {
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
   }
-}
+} */
 
 .navbar {
   background-color: #EBF2F1;

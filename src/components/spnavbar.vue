@@ -20,7 +20,7 @@
         class="sidebar offcanvas offcanvas-start"
         tabindex="-1"
         id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel"
+        aria-labelledby="offcanvasNavbarLabel" style="background-color: #ebf2f1;"
       >
         <!-- Sidebar Body -->
         <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0" style="background-color:#ebf2f1">
