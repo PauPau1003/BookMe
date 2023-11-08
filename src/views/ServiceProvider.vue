@@ -6,7 +6,6 @@ import Scheduling from "../components/ServiceProvider/Scheduling.vue";
 import Payment from "../components/ServiceProvider/Payment.vue";
 import Footer from "../components/Footer.vue";
 import Navbar from "../components/navbar.vue";
-import Chatbox from "../components/ServiceProvider/Chatbox.vue";
 import { collection, query,where,onSnapshot } from "firebase/firestore";
 import db from "../firebase/firebaseconfig"
 
@@ -91,7 +90,6 @@ components: {Navbar,
     Scheduling,
     Payment,
     Footer,
-    Chatbox
   },
 };
 </script>
@@ -126,7 +124,6 @@ components: {Navbar,
       </v-col>
     </v-row>
   </div>
-  <Chatbox :name="name" :profileImage="profileImage"/>
   <Footer />
   
 
