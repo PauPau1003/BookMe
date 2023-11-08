@@ -13,7 +13,7 @@
   <br />
 
   <div class="container">
-    <div class="row me-auto">
+    <div class="row mb-5 me-auto">
       <div class="col-md-5 col-12 mb-5">
         <h3 style="text-decoration: underline; font-weight: bold">
           Crafting Your Own Logo By Hand!
@@ -50,7 +50,7 @@
       </div>
     </div>
 
-    <div class="row me-auto">
+    <div class="row mb-5 me-auto">
       <div class="col-md-6 col-12 mb-5" style="text-align: center">
         <iframe
           width="100%"
@@ -87,7 +87,7 @@
       </div>
     </div>
 
-    <div class="row me-auto">
+    <div class="row mb-5 me-auto">
       <div class="col-md-5 col-12 mb-5">
         <h3 style="text-decoration: underline; font-weight: bold">
           Learn How To Analyse Your Data! (Beginner)
@@ -124,7 +124,7 @@
       </div>
     </div>
 
-    <div class="row me-auto">
+    <div class="row mb-5 me-auto">
       <div class="col-md-6 col-12 mb-5" style="text-align: center">
         <iframe
           width="100%"
@@ -160,7 +160,7 @@
         </button>
       </div>
     </div>
-    <div class="row me-auto">
+    <div class="row mb-5 me-auto">
       <div class="col-md-5 col-12 mb-5">
         <h3 style="text-decoration: underline; font-weight: bold">
           Communications is Key! (Professsional)
