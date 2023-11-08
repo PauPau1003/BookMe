@@ -47,7 +47,7 @@
           </div>
 
           <div class="col-md-7 col-12 mx-md-2">
-              <div class="container-fluid m-5">
+              <div class="container-fluid m-mx-5">
                   <div class="row mb-2">
                       <div class="col-12">
                           <p style="font-weight: bold; font-size: 40px; padding: 5px;color:white;float: inline-start; text-decoration: underline;">{{ data_array.name }}'s Services</p>
