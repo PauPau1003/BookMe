@@ -53,7 +53,7 @@
         <!-- Sidebar Body -->
         <div class="offcanvas-body d-flex flex-lg-row p-4 p-lg-0">
           <ul
-            class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3"
+            class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3 nav-fill"
           >
             <li class="nav-item mx-2">
               <router-link to="/" style="text-decoration: none; color: black"
@@ -61,7 +61,7 @@
               >
             </li>
 
-            <li class="nav-item mx-2 nav">
+            <li class="nav-item mx-2 ">
               <router-link
                 to="/Searchpage"
                 style="text-decoration: none; color: black"
