@@ -20,7 +20,7 @@
 import navbar from "@/components/navbar.vue";
 import ContactElement from "@/components/ContactPage/ContactElement.vue";
 import ContactForm from "@/components/ContactPage/ContactForm.vue";
-import footer from "@/components/footer.vue";
+import Footer from "@/components/Footer.vue";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -31,7 +31,7 @@ export default {
     navbar,
     ContactElement,
     ContactForm,
-    footer,
+    Footer,
   },
 
   mounted() {
