@@ -109,7 +109,7 @@ width:300px
 }
 
 .maincontent{
-background: url('images/bg.jpg') rgba(0,0,0,0.3);
+background: url('Images/bg.jpg') rgba(0,0,0,0.3);
 }
 
 .sticky-top-navbar {

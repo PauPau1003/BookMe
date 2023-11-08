@@ -58,11 +58,19 @@
         <!-- Sidebar Body -->
         <div class="offcanvas-body d-flex flex-lg-row p-4 p-lg-0">
           <ul
-            class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3"
+            class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3 nav-fill"
           >
             <li class="nav-item mx-2">
               <router-link to="/" style="text-decoration: none; color: black"
                 >Home</router-link
+              >
+            </li>
+
+            <li class="nav-item mx-2 ">
+              <router-link
+                to="/Searchpage"
+                style="text-decoration: none; color: black"
+                >Services</router-link
               >
             </li>
             <li class="nav-item mx-2">
@@ -85,6 +93,14 @@
                 style="text-decoration: none; color: black"
                 >Contact</router-link
               >
+            </li>
+            <li class="nav-item mx-2">
+              <router-link
+              to="/SPHome"
+              style="text-decoration: none; color: lightcoral"
+            >
+              Switch to Seller
+            </router-link>
             </li>
           </ul>
           <!-- Login/Sign up -->

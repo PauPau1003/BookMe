@@ -1,6 +1,6 @@
 <template>
   <div class="Navbar">
-    <Navbar />
+    <navbar />
   </div>
 
   <div class="ContactElement">
@@ -17,10 +17,10 @@
 </template>
 
 <script>
-import Navbar from "@/components/Navbar.vue";
+import navbar from "@/components/navbar.vue";
 import ContactElement from "@/components/ContactPage/ContactElement.vue";
 import ContactForm from "@/components/ContactPage/ContactForm.vue";
-import Footer from "@/components/footer.vue";
+import Footer from "@/components/Footer.vue";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -28,7 +28,7 @@ import "../assets/icomoon/style.css";
 
 export default {
   components: {
-    Navbar,
+    navbar,
     ContactElement,
     ContactForm,
     Footer,
