@@ -18,7 +18,7 @@
           style="width: 300px"
         />
         <button class="btn btn-outline-dark text-light" type="submit">
-          Search
+          Search 
         </button>
       </form> -->
       <!-- Toggle Button -->
@@ -41,7 +41,7 @@
         aria-labelledby="offcanvasNavbarLabel"
       >
         <!-- Sidebar Header -->
-        <div class="offcanvas-header border-white">
+        <div class="offcanvas-header border-white" style="background-color:#ebf2f1">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Book Me</h5>
           <button
             type="button"
@@ -51,7 +51,7 @@
           ></button>
         </div>
         <!-- Sidebar Body -->
-        <div class="offcanvas-body d-flex flex-lg-row p-4 p-lg-0">
+        <div class="offcanvas-body d-flex flex-lg-row p-4 p-lg-0" style="background-color:#ebf2f1">
           <ul
             class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3 nav-fill"
           >
