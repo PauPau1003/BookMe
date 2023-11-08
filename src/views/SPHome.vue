@@ -59,7 +59,7 @@
                     </div>
                     <div class="row mb-2">
                         <div class="col-md-4 col-12 mb-4" v-for="products in data_array.serviceList.productArray">
-                            <div class="card">
+                            <div class="card card-equal-height">
                                 <img :src="'../../src/assets/Images/Tirsa/' + products.product_image" class="card-img-top">
                                 <div class="card-body">
                                   <h5 class="card-title">{{ products.product_name }}</h5>
@@ -184,5 +184,11 @@
   align-items: center;
   padding: 5px;
   color: white; /* Set text color to white */
+}
+
+.card-equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Make cards take up the full container height */
 }
 </style>
