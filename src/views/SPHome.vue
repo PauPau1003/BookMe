@@ -155,7 +155,7 @@
             </h2>
             <div
               id="carouselExampleCaptions"
-              class="carousel carousel-dark slide"
+              class="carousel carousel-dark slide pb-5"
               data-bs-ride="carousel"
             >
               <div class="carousel-inner">
