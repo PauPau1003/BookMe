@@ -2,6 +2,7 @@
   <div class="spnavbar ">
           <spnavbar />
   </div>
+  
   <div class="container-fluid" style="background-color:#4F7369 ;border-radius: 5px;">
       <div class="row">
           <div class="col-md-4 col-12 " style="background-color: #4F7369;">
@@ -46,7 +47,6 @@
 
           </div>
 
-<<<<<<< HEAD
           <div class="col-md-7 col-12 mx-md-2">
               <div class="container-fluid m-mx-5">
                   <div class="row mb-2">
@@ -56,7 +56,7 @@
                   </div>
                   <div class="row mb-2">
                       <div class="col-md-4 col-12 mb-4" v-for="products in data_array.serviceList.productArray">
-                          <div class="card">
+                          <div class="card card-equal-height">
                               <img :src="'../../src/assets/Images/Tirsa/' + products.product_image" class="card-img-top">
                               <div class="card-body">
                                 <h5 class="card-title">{{ products.product_name }}</h5>
@@ -81,27 +81,6 @@
                                 <p class="card-text" style="padding-bottom:30px">{{ review.review }}</p>
                                 <div class="rating-container">
                                 <p class="card-text"><small class="text-muted">{{ review.rating }}/5.0 <br><v-rating half-increments readonly :length="5" :size="30" :model-value="review.rating" color="warning"/></small></p>
-=======
-            </div> -->
-            <div class="col-md-7 col-12">
-                <div class="container-fluid m-5">
-                    <div class="row mb-2">
-                        <div class="col-12">
-                            <p style="font-weight: bold; font-size: 40px; padding: 5px;color:white;float: inline-start; text-decoration: underline;">{{ data_array.name }}'s Services</p>
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-md-4 col-12 mb-4" v-for="products in data_array.serviceList.productArray">
-                            <div class="card card-equal-height">
-                                <img :src="'../../src/assets/Images/Tirsa/' + products.product_image" class="card-img-top">
-                                <div class="card-body">
-                                  <h5 class="card-title">{{ products.product_name }}</h5>
-                                  <p class="card-text">{{ products.product_description }}</p>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">SGD${{ products.pricing }}</li>
-                                </ul>
->>>>>>> main
                               </div>
                               </div>
                             </div>
@@ -117,6 +96,10 @@
 
   
           
+          
+  
+  
+
           
   
   
