@@ -10,11 +10,12 @@
         </div>
       </div>
       <div class="row">
-        <div class="person-wrap col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
+        <div class="person-wrap col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
           <div
             class="h-100 person"
             data-aos="zoom-in-up"
-            data-aos-delay="400"
+            data-aos-delay="200"
+            data-aos-offset ="100"
             style="text-align: center"
           >
             <img
@@ -36,11 +37,12 @@
           </div>
         </div>
 
-        <div class="person-wrap col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
+        <div class="person-wrap col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
           <div
             class="h-100 person"
             data-aos="zoom-in-up"
-            data-aos-delay="450"
+            data-aos-delay="250"
+            data-aos-offset ="100"
             style="text-align: center"
           >
             <img
@@ -61,11 +63,12 @@
           </div>
         </div>
 
-        <div class="person-wrap col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
+        <div class="person-wrap col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0 p-3">
           <div
             class="h-100 person"
             data-aos="zoom-in-up"
-            data-aos-delay="500"
+            data-aos-delay="300"
+            data-aos-offset ="100"
             style="text-align: center"
           >
             <img
@@ -92,24 +95,38 @@
     <div
       class="row justify-content-center footer-cta"
       data-aos="fade-up"
-      data-aos-delay="200"
+      data-aos-delay="100"
+      data-aos-offset ="100"
     >
       <div class="col-lg-7 mx-auto text-center">
         <h2 class="mb-4">
           Be a part of our growing community to promote sustainable growth
         </h2>
         <p>
-          <a
+          <!-- <a
             href="#"
             target="_blank"
-            class="btn btn-primary text-white py-3 px-4"
-            >Become a Service Provider</a
-          >
+            
+            >Become a Service Provider</a -->
+            <router-link to="/ContactPage" class="btn btn-primary text-white py-3 px-4"
+                >Become a Service Provider</router-link>
+          
         </p>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+/* class="btn btn-primary text-white py-3 px-4" */
+.btn {
+  transition: transform 0.3s ease-in-out; /* Add a transition */
+}
+
+.btn:hover {
+  transform: scale(1.2); /* Scale the image slightly when hovering */
+}
+</style>
 <script>
 export default {
   name: "Cilentsreview",

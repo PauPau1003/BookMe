@@ -22,15 +22,11 @@
   <div class="Footer">
     <Footer />
   </div>
-  <!-- <Navbar/>
-    <Categories/>
-    <Suggested/>
-    <Filter/>
-    <SellerContent/>
-    <Footer/> -->
+
 </template>
 
 <script>
+
 // import Categories from "../components/SearchPage/Categories.vue";
 // import Filter from "../components/SearchPage/Filter.vue";
 import Footer from "../components/Footer.vue";
@@ -47,5 +43,10 @@ export default {
     SellerContent,
     Suggested,
   },
+ methods:{
+  selectCategory(category){
+    console.log(category)
+  }
+ }
 };
 </script>

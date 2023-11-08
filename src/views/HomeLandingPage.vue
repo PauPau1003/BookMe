@@ -26,41 +26,7 @@
   <div class="Footer">
     <Footer />
   </div>
-  <div>
-    <!-- Payment Success Modal -->
-    <v-dialog v-model="paymentSuccessDialog" max-width="400">
-      <v-card>
-        <v-card-title class="headline success-color">
-          Payment Successful
-        </v-card-title>
-        <v-card-text>
-          Thank you for your payment. Your transaction was successful.
-        </v-card-text>
-        <v-card-actions>
-          <v-btn color="success" text @click="closePaymentSuccessDialog">
-            Close
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-
-    <!-- Payment Unsuccessful Modal -->
-    <v-dialog v-model="paymentUnsuccessfulDialog" max-width="400">
-      <v-card>
-        <v-card-title class="headline error-color">
-          Payment Unsuccessful
-        </v-card-title>
-        <v-card-text>
-          Sorry, we couldn't process your payment. Please try again later.
-        </v-card-text>
-        <v-card-actions>
-          <v-btn color="error" text @click="closePaymentUnsuccessfulDialog">
-            Close
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-  </div>
+  
 </template>
 
 <script>
@@ -77,12 +43,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default {
-  data() {
-    return {
-      paymentSuccessDialog: false,
-      paymentUnsuccessfulDialog: false,
-    };
-  },
+  
   components: {
     Navbar,
     FirstImage,
@@ -95,26 +56,13 @@ export default {
 
   mounted() {
     AOS.init({
-      //   offset: 100, // Adjust this value as needed
-      //   duration: 1000, // Animation duration in milliseconds
       easing: "ease", // Animation easing function
       // once: true, // Whether the animation should only occur once
     });
+    AOS.refresh();
   },
-  methods: {
-    showPaymentSuccessModal() {
-      this.paymentSuccessDialog = true;
-    },
-    closePaymentSuccessDialog() {
-      this.paymentSuccessDialog = false;
-    },
-    showPaymentUnsuccessfulModal() {
-      this.paymentUnsuccessfulDialog = true;
-    },
-    closePaymentUnsuccessfulDialog() {
-      this.paymentUnsuccessfulDialog = false;
-    },
-  },
+ 
+
 };
 </script>
 
@@ -169,4 +117,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
+
 </style>
+

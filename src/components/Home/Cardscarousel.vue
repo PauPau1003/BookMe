@@ -26,10 +26,10 @@
           </button>
         </div>
 
-        <div class="col-12">
+        <div class="col-12 pb-3">
           <div
             id="carouselExampleAutoplaying"
-            class="carousel slide"
+            class="carousel slide px-2"
             data-bs-ride="carousel"
           >
             <div class="carousel-inner">
@@ -185,7 +185,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .cardscarousel .carousel-control-prev,
 .cardscarousel .carousel-control-next {
   position: relative;
@@ -209,10 +209,18 @@ export default {
 
 .cardwrapper > img {
   max-height: 768px;
-  transition: transform 0.3s ease-in-out; /* Add a transition */
+  transition: transform 0.3s ease-in-out;
 }
 
 .cardwrapper:hover > img {
   transform: scale(1.05); /* Scale the image slightly when hovering */
+}
+
+.carousel-item {
+  transition: transform 0.3s ease-in-out; /* Add a transition */
+}
+
+.carousel-item:hover {
+  transform: scale(1.01); /* Scale the image slightly when hovering */
 }
 </style>

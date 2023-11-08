@@ -8,8 +8,8 @@
           alt="Logo"
           style="height: 40px"
       /></a>
-      <form class="d-none d-md-flex d-lg-flex" role="search">
-        <!-- Search Form -->
+      <!-- <form class="d-none d-md-flex d-lg-flex" role="search">
+
         <input
           class="formsearch form-control me-2"
           type="search"
@@ -20,7 +20,7 @@
         <button class="btn btn-outline-dark text-light" type="submit">
           Search
         </button>
-      </form>
+      </form> -->
       <!-- Toggle Button -->
       <button
         class="navbar-toggler"
@@ -61,13 +61,7 @@
                 >Home</router-link
               >
             </li>
-            <li class="nav-item mx-2">
-              <router-link
-                to="/AboutPage"
-                style="text-decoration: none; color: black"
-                >About</router-link
-              >
-            </li>
+
             <li class="nav-item mx-2 nav">
               <router-link
                 to="/Searchpage"
@@ -77,14 +71,29 @@
             </li>
             <li class="nav-item mx-2">
               <router-link
+                to="/AboutPage"
+                style="text-decoration: none; color: black"
+                >About</router-link
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <router-link
                 to="/ContactPage"
                 style="text-decoration: none; color: black"
                 >Contact</router-link
               >
             </li>
+            <li class="nav-item mx-2">
+              <router-link
+              to="/SPHome"
+              style="text-decoration: none; color: lightcoral"
+            >
+              Switch to Seller
+            </router-link>
+            </li>
           </ul>
           <!-- Login/Sign up -->
-          <div class="d-flex justify-content-center mt-1">
+          <div class="d-flex justify-content-center">
             <button
               @click="$store.dispatch('logout')"
               class="btn"
@@ -101,7 +110,6 @@
 </template>
 
 <script>
-import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "jquery";
 import "popper.js";
@@ -188,9 +196,9 @@ body {
 }
 
 .navbar {
-  padding-top: 10px;
   background-color: #ebf2f1;
   margin-top: 0px;
+  padding-top: 10px;
 }
 
 .form-search.form-control {
@@ -224,4 +232,11 @@ body {
 .navbar .text-white {
   color: black; /* Change the text color to black */
 }
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
 </style>

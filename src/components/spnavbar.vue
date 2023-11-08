@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top-navbar">
     <div class="container-fluid" style="margin-left:0px; margin-right:0px;">
       <!-- Logo -->
-      <a class="navbar-brand"><img src="../../public/BookMeLogo.png" alt="Logo" style="height: 100px; width:150px;"></a>
+      <a class="navbar-brand"><img src="/BookMeLogo-removebg-preview.png" alt="Logo" style="height: 40px; width:100px;"></a>
       <!-- Toggle Button -->
       <button
         class="navbar-toggler"
@@ -35,13 +35,13 @@
               <router-link to="/LearningAvenue" style="text-decoration: none; color:black">Learning Avenue</router-link>
             </li>
             <li class="nav-item mx-2">
-              <router-link to="/Permits&Requirements" style="text-decoration: none; color:black;">Permits/Requirements</router-link>
+              <router-link to="/Permits&Requirements" style="text-decoration: none; color:black;">Permits&Requirements</router-link>
             </li>
           </ul>
           <div
             class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
           >
-          <a href="#login" class="text-black text-decoration-none" style="color: green;">Switch to Buying</a>
+          <router-link to="/HomeLandingPage" style="text-decoration: none; color:green;">Switch to Buying</router-link>
           </div>
         </div>
       </div>
