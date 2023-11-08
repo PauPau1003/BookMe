@@ -5,7 +5,7 @@
 
 <template>
   <div class="container">
-            <img src="/src/assets/Img/Tirsa/sadface.png" class="m-5" width="100px" height="100px">
+            <img src="/src/assets/Images/Tirsa/sadface.png" class="m-5" width="100px" height="100px">
             <h3>Awesome!</h3>
             <p>Your booking has been confirmed.</p>
             <p>Check your email for details.</p>
